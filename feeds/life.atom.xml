@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Life</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/life.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2015-09-17T11:23:00+02:00</updated><entry><title>At Last</title><link href="endergeek.com/pages/2015/09/17/at-last/" rel="alternate"></link><published>2015-09-17T11:23:00+02:00</published><updated>2015-09-17T11:23:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-09-17:endergeek.com/pages/2015/09/17/at-last/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h2&gt;&lt;img alt="testspeed" src="endergeek.com/images/atlast/fuck.jpg"&gt;&lt;/h2&gt;
-&lt;h4&gt;0. At last&lt;/h4&gt;
-&lt;p&gt;最后的最后 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h2&gt;&lt;img alt="testspeed" src="endergeek.com/images/atlast/fuck.jpg"&gt;&lt;/h2&gt;
-=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Life</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/life.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-09-17T11:23:00+02:00</updated><entry><title>At Last</title><link href="http://blog.endergeek.com/pages/2015/09/17/at-last/" rel="alternate"></link><published>2015-09-17T11:23:00+02:00</published><updated>2015-09-17T11:23:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-09-17:/pages/2015/09/17/at-last/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h2&gt;&lt;img alt="testspeed" src="http://blog.endergeek.com/images/atlast/fuck.jpg"&gt;&lt;/h2&gt;
@@ -15,7 +6,6 @@
 &lt;p&gt;最后的最后 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h2&gt;&lt;img alt="testspeed" src="http://blog.endergeek.com/images/atlast/fuck.jpg"&gt;&lt;/h2&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0. At last&lt;/h4&gt;
 &lt;p&gt;最后的最后，时间证明了一切。&lt;/p&gt;
 &lt;hr&gt;
@@ -38,18 +28,6 @@
 &lt;p&gt;最后的最后，时间会证明了一切。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;4. The End.&lt;/h4&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="lifefucker" src="endergeek.com/images/atlast/lifefucker.jpg"&gt;&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>How reading affects us</title><link href="endergeek.com/pages/2015/08/25/how-reading-affects-us/" rel="alternate"></link><published>2015-08-25T14:10:00+02:00</published><updated>2015-08-25T14:10:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-25:endergeek.com/pages/2015/08/25/how-reading-affects-us/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;How reading affects us …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;How reading affects us&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="read" src="endergeek.com/images/howread/read.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;0. When requirement occurs&lt;/h4&gt;
-&lt;p&gt;由于俩台机器一台&lt;code&gt;win7&lt;/code&gt;一台&lt;code&gt;Linux&lt;/code&gt;而又不堪忍受&lt;code&gt;Linux&lt;/code&gt;乌龟性能(说乌龟不要赖我，截图为证):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="linux7z" src="endergeek.com/images/howread/linux7z.png"&gt;&lt;/p&gt;
-&lt;p&gt;而相较之下，&lt;code&gt;win7&lt;/code&gt;游戏机性能反而好多了:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="win7z" src="endergeek.com/images/howread/win7z.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="lifefucker" src="http://blog.endergeek.com/images/atlast/lifefucker.jpg"&gt;&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>How reading affects us</title><link href="http://blog.endergeek.com/pages/2015/08/25/how-reading-affects-us/" rel="alternate"></link><published>2015-08-25T14:10:00+02:00</published><updated>2015-08-25T14:10:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-25:/pages/2015/08/25/how-reading-affects-us/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;How reading affects us …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;How reading affects us&lt;/h3&gt;
@@ -60,7 +38,6 @@
 &lt;p&gt;&lt;img alt="linux7z" src="http://blog.endergeek.com/images/howread/linux7z.png"&gt;&lt;/p&gt;
 &lt;p&gt;而相较之下，&lt;code&gt;win7&lt;/code&gt;游戏机性能反而好多了:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="win7z" src="http://blog.endergeek.com/images/howread/win7z.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;因此，在&lt;code&gt;win7&lt;/code&gt;机器上安装&lt;code&gt;Linux&lt;/code&gt;后，需要把&lt;code&gt;Linux&lt;/code&gt;配置迁移过去，安装软件之类倒简单，参考另一篇文章&lt;a href="http://blog.endergeek.com/pages/2015/08/20/disaster-recovery-record/"&gt;Disaster Recovery Record&lt;/a&gt;可以很快恢复，所以主要任务是把主目录下&lt;code&gt;.&lt;/code&gt;开头的文件都拷贝过去就行了。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;1. First Attempt&lt;/h4&gt;
@@ -86,17 +63,10 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;p&gt;确实，感觉读书总会忘的，而不读，是根本没有东西可忘，读过的，也会在脑海扎根，有时给你灵光一闪。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;4. More ...&lt;/h4&gt;
-<<<<<<< HEAD
-&lt;p&gt;继续学习吧！～&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Practise Makes For Success</title><link href="endergeek.com/pages/2015/08/23/practise-makes-for-success/" rel="alternate"></link><published>2015-08-23T12:17:00+02:00</published><updated>2015-08-23T12:17:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-23:endergeek.com/pages/2015/08/23/practise-makes-for-success/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;Practise makes for success …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;Practise makes for success&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="practise" src="endergeek.com/images/practisemakes/practise.jpeg"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;继续学习吧！～&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Practise Makes For Success</title><link href="http://blog.endergeek.com/pages/2015/08/23/practise-makes-for-success/" rel="alternate"></link><published>2015-08-23T12:17:00+02:00</published><updated>2015-08-23T12:17:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-23:/pages/2015/08/23/practise-makes-for-success/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Practise makes for success …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Practise makes for success&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="practise" src="http://blog.endergeek.com/images/practisemakes/practise.jpeg"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;刚几乎裸考完python研发招聘，又正三观了&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;0. Abstract&lt;/h4&gt;
@@ -135,15 +105,6 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;hr&gt;
 &lt;h4&gt;4. More&lt;/h4&gt;
 &lt;p&gt;以为自己会点吧怎么也不至于，首次考试基本就算瞎了吧，抓紧时间学习咯！&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="endeavor" src="endergeek.com/images/practisemakes/endeavor.gif"&gt;&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Before Semester,Say Thank You</title><link href="endergeek.com/pages/2015/08/22/before-semestersay-thank-you/" rel="alternate"></link><published>2015-08-22T22:22:00+02:00</published><updated>2015-08-22T22:22:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-22:endergeek.com/pages/2015/08/22/before-semestersay-thank-you/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;Before semester,say Thank …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;Before semester,say Thank you&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="Fraterculaarctica" src="endergeek.com/images/beforesemester/Fraterculaarctica.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;0. Recent events&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="sadevent" src="endergeek.com/images/beforesemester/sadevent.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="endeavor" src="http://blog.endergeek.com/images/practisemakes/endeavor.gif"&gt;&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Before Semester,Say Thank You</title><link href="http://blog.endergeek.com/pages/2015/08/22/before-semestersay-thank-you/" rel="alternate"></link><published>2015-08-22T22:22:00+02:00</published><updated>2015-08-22T22:22:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-22:/pages/2015/08/22/before-semestersay-thank-you/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Before semester,say Thank …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Before semester,say Thank you&lt;/h3&gt;
@@ -151,7 +112,6 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;hr&gt;
 &lt;h4&gt;0. Recent events&lt;/h4&gt;
 &lt;p&gt;&lt;img alt="sadevent" src="http://blog.endergeek.com/images/beforesemester/sadevent.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;&lt;code&gt;ss&lt;/code&gt;作者(就职于知乎)最近被要求删除托管在&lt;code&gt;github&lt;/code&gt;上的&lt;code&gt;ss&lt;/code&gt;项目，在&lt;code&gt;ios&lt;/code&gt;的&lt;a href="https://github.com/shadowsocks/shadowsocks-iOS/issues/124#issuecomment-133707443"&gt;issue#124&lt;/a&gt;下大家都纷纷前来感谢作者以及希望作者保重。&lt;/p&gt;
 &lt;p&gt;想说的话都被你们说完了，自强不息。&lt;/p&gt;
 &lt;hr&gt;
@@ -169,11 +129,7 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;li&gt;9.之后直接不上&lt;code&gt;weibo&lt;/code&gt;，直接进入&lt;code&gt;d.weibo.com&lt;/code&gt;看看热门消息就行了，实在想看网友都是怎么评论一件事的，忍受奇s葩b无比的三次验证码后，新标签页中打开链接一样看，页内屏蔽有什么用呢？&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;真心希望以后学学&lt;code&gt;google&lt;/code&gt;，如何判断是否是机器人，不要那么麻烦，珍惜大家生命，把编程当作生活艺术&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="star" src="endergeek.com/images/beforesemester/star.jpg"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="star" src="http://blog.endergeek.com/images/beforesemester/star.jpg"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;2. Comments on sth - baidu&lt;/h4&gt;
 &lt;p&gt;其次就吐槽下&lt;code&gt;baidu&lt;/code&gt;，钱多就是霸气，妈妈问我为什么跪着敲键盘。先说说200亿砸外卖，能砸出什么呢，用户黏性就跟海浪似的，一大波在沙滩上留下一小波，不断砸钱不断的大浪冲上岸，留下的深入沙土的仍然是少数，平台那么多，人家已经成型，最后大不了家家软件都安装，给点好处就来的，并谈不上什么黏性。且看200亿是如何砸完的，期待结果中。&lt;/p&gt;
@@ -192,11 +148,7 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;h4&gt;4. Comments on me&lt;/h4&gt;
 &lt;p&gt;最近&lt;code&gt;blog&lt;/code&gt;写得有点频繁，虽然也学习了，但是写&lt;code&gt;blog&lt;/code&gt;真是一件劳累的事呢，为了对自己写的负责往往还要继续查资料，怪不得大神经常发个&lt;code&gt;blog&lt;/code&gt;就给了个图，哈哈哈哈，新学期也要开始了，除了要上课，还想系统学点东西写点东西吧，&lt;code&gt;blog&lt;/code&gt;就不像以前用&lt;code&gt;hexo&lt;/code&gt;那样把&lt;code&gt;evernote&lt;/code&gt;里的笔记都写了个遍，浪费时间且重复使用价值不大。&lt;/p&gt;
 &lt;p&gt;总之，努力吧！&lt;/p&gt;
-<<<<<<< HEAD
-&lt;h2&gt;&lt;img alt="owls" src="endergeek.com/images/beforesemester/owls.png"&gt;&lt;/h2&gt;</content><category term="tips"></category></entry><entry><title>Restart</title><link href="endergeek.com/pages/2015/08/16/restart/" rel="alternate"></link><published>2015-08-16T22:52:00+02:00</published><updated>2015-08-16T22:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-16:endergeek.com/pages/2015/08/16/restart/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;h2&gt;&lt;img alt="owls" src="http://blog.endergeek.com/images/beforesemester/owls.png"&gt;&lt;/h2&gt;</content><category term="tips"></category></entry><entry><title>Restart</title><link href="http://blog.endergeek.com/pages/2015/08/16/restart/" rel="alternate"></link><published>2015-08-16T22:52:00+02:00</published><updated>2015-08-16T22:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-16:/pages/2015/08/16/restart/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;说说最近&lt;/h3&gt;
 &lt;h4&gt;1. 发生的一些事&lt;/h4&gt;
 &lt;p&gt;天津塘沽物流爆炸事件 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
@@ -234,11 +186,7 @@ openWRT，简单说吧，都是泪。大杰懒得指导我，伤心。。。&lt;
 &lt;p&gt;然后我就无语了，我都已经ssh上router了就说明LAN是对的，再说我这小路由并没有console口啊哈哈哈哈（算了都是内心活动）&lt;/p&gt;
 &lt;p&gt;今天聊天少年说自己C盘还有20G怕放不了什么东西了（意思啥都会放C盘），我说我C盘70G都塞满过（其实我是安装软件太多）后来重装系统了世界就清净了～少年说咋重装的（内心活动：你不是计算机学院的么。。。）我说自己拿工具烧写个u盘启动盘就行啦，他：哪来的镜像，我说下的啊，他：那不是有很多广告吗，我：我没用过有广告的。。。他：听起来好高端，我（内心活动：这种高端的活也只能拿来骗骗小朋友啊唉。。。我还是好好学习争取有个公司能让我搬个砖啥的）&lt;/p&gt;
 &lt;p&gt;虽然我很水，大杰大神都不愿意指导我。。。
-<<<<<<< HEAD
-但是，加油吧！&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Some Tips On It Learning</title><link href="endergeek.com/pages/2015/06/15/some-tips-on-it-learning/" rel="alternate"></link><published>2015-06-15T23:19:00+02:00</published><updated>2015-06-15T23:19:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-15:endergeek.com/pages/2015/06/15/some-tips-on-it-learning/</id><summary type="html">&lt;hr&gt;
-=======
 但是，加油吧！&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Some Tips On It Learning</title><link href="http://blog.endergeek.com/pages/2015/06/15/some-tips-on-it-learning/" rel="alternate"></link><published>2015-06-15T23:19:00+02:00</published><updated>2015-06-15T23:19:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/some-tips-on-it-learning/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;给编程初学者的一些建议&lt;/h3&gt;
 &lt;p&gt;&lt;p&gt;
 对编程初学者来说，或者对仍在大学接受高等教育，即将成为编程工作者的人来说 …&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
@@ -281,11 +229,7 @@ openWRT，简单说吧，都是泪。大杰懒得指导我，伤心。。。&lt;
 &lt;h4&gt;参考与来源&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.linuxeden.com/html/news/20140630/153224.html"&gt;linuxeden page&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="tips"></category><category term="nb"></category></entry><entry><title>README</title><link href="endergeek.com/pages/1970/01/01/readme/" rel="alternate"></link><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><author><name>sennhviwang</name></author><id>tag:None,1970-01-01:endergeek.com/pages/1970/01/01/readme/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/ul&gt;</content><category term="tips"></category><category term="nb"></category></entry><entry><title>README</title><link href="http://blog.endergeek.com/pages/1970/01/01/readme/" rel="alternate"></link><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,1970-01-01:/pages/1970/01/01/readme/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;博客文章MD文件备份&lt;/h3&gt;
 &lt;h4&gt;使用请申请，保留著作权。&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;博客文章MD文件备份&lt;/h3&gt;

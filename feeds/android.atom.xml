@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Android</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/android.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2016-09-08T11:50:00+02:00</updated><entry><title>Android Related</title><link href="endergeek.com/pages/2016/09/08/android-related/" rel="alternate"></link><published>2016-09-08T11:50:00+02:00</published><updated>2016-09-08T11:50:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-09-08:endergeek.com/pages/2016/09/08/android-related/</id><summary type="html">&lt;hr&gt;
-=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Android</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/android.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-08T11:50:00+02:00</updated><entry><title>Android Related</title><link href="http://blog.endergeek.com/pages/2016/09/08/android-related/" rel="alternate"></link><published>2016-09-08T11:50:00+02:00</published><updated>2016-09-08T11:50:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-09-08:/pages/2016/09/08/android-related/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0. &lt;strong&gt;Android布局学习&lt;/strong&gt;&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -55,11 +51,7 @@
 &lt;li&gt;&lt;code&gt;AppBarLayout&lt;/code&gt;：继承自LinearLayout，布局方向为垂直方向。所以你可以把它当成垂直布局的LinearLayout来使用。AppBarLayout是在LinearLayou上加了一些材料设计的概念，可以让你定制当某个可滚动View的滚动手势发生变化时，其内部的子View实现何种动作&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;CollapsingToolbarLayout&lt;/code&gt;：用来对Toolbar进行再次包装的ViewGroup，主要是用于实现折叠（其实就是看起来像伸缩~）的App Bar效果。&lt;/li&gt;
 &lt;/ol&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602133921216.jpg"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602111843383.gif"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602110406047.gif"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602131315362.gif"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602133921216.jpg"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602111843383.gif"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602110406047.gif"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602131315362.gif"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;Android Drawable XML Documentation&lt;/code&gt;：&lt;a href="http://idunnolol.com/android/drawables.html"&gt;Android Drawable XML文档&lt;/a&gt;&lt;/p&gt;
@@ -84,11 +76,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-<<<<<<< HEAD
-&lt;hr&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Android Screen Support</title><link href="endergeek.com/pages/2016/08/27/android-screen-support/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-27:endergeek.com/pages/2016/08/27/android-screen-support/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;hr&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Android Screen Support</title><link href="http://blog.endergeek.com/pages/2016/08/27/android-screen-support/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/android-screen-support/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;Android Screen Support&lt;/h3&gt;
 &lt;hr&gt;
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
@@ -191,11 +179,7 @@
 &lt;p&gt;在res/目录下创建一个不同的layout文件夹、values文件夹、drawable文件夹等资源文件夹&lt;br&gt;资源文件夹命名：资源名-属性1-属性2-属性3-属性4-属性5.....（ values-ldpi、values-land-mdpi）&lt;br&gt;即以&lt;code&gt;&amp;lt;resources_name&amp;gt;-&amp;lt;qualifier&amp;gt;&lt;/code&gt;格式命名系统会根据屏幕的大小自己选择合适的进行使用。&lt;br&gt;其中resources_name资源名就是资源类型名，包括:drawable, values, layout, anim, raw, menu, color, animator, xml;&lt;br&gt;&lt;code&gt;&amp;lt;qualifier&amp;gt;&lt;/code&gt; 是一个配置限定符，指定对应的屏幕参数，限定符可以参考以下表：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="scrren" src="endergeek.com/images/androidss/ss.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="scrren" src="http://blog.endergeek.com/images/androidss/ss.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;2.&lt;/h4&gt;
 &lt;hr&gt;
@@ -211,11 +195,7 @@
 &lt;hr&gt;
 &lt;h4&gt;8.&lt;/h4&gt;
 &lt;hr&gt;
-<<<<<<< HEAD
-&lt;h4&gt;9.&lt;/h4&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Android Dev</title><link href="endergeek.com/pages/2016/08/12/faqs-in-android-dev/" rel="alternate"></link><published>2016-08-12T10:52:00+02:00</published><updated>2016-08-12T10:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-12:endergeek.com/pages/2016/08/12/faqs-in-android-dev/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;h4&gt;9.&lt;/h4&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Android Dev</title><link href="http://blog.endergeek.com/pages/2016/08/12/faqs-in-android-dev/" rel="alternate"></link><published>2016-08-12T10:52:00+02:00</published><updated>2016-08-12T10:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-12:/pages/2016/08/12/faqs-in-android-dev/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0. &lt;strong&gt;gradle相关&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;

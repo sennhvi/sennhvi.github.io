@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - C/c++</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/cc.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2015-07-16T08:28:00+02:00</updated><entry><title>ceil in C-math.h</title><link href="endergeek.com/pages/2015/07/16/ceil-in-c-mathh/" rel="alternate"></link><published>2015-07-16T08:28:00+02:00</published><updated>2015-07-16T08:28:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-07-16:endergeek.com/pages/2015/07/16/ceil-in-c-mathh/</id><summary type="html">&lt;hr&gt;
-=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - C/c++</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/cc.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-07-16T08:28:00+02:00</updated><entry><title>ceil in C-math.h</title><link href="http://blog.endergeek.com/pages/2015/07/16/ceil-in-c-mathh/" rel="alternate"></link><published>2015-07-16T08:28:00+02:00</published><updated>2015-07-16T08:28:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-16:/pages/2015/07/16/ceil-in-c-mathh/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;1.  提出问题&lt;/h4&gt;
 &lt;p&gt;最近翻阅&lt;a href="http://xuec.org/index.html"&gt;《Linux …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  提出问题&lt;/h4&gt;
@@ -22,11 +18,7 @@
 &lt;li&gt;2)对于形如y这样通过值求天棚(&lt;code&gt;ceiling&lt;/code&gt;)：&lt;ul&gt;
 &lt;li&gt;演化1：坐标轴上的点不属于整数的点取天棚总是向坐标轴正半轴方向靠拢。&lt;/li&gt;
 &lt;li&gt;演化2：采用形如&lt;code&gt;x/n&lt;/code&gt;方法，则m=0.9999...，可求解&lt;/li&gt;
-<<<<<<< HEAD
-&lt;li&gt;&lt;img alt="math-ceil" src="endergeek.com/images/ceilinc/math-ceil.svg"&gt;&lt;/li&gt;
-=======
 &lt;li&gt;&lt;img alt="math-ceil" src="http://blog.endergeek.com/images/ceilinc/math-ceil.svg"&gt;&lt;/li&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

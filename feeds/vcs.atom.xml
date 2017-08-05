@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Vcs</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/vcs.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2015-06-15T07:39:00+02:00</updated><entry><title>Git Some Note</title><link href="endergeek.com/pages/2015/06/15/git-some-note/" rel="alternate"></link><published>2015-06-15T07:39:00+02:00</published><updated>2015-06-15T07:39:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-15:endergeek.com/pages/2015/06/15/git-some-note/</id><summary type="html">&lt;hr&gt;
-=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Vcs</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/vcs.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-06-15T07:39:00+02:00</updated><entry><title>Git Some Note</title><link href="http://blog.endergeek.com/pages/2015/06/15/git-some-note/" rel="alternate"></link><published>2015-06-15T07:39:00+02:00</published><updated>2015-06-15T07:39:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/git-some-note/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;一些常用git命令&lt;/h3&gt;
 &lt;h4&gt;1.  安装&lt;/h4&gt;
 &lt;p&gt;在 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;

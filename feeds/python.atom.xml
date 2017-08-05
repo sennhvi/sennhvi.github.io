@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Python</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/python.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2015-10-15T10:30:00+02:00</updated><entry><title>Tips On 《Head First Pyt》</title><link href="endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/" rel="alternate"></link><published>2015-10-15T10:30:00+02:00</published><updated>2015-10-15T10:30:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-10-15:endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;Tips on HFPython&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="tts" src="endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;Tips on HFPython&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="tts" src="endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
-=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Python</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/python.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-10-15T10:30:00+02:00</updated><entry><title>Tips On 《Head First Pyt》</title><link href="http://blog.endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/" rel="alternate"></link><published>2015-10-15T10:30:00+02:00</published><updated>2015-10-15T10:30:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-10-15:/pages/2015/10/15/tips-on-head-first-pyt/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Tips on HFPython&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="tts" src="http://blog.endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
@@ -15,7 +6,6 @@
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Tips on HFPython&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="tts" src="http://blog.endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;0. &lt;strong&gt;关于数据处理&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;建议C01(Chapter01，后同)C05和C11一起看，今天看完C11正符合了5月份帮人处理csv文件的需求，demo值得初学者一试，有基础的话看代码就懂。&lt;/p&gt;

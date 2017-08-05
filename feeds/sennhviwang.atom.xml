@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - sennhviwang</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/sennhviwang.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2016-09-08T11:50:00+02:00</updated><entry><title>Android Related</title><link href="endergeek.com/pages/2016/09/08/android-related/" rel="alternate"></link><published>2016-09-08T11:50:00+02:00</published><updated>2016-09-08T11:50:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-09-08:endergeek.com/pages/2016/09/08/android-related/</id><summary type="html">&lt;hr&gt;
-=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - sennhviwang</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/sennhviwang.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-08T11:50:00+02:00</updated><entry><title>Android Related</title><link href="http://blog.endergeek.com/pages/2016/09/08/android-related/" rel="alternate"></link><published>2016-09-08T11:50:00+02:00</published><updated>2016-09-08T11:50:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-09-08:/pages/2016/09/08/android-related/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0. &lt;strong&gt;Android布局学习&lt;/strong&gt;&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -55,11 +51,7 @@
 &lt;li&gt;&lt;code&gt;AppBarLayout&lt;/code&gt;：继承自LinearLayout，布局方向为垂直方向。所以你可以把它当成垂直布局的LinearLayout来使用。AppBarLayout是在LinearLayou上加了一些材料设计的概念，可以让你定制当某个可滚动View的滚动手势发生变化时，其内部的子View实现何种动作&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;CollapsingToolbarLayout&lt;/code&gt;：用来对Toolbar进行再次包装的ViewGroup，主要是用于实现折叠（其实就是看起来像伸缩~）的App Bar效果。&lt;/li&gt;
 &lt;/ol&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602133921216.jpg"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602111843383.gif"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602110406047.gif"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602131315362.gif"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602133921216.jpg"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602111843383.gif"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602110406047.gif"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602131315362.gif"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;Android Drawable XML Documentation&lt;/code&gt;：&lt;a href="http://idunnolol.com/android/drawables.html"&gt;Android Drawable XML文档&lt;/a&gt;&lt;/p&gt;
@@ -84,24 +76,14 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-<<<<<<< HEAD
-&lt;hr&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Classic Shell Scripting</title><link href="endergeek.com/pages/2016/09/04/classic-shell-scripting/" rel="alternate"></link><published>2016-09-04T10:01:00+02:00</published><updated>2016-09-04T10:01:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-09-04:endergeek.com/pages/2016/09/04/classic-shell-scripting/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="css" src="endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
-=======
 &lt;hr&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Classic Shell Scripting</title><link href="http://blog.endergeek.com/pages/2016/09/04/classic-shell-scripting/" rel="alternate"></link><published>2016-09-04T10:01:00+02:00</published><updated>2016-09-04T10:01:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-09-04:/pages/2016/09/04/classic-shell-scripting/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="css" src="http://blog.endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;0. Abstract&lt;/h4&gt;
 &lt;p&gt;写作原因：虽然写篇真的很费精力 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="css" src="endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="css" src="http://blog.endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;0. Abstract&lt;/h4&gt;
 &lt;p&gt;写作原因：虽然写篇真的很费精力，看完本书，过几月再回顾的时候，记忆寥寥，用时再查，无论baidu,google，都需要多一步筛选，良莠不齐的回答更是浪费时间&lt;/p&gt;
@@ -223,11 +205,7 @@ $ &lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://linux.cn/article-7161-1.html"&gt;[LFCS系列]如何在 Linux 上使用 GNU sed 等命令来创建、编辑和操作文件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.jobbole.com/99063/"&gt;Linux Shell 文本处理工具集锦&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="linux"></category><category term="shell"></category><category term="nb"></category></entry><entry><title>Android Screen Support</title><link href="endergeek.com/pages/2016/08/27/android-screen-support/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-27:endergeek.com/pages/2016/08/27/android-screen-support/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/ul&gt;</content><category term="linux"></category><category term="shell"></category><category term="nb"></category></entry><entry><title>Android Screen Support</title><link href="http://blog.endergeek.com/pages/2016/08/27/android-screen-support/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/android-screen-support/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;Android Screen Support&lt;/h3&gt;
 &lt;hr&gt;
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
@@ -330,11 +308,7 @@ $ &lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
 &lt;p&gt;在res/目录下创建一个不同的layout文件夹、values文件夹、drawable文件夹等资源文件夹&lt;br&gt;资源文件夹命名：资源名-属性1-属性2-属性3-属性4-属性5.....（ values-ldpi、values-land-mdpi）&lt;br&gt;即以&lt;code&gt;&amp;lt;resources_name&amp;gt;-&amp;lt;qualifier&amp;gt;&lt;/code&gt;格式命名系统会根据屏幕的大小自己选择合适的进行使用。&lt;br&gt;其中resources_name资源名就是资源类型名，包括:drawable, values, layout, anim, raw, menu, color, animator, xml;&lt;br&gt;&lt;code&gt;&amp;lt;qualifier&amp;gt;&lt;/code&gt; 是一个配置限定符，指定对应的屏幕参数，限定符可以参考以下表：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="scrren" src="endergeek.com/images/androidss/ss.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="scrren" src="http://blog.endergeek.com/images/androidss/ss.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;2.&lt;/h4&gt;
 &lt;hr&gt;
@@ -350,11 +324,7 @@ $ &lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
 &lt;hr&gt;
 &lt;h4&gt;8.&lt;/h4&gt;
 &lt;hr&gt;
-<<<<<<< HEAD
-&lt;h4&gt;9.&lt;/h4&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Linux</title><link href="endergeek.com/pages/2016/08/27/faqs-in-linux/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-27:endergeek.com/pages/2016/08/27/faqs-in-linux/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;h4&gt;9.&lt;/h4&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Linux</title><link href="http://blog.endergeek.com/pages/2016/08/27/faqs-in-linux/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/faqs-in-linux/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;FAQs in Linux&lt;/h3&gt;
 &lt;hr&gt;
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
@@ -464,11 +434,7 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 &lt;h4&gt;7.&lt;/h4&gt;
 &lt;hr&gt;
 &lt;h4&gt;8.&lt;/h4&gt;
-<<<<<<< HEAD
-&lt;hr&gt;</content><category term="linux"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Android Dev</title><link href="endergeek.com/pages/2016/08/12/faqs-in-android-dev/" rel="alternate"></link><published>2016-08-12T10:52:00+02:00</published><updated>2016-08-12T10:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-12:endergeek.com/pages/2016/08/12/faqs-in-android-dev/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;hr&gt;</content><category term="linux"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Android Dev</title><link href="http://blog.endergeek.com/pages/2016/08/12/faqs-in-android-dev/" rel="alternate"></link><published>2016-08-12T10:52:00+02:00</published><updated>2016-08-12T10:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-12:/pages/2016/08/12/faqs-in-android-dev/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0. &lt;strong&gt;gradle相关&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -706,15 +672,6 @@ Android SDK-&amp;gt;Edit，然后一路next下去，点击finish就一切ok了�
 &lt;hr&gt;
 &lt;h4&gt;8.&lt;/h4&gt;
 &lt;hr&gt;
-<<<<<<< HEAD
-&lt;h4&gt;9.&lt;/h4&gt;</content><category term="linux"></category><category term="android"></category><category term="nb"></category></entry><entry><title>Tips On 《Head First Pyt》</title><link href="endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/" rel="alternate"></link><published>2015-10-15T10:30:00+02:00</published><updated>2015-10-15T10:30:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-10-15:endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;Tips on HFPython&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="tts" src="endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;Tips on HFPython&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="tts" src="endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
-=======
 &lt;h4&gt;9.&lt;/h4&gt;</content><category term="linux"></category><category term="android"></category><category term="nb"></category></entry><entry><title>Tips On 《Head First Pyt》</title><link href="http://blog.endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/" rel="alternate"></link><published>2015-10-15T10:30:00+02:00</published><updated>2015-10-15T10:30:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-10-15:/pages/2015/10/15/tips-on-head-first-pyt/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Tips on HFPython&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="tts" src="http://blog.endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
@@ -722,7 +679,6 @@ Android SDK-&amp;gt;Edit，然后一路next下去，点击finish就一切ok了�
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Tips on HFPython&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="tts" src="http://blog.endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;0. &lt;strong&gt;关于数据处理&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;建议C01(Chapter01，后同)C05和C11一起看，今天看完C11正符合了5月份帮人处理csv文件的需求，demo值得初学者一试，有基础的话看代码就懂。&lt;/p&gt;
@@ -753,35 +709,21 @@ GIL：避免使用python线程，更多：分布式计算
 其他python书：python标准库，pyMOTW，learn python the hard way，python essential reference，core python programming&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;6. More&lt;/h4&gt;
-<<<<<<< HEAD
-&lt;p&gt;要熄灯了，洗洗睡吧&lt;/p&gt;</content><category term="tips"></category><category term="python"></category><category term="nb"></category></entry><entry><title>Ssh Login Without Password</title><link href="endergeek.com/pages/2015/09/24/ssh-login-without-password/" rel="alternate"></link><published>2015-09-24T10:41:00+02:00</published><updated>2015-09-24T10:41:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-09-24:endergeek.com/pages/2015/09/24/ssh-login-without-password/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h2&gt;&lt;img alt="ssh" src="endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
-=======
 &lt;p&gt;要熄灯了，洗洗睡吧&lt;/p&gt;</content><category term="tips"></category><category term="python"></category><category term="nb"></category></entry><entry><title>Ssh Login Without Password</title><link href="http://blog.endergeek.com/pages/2015/09/24/ssh-login-without-password/" rel="alternate"></link><published>2015-09-24T10:41:00+02:00</published><updated>2015-09-24T10:41:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-09-24:/pages/2015/09/24/ssh-login-without-password/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h2&gt;&lt;img alt="ssh" src="http://blog.endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0.&lt;/h4&gt;
 &lt;p&gt;本文十分简单粗浅，旨在减少生活中的重复工作。&lt;/p&gt;
 &lt;p&gt;例如我 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
-<<<<<<< HEAD
-&lt;h2&gt;&lt;img alt="ssh" src="endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
-=======
 &lt;h2&gt;&lt;img alt="ssh" src="http://blog.endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0.&lt;/h4&gt;
 &lt;p&gt;本文十分简单粗浅，旨在减少生活中的重复工作。&lt;/p&gt;
 &lt;p&gt;例如我，曾经每当&lt;code&gt;11：30&lt;/code&gt;断电我就需要拔下自己的外接屏然后默默地关机，而再次开机时如果忘了插回，则会导致一些不可预测的魔幻效果。&lt;/p&gt;
 &lt;p&gt;Bill Gates说需要利用好那些懒人，因为他们知道如何用最高效的方式完成一项事情。&lt;/p&gt;
 &lt;p&gt;然而我懒&lt;/p&gt;
 &lt;p&gt;使用&lt;code&gt;ssh&lt;/code&gt;控制关机就得了，于是某个应用曾经唯一的价值就是帮我“远程”关机、&lt;code&gt;vps&lt;/code&gt;升级...&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="shutdown" src="endergeek.com/images/sshlogin/shutdown.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="shutdown" src="http://blog.endergeek.com/images/sshlogin/shutdown.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;然而我懒&lt;/p&gt;
 &lt;p&gt;每次&lt;code&gt;ssh&lt;/code&gt;登录输入密码真麻烦，直接丢个证书不就得了，那么就好好利用下&lt;code&gt;ssh-keyge&lt;/code&gt;n吧，这货在使用&lt;code&gt;github&lt;/code&gt;之前还是没有用过的&lt;/p&gt;
 &lt;hr&gt;
@@ -791,11 +733,7 @@ GIL：避免使用python线程，更多：分布式计算
 &lt;/pre&gt;&lt;/div&gt;
 
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="sshkeygen" src="endergeek.com/images/sshlogin/sshkeygen.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="sshkeygen" src="http://blog.endergeek.com/images/sshlogin/sshkeygen.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;使用完毕，将在目录下生成&lt;code&gt;id_rsa&lt;/code&gt;和&lt;code&gt;id_rsa.pub&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;之后，将&lt;code&gt;id_rsa&lt;/code&gt;拷贝到&lt;code&gt;/sdcard/&lt;/code&gt;下以使手机应用可以访问，将&lt;code&gt;id_rsa.pub&lt;/code&gt;拷贝到远程机器（使用数据线or&lt;code&gt;FTP&lt;/code&gt;等等），然后在远程机器上将&lt;code&gt;id_rsa.pub&lt;/code&gt;的内容添加到&lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt;中：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys
@@ -806,19 +744,11 @@ GIL：避免使用python线程，更多：分布式计算
 &lt;hr&gt;
 &lt;h4&gt;2. Config&lt;/h4&gt;
 &lt;p&gt;完成上述步骤就可以从手机登录远程电脑了，需要对ConnectBot简单的配置： 点击&lt;code&gt;Manage Pubkeys&lt;/code&gt;&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="manage" src="endergeek.com/images/sshlogin/manage.png"&gt;&lt;/p&gt;
-&lt;p&gt;点击&lt;code&gt;Import&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="import" src="endergeek.com/images/sshlogin/import.png"&gt;&lt;/p&gt;
-&lt;p&gt;选择&lt;code&gt;id_rsa&lt;/code&gt;私钥导入，首次登录会要求输入该私钥对应密码，之后无需密码 &lt;/p&gt;
-&lt;p&gt;&lt;img alt="done" src="endergeek.com/images/sshlogin/done.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="manage" src="http://blog.endergeek.com/images/sshlogin/manage.png"&gt;&lt;/p&gt;
 &lt;p&gt;点击&lt;code&gt;Import&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="import" src="http://blog.endergeek.com/images/sshlogin/import.png"&gt;&lt;/p&gt;
 &lt;p&gt;选择&lt;code&gt;id_rsa&lt;/code&gt;私钥导入，首次登录会要求输入该私钥对应密码，之后无需密码 &lt;/p&gt;
 &lt;p&gt;&lt;img alt="done" src="http://blog.endergeek.com/images/sshlogin/done.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;3. Optional&lt;/h4&gt;
 &lt;p&gt;取消使用密码： - 可以在&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;中关闭 把文件中的&lt;code&gt;#PasswordAuthentication yes&lt;/code&gt;的&lt;code&gt;#&lt;/code&gt;去掉，并将&lt;code&gt;yes&lt;/code&gt;改成&lt;code&gt;no&lt;/code&gt;&lt;/p&gt;
@@ -827,15 +757,6 @@ GIL：避免使用python线程，更多：分布式计算
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.prosight.me/blogs/1097/?utm_source=rss&amp;amp;utm_medium=rss&amp;amp;utm_campaign=%25e8%25ae%25be%25e7%25bd%25aessh%25e6%2597%25a0%25e5%25af%2586%25e9%2592%25a5%25e7%2599%25bb%25e5%25bd%2595"&gt;ssh&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-key-pairs.html"&gt;ec2 key pairs&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="linux"></category><category term="nb"></category></entry><entry><title>At Last</title><link href="endergeek.com/pages/2015/09/17/at-last/" rel="alternate"></link><published>2015-09-17T11:23:00+02:00</published><updated>2015-09-17T11:23:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-09-17:endergeek.com/pages/2015/09/17/at-last/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h2&gt;&lt;img alt="testspeed" src="endergeek.com/images/atlast/fuck.jpg"&gt;&lt;/h2&gt;
-&lt;h4&gt;0. At last&lt;/h4&gt;
-&lt;p&gt;最后的最后 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h2&gt;&lt;img alt="testspeed" src="endergeek.com/images/atlast/fuck.jpg"&gt;&lt;/h2&gt;
-=======
 &lt;/ul&gt;</content><category term="linux"></category><category term="nb"></category></entry><entry><title>At Last</title><link href="http://blog.endergeek.com/pages/2015/09/17/at-last/" rel="alternate"></link><published>2015-09-17T11:23:00+02:00</published><updated>2015-09-17T11:23:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-09-17:/pages/2015/09/17/at-last/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h2&gt;&lt;img alt="testspeed" src="http://blog.endergeek.com/images/atlast/fuck.jpg"&gt;&lt;/h2&gt;
@@ -843,7 +764,6 @@ GIL：避免使用python线程，更多：分布式计算
 &lt;p&gt;最后的最后 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h2&gt;&lt;img alt="testspeed" src="http://blog.endergeek.com/images/atlast/fuck.jpg"&gt;&lt;/h2&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0. At last&lt;/h4&gt;
 &lt;p&gt;最后的最后，时间证明了一切。&lt;/p&gt;
 &lt;hr&gt;
@@ -866,18 +786,6 @@ GIL：避免使用python线程，更多：分布式计算
 &lt;p&gt;最后的最后，时间会证明了一切。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;4. The End.&lt;/h4&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="lifefucker" src="endergeek.com/images/atlast/lifefucker.jpg"&gt;&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>How reading affects us</title><link href="endergeek.com/pages/2015/08/25/how-reading-affects-us/" rel="alternate"></link><published>2015-08-25T14:10:00+02:00</published><updated>2015-08-25T14:10:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-25:endergeek.com/pages/2015/08/25/how-reading-affects-us/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;How reading affects us …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;How reading affects us&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="read" src="endergeek.com/images/howread/read.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;0. When requirement occurs&lt;/h4&gt;
-&lt;p&gt;由于俩台机器一台&lt;code&gt;win7&lt;/code&gt;一台&lt;code&gt;Linux&lt;/code&gt;而又不堪忍受&lt;code&gt;Linux&lt;/code&gt;乌龟性能(说乌龟不要赖我，截图为证):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="linux7z" src="endergeek.com/images/howread/linux7z.png"&gt;&lt;/p&gt;
-&lt;p&gt;而相较之下，&lt;code&gt;win7&lt;/code&gt;游戏机性能反而好多了:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="win7z" src="endergeek.com/images/howread/win7z.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="lifefucker" src="http://blog.endergeek.com/images/atlast/lifefucker.jpg"&gt;&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>How reading affects us</title><link href="http://blog.endergeek.com/pages/2015/08/25/how-reading-affects-us/" rel="alternate"></link><published>2015-08-25T14:10:00+02:00</published><updated>2015-08-25T14:10:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-25:/pages/2015/08/25/how-reading-affects-us/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;How reading affects us …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;How reading affects us&lt;/h3&gt;
@@ -888,7 +796,6 @@ GIL：避免使用python线程，更多：分布式计算
 &lt;p&gt;&lt;img alt="linux7z" src="http://blog.endergeek.com/images/howread/linux7z.png"&gt;&lt;/p&gt;
 &lt;p&gt;而相较之下，&lt;code&gt;win7&lt;/code&gt;游戏机性能反而好多了:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="win7z" src="http://blog.endergeek.com/images/howread/win7z.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;因此，在&lt;code&gt;win7&lt;/code&gt;机器上安装&lt;code&gt;Linux&lt;/code&gt;后，需要把&lt;code&gt;Linux&lt;/code&gt;配置迁移过去，安装软件之类倒简单，参考另一篇文章&lt;a href="http://blog.endergeek.com/pages/2015/08/20/disaster-recovery-record/"&gt;Disaster Recovery Record&lt;/a&gt;可以很快恢复，所以主要任务是把主目录下&lt;code&gt;.&lt;/code&gt;开头的文件都拷贝过去就行了。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;1. First Attempt&lt;/h4&gt;
@@ -914,17 +821,10 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;p&gt;确实，感觉读书总会忘的，而不读，是根本没有东西可忘，读过的，也会在脑海扎根，有时给你灵光一闪。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;4. More ...&lt;/h4&gt;
-<<<<<<< HEAD
-&lt;p&gt;继续学习吧！～&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Practise Makes For Success</title><link href="endergeek.com/pages/2015/08/23/practise-makes-for-success/" rel="alternate"></link><published>2015-08-23T12:17:00+02:00</published><updated>2015-08-23T12:17:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-23:endergeek.com/pages/2015/08/23/practise-makes-for-success/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;Practise makes for success …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;Practise makes for success&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="practise" src="endergeek.com/images/practisemakes/practise.jpeg"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;继续学习吧！～&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Practise Makes For Success</title><link href="http://blog.endergeek.com/pages/2015/08/23/practise-makes-for-success/" rel="alternate"></link><published>2015-08-23T12:17:00+02:00</published><updated>2015-08-23T12:17:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-23:/pages/2015/08/23/practise-makes-for-success/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Practise makes for success …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Practise makes for success&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="practise" src="http://blog.endergeek.com/images/practisemakes/practise.jpeg"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;刚几乎裸考完python研发招聘，又正三观了&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;0. Abstract&lt;/h4&gt;
@@ -963,15 +863,6 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;hr&gt;
 &lt;h4&gt;4. More&lt;/h4&gt;
 &lt;p&gt;以为自己会点吧怎么也不至于，首次考试基本就算瞎了吧，抓紧时间学习咯！&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="endeavor" src="endergeek.com/images/practisemakes/endeavor.gif"&gt;&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Before Semester,Say Thank You</title><link href="endergeek.com/pages/2015/08/22/before-semestersay-thank-you/" rel="alternate"></link><published>2015-08-22T22:22:00+02:00</published><updated>2015-08-22T22:22:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-22:endergeek.com/pages/2015/08/22/before-semestersay-thank-you/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;Before semester,say Thank …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;Before semester,say Thank you&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="Fraterculaarctica" src="endergeek.com/images/beforesemester/Fraterculaarctica.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;0. Recent events&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="sadevent" src="endergeek.com/images/beforesemester/sadevent.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="endeavor" src="http://blog.endergeek.com/images/practisemakes/endeavor.gif"&gt;&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>Before Semester,Say Thank You</title><link href="http://blog.endergeek.com/pages/2015/08/22/before-semestersay-thank-you/" rel="alternate"></link><published>2015-08-22T22:22:00+02:00</published><updated>2015-08-22T22:22:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-22:/pages/2015/08/22/before-semestersay-thank-you/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Before semester,say Thank …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Before semester,say Thank you&lt;/h3&gt;
@@ -979,7 +870,6 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;hr&gt;
 &lt;h4&gt;0. Recent events&lt;/h4&gt;
 &lt;p&gt;&lt;img alt="sadevent" src="http://blog.endergeek.com/images/beforesemester/sadevent.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;&lt;code&gt;ss&lt;/code&gt;作者(就职于知乎)最近被要求删除托管在&lt;code&gt;github&lt;/code&gt;上的&lt;code&gt;ss&lt;/code&gt;项目，在&lt;code&gt;ios&lt;/code&gt;的&lt;a href="https://github.com/shadowsocks/shadowsocks-iOS/issues/124#issuecomment-133707443"&gt;issue#124&lt;/a&gt;下大家都纷纷前来感谢作者以及希望作者保重。&lt;/p&gt;
 &lt;p&gt;想说的话都被你们说完了，自强不息。&lt;/p&gt;
 &lt;hr&gt;
@@ -997,11 +887,7 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;li&gt;9.之后直接不上&lt;code&gt;weibo&lt;/code&gt;，直接进入&lt;code&gt;d.weibo.com&lt;/code&gt;看看热门消息就行了，实在想看网友都是怎么评论一件事的，忍受奇s葩b无比的三次验证码后，新标签页中打开链接一样看，页内屏蔽有什么用呢？&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;真心希望以后学学&lt;code&gt;google&lt;/code&gt;，如何判断是否是机器人，不要那么麻烦，珍惜大家生命，把编程当作生活艺术&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="star" src="endergeek.com/images/beforesemester/star.jpg"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="star" src="http://blog.endergeek.com/images/beforesemester/star.jpg"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;2. Comments on sth - baidu&lt;/h4&gt;
 &lt;p&gt;其次就吐槽下&lt;code&gt;baidu&lt;/code&gt;，钱多就是霸气，妈妈问我为什么跪着敲键盘。先说说200亿砸外卖，能砸出什么呢，用户黏性就跟海浪似的，一大波在沙滩上留下一小波，不断砸钱不断的大浪冲上岸，留下的深入沙土的仍然是少数，平台那么多，人家已经成型，最后大不了家家软件都安装，给点好处就来的，并谈不上什么黏性。且看200亿是如何砸完的，期待结果中。&lt;/p&gt;
@@ -1020,17 +906,10 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 &lt;h4&gt;4. Comments on me&lt;/h4&gt;
 &lt;p&gt;最近&lt;code&gt;blog&lt;/code&gt;写得有点频繁，虽然也学习了，但是写&lt;code&gt;blog&lt;/code&gt;真是一件劳累的事呢，为了对自己写的负责往往还要继续查资料，怪不得大神经常发个&lt;code&gt;blog&lt;/code&gt;就给了个图，哈哈哈哈，新学期也要开始了，除了要上课，还想系统学点东西写点东西吧，&lt;code&gt;blog&lt;/code&gt;就不像以前用&lt;code&gt;hexo&lt;/code&gt;那样把&lt;code&gt;evernote&lt;/code&gt;里的笔记都写了个遍，浪费时间且重复使用价值不大。&lt;/p&gt;
 &lt;p&gt;总之，努力吧！&lt;/p&gt;
-<<<<<<< HEAD
-&lt;h2&gt;&lt;img alt="owls" src="endergeek.com/images/beforesemester/owls.png"&gt;&lt;/h2&gt;</content><category term="tips"></category></entry><entry><title>Setup &amp;&amp; Use Ftp Server In Ubuntu Linux</title><link href="endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/" rel="alternate"></link><published>2015-08-21T21:53:00+02:00</published><updated>2015-08-21T21:53:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-21:endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server in Ubuntu Linux&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="testspeed" src="endergeek.com/images/ftp/testspeed.png"&gt;&lt;/p&gt;
-=======
 &lt;h2&gt;&lt;img alt="owls" src="http://blog.endergeek.com/images/beforesemester/owls.png"&gt;&lt;/h2&gt;</content><category term="tips"></category></entry><entry><title>Setup &amp;&amp; Use Ftp Server In Ubuntu Linux</title><link href="http://blog.endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/" rel="alternate"></link><published>2015-08-21T21:53:00+02:00</published><updated>2015-08-21T21:53:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-21:/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server in Ubuntu Linux&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="testspeed" src="http://blog.endergeek.com/images/ftp/testspeed.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;记录一下在学校的网速，留作纪念:-)&lt;/p&gt;
 &lt;h4&gt;0. Introduction&lt;/h4&gt;
 &lt;p&gt;最近由于寝室共享电影，为了避免U盘传输的麻烦，因此搭建&lt;code&gt;FTP&lt;/code&gt;服务器传输电影，省了不少事，因此也记录一下&lt;/p&gt;
@@ -1046,11 +925,7 @@ $ tar -zcvf config.tar.gz &lt;span class="sb"&gt;`&lt;/span&gt;ls -a &lt;span cl
 
 
 &lt;p&gt;上述命令将会安装并启动&lt;code&gt;ftp&lt;/code&gt;服务器：&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="checkvsftpd" src="endergeek.com/images/ftp/checkvsftpd.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="checkvsftpd" src="http://blog.endergeek.com/images/ftp/checkvsftpd.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;2. Standalone &amp;amp;&amp;amp; Normal FTP mode&lt;/h4&gt;
 &lt;p&gt;独立模式：&lt;code&gt;vsftpd&lt;/code&gt;默认以独立模式运行，在独立模式下服务器上运行的服务有叫做守护进程(&lt;code&gt;daemon&lt;/code&gt;)的启动脚本，以&lt;code&gt;vsftpd&lt;/code&gt;为例是&lt;code&gt;/etc/init.d/vsftpd&lt;/code&gt;，这个独立守护进程将会在FTP服务启动的时候接管它，并为&lt;code&gt;FTP&lt;/code&gt;管理者提供了一些命令以管理该&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器：&lt;/p&gt;
@@ -1106,19 +981,11 @@ banner_fail - 指向列出禁止访问IP的文件
 
 
 &lt;p&gt;为了确保&lt;code&gt;FTP&lt;/code&gt;服务器启动了标准模式且开放了21号端口，可以使用命令：
-<<<<<<< HEAD
-&lt;img alt="xinetdcheck" src="endergeek.com/images/ftp/xinetdcheck.png"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;3. Make first FTP connection&lt;/h4&gt;
-&lt;p&gt;无论你是以上述哪种模式启动&lt;code&gt;FTP&lt;/code&gt;服务器你都需要能够建立本地连接。&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器默认是允许匿名访问的，下面，我们将使用匿名用户建立连接以测试&lt;code&gt;FTP&lt;/code&gt;服务器安装成功：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="ftpanon" src="endergeek.com/images/ftp/ftpanon.png"&gt;&lt;/p&gt;
-=======
 &lt;img alt="xinetdcheck" src="http://blog.endergeek.com/images/ftp/xinetdcheck.png"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;3. Make first FTP connection&lt;/h4&gt;
 &lt;p&gt;无论你是以上述哪种模式启动&lt;code&gt;FTP&lt;/code&gt;服务器你都需要能够建立本地连接。&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器默认是允许匿名访问的，下面，我们将使用匿名用户建立连接以测试&lt;code&gt;FTP&lt;/code&gt;服务器安装成功：&lt;/p&gt;
 &lt;p&gt;&lt;img alt="ftpanon" src="http://blog.endergeek.com/images/ftp/ftpanon.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;上述命令仅仅确保了你的&lt;code&gt;FTP&lt;/code&gt;服务器在本地系统上正确装配，为了更好利用&lt;code&gt;FTP&lt;/code&gt;服务器你需要用一些远程主机来测试。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;4. Configuring FTP Server - Anonymous FTP access&lt;/h4&gt;
@@ -1131,11 +998,7 @@ banner_fail - 指向列出禁止访问IP的文件
 &lt;p&gt;现在，你的服务器将不允许除了匿名用户之外的用户访问了。那么通过设置&lt;code&gt;/etc/vsftpd.conf&lt;/code&gt;中&lt;code&gt;local_enable&lt;/code&gt;指令来允许所有在&lt;code&gt;/etc/passwd&lt;/code&gt;文件中定义的用户登录，该选项默认是&lt;code&gt;NO&lt;/code&gt;：
 &lt;code&gt;local_enable=YES&lt;/code&gt;
 现在在&lt;code&gt;/etc/passwd&lt;/code&gt;下定义的任何用户都能使用相关密码登录：&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="ftplocalhost" src="endergeek.com/images/ftp/ftplocalhost.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="ftplocalhost" src="http://blog.endergeek.com/images/ftp/ftplocalhost.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;6. Configuring FTP Server - User Access list&lt;/h4&gt;
 &lt;p&gt;使用文件列出允许访问的用户来配置&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器，通常，你可以在&lt;code&gt;/etc&lt;/code&gt;目录定义这样的文件，它可以是任意文件名，你只需要在这个文件中列出所有可以访问的用户名即可，那么举个例子吧：&lt;/p&gt;
@@ -1172,11 +1035,7 @@ banner_fail - 指向列出禁止访问IP的文件
 &lt;h4&gt;9. How to connect to FTP with a web browser&lt;/h4&gt;
 &lt;p&gt;用法：
 &lt;code&gt;ftp://YourFtpUser:YourFtpUserPassword@yourdomain.com&lt;/code&gt;&lt;/p&gt;
-<<<<<<< HEAD
-&lt;h2&gt;&lt;img alt="ftpbrowser" src="endergeek.com/images/ftp/ftpbrowser.png"&gt;&lt;/h2&gt;
-=======
 &lt;h2&gt;&lt;img alt="ftpbrowser" src="http://blog.endergeek.com/images/ftp/ftpbrowser.png"&gt;&lt;/h2&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;9. More ...&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;1.&lt;a href="http://linuxconfig.org/how-to-setup-and-use-ftp-server-in-ubuntu-linux"&gt;How to setup and use FTP - LinuxConfig&lt;/a&gt;&lt;/li&gt;
@@ -1184,21 +1043,12 @@ banner_fail - 指向列出禁止访问IP的文件
 &lt;li&gt;3.&lt;a href="http://www.tldp.org/HOWTO/FTP-3.html"&gt;Using FTP - Howtos&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;4.&lt;a href="https://www.siteground.com/kb/ftp_browser/"&gt;How to connect to FTP with a web browser - siteground&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="plant" src="endergeek.com/images/ftp/plant.gif"&gt;&lt;/p&gt;</content><category term="linux"></category><category term="cli"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Disaster Recovery Record</title><link href="endergeek.com/pages/2015/08/20/disaster-recovery-record/" rel="alternate"></link><published>2015-08-20T21:12:00+02:00</published><updated>2015-08-20T21:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-20:endergeek.com/pages/2015/08/20/disaster-recovery-record/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;灾难恢复记录&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="Disaster" src="endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
-&lt;h4&gt;0. Why we …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;灾难恢复记录&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="Disaster" src="endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="plant" src="http://blog.endergeek.com/images/ftp/plant.gif"&gt;&lt;/p&gt;</content><category term="linux"></category><category term="cli"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Disaster Recovery Record</title><link href="http://blog.endergeek.com/pages/2015/08/20/disaster-recovery-record/" rel="alternate"></link><published>2015-08-20T21:12:00+02:00</published><updated>2015-08-20T21:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-20:/pages/2015/08/20/disaster-recovery-record/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;灾难恢复记录&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="Disaster" src="http://blog.endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
 &lt;h4&gt;0. Why we …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;灾难恢复记录&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="Disaster" src="http://blog.endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0. Why we need disaster recovery?&lt;/h4&gt;
 &lt;p&gt;首先，解释下什么是&lt;a href="https://en.wikipedia.org/wiki/Disaster"&gt;disaster&lt;/a&gt;：对能够给人类和人类赖以生存的环境造成破坏性影响的事物总称。当我们执行的操作破坏了现有的稳定或者平衡的时候，便发生了人为灾难。最近，由于操作不当，致使&lt;code&gt;/etc&lt;/code&gt;下某些文件损坏，造成了不可挽回的灾难，因此需要执行灾难恢复操作，也有了这篇恢复记录，以节省更多恢复的时间。&lt;/p&gt;
 &lt;hr&gt;
@@ -1263,19 +1113,6 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 
 &lt;p&gt;之后，运行&lt;code&gt;fcitx -r&lt;/code&gt;警告:&lt;code&gt;fcitx -r :(WARN-16299 /build/buildd/fcitx-4.2.8.5/src/frontend/xim/xim.c:161) Please set XMODIFIERS&lt;/code&gt;.可以无视，然而由于输入法只能在&lt;code&gt;kde&lt;/code&gt;应用如&lt;code&gt;konsole&lt;/code&gt;下使用，并不能在一些&lt;code&gt;gtk&lt;/code&gt;应用下使用，因此，可以卸载&lt;code&gt;fcitx-frontend-gtk2 fcitx-frontend-gtk3&lt;/code&gt;后重装发现在一般&lt;code&gt;gtk&lt;/code&gt;应用如&lt;code&gt;gedit&lt;/code&gt;上可以使用，而&lt;code&gt;chrome&lt;/code&gt;下仍然不能使用，这时需要注销后重新登录。&lt;a href="http://ears.iteye.com/blog/1656836"&gt;Reference: fcitx kde diagnostic&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;关于&lt;code&gt;fcitx&lt;/code&gt;安装更多细节请参考&lt;a href="https://fcitx-im.org/wiki/Fcitx"&gt;英文Wiki&lt;/a&gt;和&lt;a href="https://wiki.archlinux.org/index.php/Fcitx_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)"&gt;中文ArchWiki&lt;/a&gt;，个人经验，有时无论你怎么百度怎么&lt;code&gt;google&lt;/code&gt;都不如直接看&lt;code&gt;Official manual&lt;/code&gt;有效且快速。&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="RTFM" src="endergeek.com/images/disasterrecovery/RTFM.png"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;5. Pelican Related - first Step&lt;/h4&gt;
-&lt;p&gt;在安装了&lt;code&gt;pelican&lt;/code&gt;(注意，使用&lt;code&gt;apt-get&lt;/code&gt;和&lt;code&gt;pip&lt;/code&gt;安装的&lt;code&gt;pelican&lt;/code&gt;版本是不一样的，可能会导致你需要的特性找不到，个人推荐使用&lt;code&gt;pip&lt;/code&gt;安装)之后，便进入了自己&lt;code&gt;blog&lt;/code&gt;目录，使用命令&lt;code&gt;make html&lt;/code&gt;(具体定义参见&lt;code&gt;Makefile&lt;/code&gt;文件)后报错：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pelicanhandler" src="endergeek.com/images/disasterrecovery/pelicanhander.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;No module named html&lt;/code&gt;提示在处理&lt;code&gt;ipynb&lt;/code&gt;的时候发现&lt;code&gt;python&lt;/code&gt;模块并没有被安装，因此重新安装&lt;a href="https://github.com/getpelican/pelican-plugins"&gt;pelican-plugins&lt;/a&gt;相应插件，&lt;code&gt;ipynb&lt;/code&gt;需要插件&lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags"&gt;liquid_tags&lt;/a&gt;，参考文档重新安装，需要&lt;code&gt;pip install ipython==2.4.1&lt;/code&gt;，之后继续&lt;code&gt;make html&lt;/code&gt;，依然报错：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pelicanhandler1" src="endergeek.com/images/disasterrecovery/pelicanhander1.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Pandoc wasn't found&lt;/code&gt;提示去&lt;a href="http://johnmacfarlane.net/pandoc/installing.html"&gt;Pandoc&lt;/a&gt;官方网站安装，由于使用&lt;code&gt;Linux 64-bit Debian/Ubuntu&lt;/code&gt;系，因此前往&lt;a href="https://github.com/jgm/pandoc/releases/tag/1.15.0.6"&gt;github&lt;/a&gt;下载&lt;code&gt;.deb&lt;/code&gt;文件安装即可。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pelicanhandlerdone" src="endergeek.com/images/disasterrecovery/pelicanhanderdone.png"&gt;&lt;/p&gt;
-&lt;p&gt;此时没有&lt;code&gt;Error&lt;/code&gt;而有&lt;code&gt;UserWarning&lt;/code&gt;，&lt;code&gt;nodejs&lt;/code&gt;没有安装，因此&lt;code&gt;apt-get install nodejs&lt;/code&gt;即可。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pelicannodejs1" src="endergeek.com/images/disasterrecovery/pelicannodejs1.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="RTFM" src="http://blog.endergeek.com/images/disasterrecovery/RTFM.png"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;5. Pelican Related - first Step&lt;/h4&gt;
@@ -1287,17 +1124,12 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 &lt;p&gt;&lt;img alt="pelicanhandlerdone" src="http://blog.endergeek.com/images/disasterrecovery/pelicanhanderdone.png"&gt;&lt;/p&gt;
 &lt;p&gt;此时没有&lt;code&gt;Error&lt;/code&gt;而有&lt;code&gt;UserWarning&lt;/code&gt;，&lt;code&gt;nodejs&lt;/code&gt;没有安装，因此&lt;code&gt;apt-get install nodejs&lt;/code&gt;即可。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="pelicannodejs1" src="http://blog.endergeek.com/images/disasterrecovery/pelicannodejs1.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;类似问题往往只是需要你查看报错信息，检查系统完整性，然后根据信息安装缺少依赖就解决了，因此默认英语较好或像我这样英语不好耐心学习英语。&lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;Reference: ipynb &lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;6. Pelican Related - TBD&lt;/h4&gt;
 &lt;p&gt;这个问题属于&lt;code&gt;TBD&lt;/code&gt;，在使用&lt;code&gt;ipynb&lt;/code&gt;相关模块后，会使得每个页面头部被暴力地加上&lt;code&gt;_nb_header.html&lt;/code&gt;，这会在每次&lt;code&gt;make html&lt;/code&gt;的时候产生很大的处理工作量，因此&lt;code&gt;pelican&lt;/code&gt;提供了擦车功能--&lt;code&gt;cache&lt;/code&gt;，在&lt;code&gt;cache&lt;/code&gt;目录下的文件是&lt;code&gt;make&lt;/code&gt;后生成的缓存文件，根据每次&lt;code&gt;make&lt;/code&gt;时&lt;code&gt;content&lt;/code&gt;的改变决定是否更新&lt;code&gt;cache&lt;/code&gt;，这样如同&lt;code&gt;git&lt;/code&gt;提交时会比较两个版本配置文件，如果存在差别则重写&lt;code&gt;cache&lt;/code&gt;，如果相同则修改&lt;code&gt;content&lt;/code&gt;部分即可。&lt;/p&gt;
 &lt;p&gt;由于发现每次&lt;code&gt;make&lt;/code&gt;使用时间过长(约150s)，因此根据&lt;a href="https://github.com/getpelican/pelican/blob/master/docs/settings.rst"&gt;pelican文档&lt;/a&gt;，因此指定&lt;code&gt;cache&lt;/code&gt;文件夹：&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="pelicanusecache1" src="endergeek.com/images/disasterrecovery/pelicanusecache1.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="pelicanusecache1" src="http://blog.endergeek.com/images/disasterrecovery/pelicanusecache1.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;再次&lt;code&gt;make&lt;/code&gt;时间缩减为5s，但是并没有像以往一样生成&lt;code&gt;cache&lt;/code&gt;文件夹且目录下含有俩个文件，因此目前只能猜测pelican进行的更新修改了目录结构，&lt;code&gt;cache&lt;/code&gt;功能需要指定开启。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;7. Pelican Related - Theme&lt;/h4&gt;
@@ -1308,11 +1140,7 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 &lt;p&gt;2.&lt;code&gt;sidebar.html&lt;/code&gt;修改头像外部链接为内部链接，增加&lt;code&gt;SOCIAL&lt;/code&gt;和&lt;code&gt;LINKS&lt;/code&gt;内容&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="siderbaricon2" src="endergeek.com/images/disasterrecovery/siderbaricon2.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="siderbaricon2" src="http://blog.endergeek.com/images/disasterrecovery/siderbaricon2.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;3.&lt;code&gt;style.css&lt;/code&gt;增加&lt;code&gt;.avatar { border-radius: 50%; width: 186px;}&lt;/code&gt;使&lt;code&gt;sidebar&lt;/code&gt;头像为圆形&lt;/p&gt;
@@ -1321,11 +1149,7 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 &lt;p&gt;4.&lt;code&gt;gumby.css&lt;/code&gt;增加样式内容以加入链接图标，其余按之前优化保持不变&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="siderbaricon" src="endergeek.com/images/disasterrecovery/siderbaricon.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="siderbaricon" src="http://blog.endergeek.com/images/disasterrecovery/siderbaricon.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;至此，恢复阶段的恢复和优化工作结束:-)&lt;/p&gt;
@@ -1341,31 +1165,18 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 &lt;li&gt;7.&lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;reference for ipynb &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;8.&lt;a href="http://sourceforge.net/p/retext/tickets/104/"&gt;retext sf&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-<<<<<<< HEAD
-&lt;hr&gt;</content><category term="nb"></category><category term="pelican"></category><category term="linux"></category></entry><entry><title>Oneplus One 折腾记录</title><link href="endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/" rel="alternate"></link><published>2015-08-19T14:47:00+02:00</published><updated>2015-08-19T14:47:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-19:endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="cmhead" src="endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
-&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="cmhead" src="endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
-=======
 &lt;hr&gt;</content><category term="nb"></category><category term="pelican"></category><category term="linux"></category></entry><entry><title>Oneplus One 折腾记录</title><link href="http://blog.endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/" rel="alternate"></link><published>2015-08-19T14:47:00+02:00</published><updated>2015-08-19T14:47:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-19:/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="cmhead" src="http://blog.endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="cmhead" src="http://blog.endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0. Abstract&lt;/h4&gt;
 &lt;p&gt;自从四年前使用CM 7 for Moto Defy Android v2.7.6后，便深深被CM系列所吸引，随着科技的进步，Defy的性能已经远远落后，渐渐也出现了“不支持”的应用，作者深深感受到被世界潮流的抛弃感，之后便使用了“老人机”系列如联想A380,华为Y320,酷派大神F1,加起来浪费的钱都快够买现在使用的一加1了，而忍受过“国产定制”“应用市场”“虚假root”等一系列强迫定制后，感受到对CM的日益怀念，又获知一加官方支持刷CM系统，于是在7月17日入手了一台，首先感谢财政支持！&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;1. Butterfly effect&lt;/h4&gt;
 &lt;p&gt;新机到手，立马刷入&lt;a href="http://www.oneplusbbs.com/thread-725776-1-1.html"&gt;CM12.1&lt;/a&gt;[&lt;a href="http://pan.baidu.com/s/1i3eRPE9"&gt;下载地址&lt;/a&gt;]，当然选择最新的，刷入后便迫不及待开始熟悉Android5.0.2，然而发现信号栏会出现让强迫症抓狂的感叹号，如图&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="!" src="endergeek.com/images/oneplus/cmbug.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="!" src="http://blog.endergeek.com/images/oneplus/cmbug.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;尝试论坛各种“教程”之后发现刷入CM12.1的Recovery(后称re)并不能用，这意味这什么呢，意味这re作为管理员只认识自己认识的人允许其进入手机(如更新，安装软件等），而不会接受re其他家庭的管理员认识的人进入手机，听起来很安全啊，那么这有什么问题呢？问题出在re自己认识的人太少，大家都说支持，你说不支持，那咋办，就把自己自闭了呗。&lt;/p&gt;
 &lt;p&gt;而解决感叹号问题，需要让这个版本re像其他版本re一样认识很多人，虚心升级自我。现实是糟糕的，re不仅自闭，还拒绝学习其他同行的知识(不可更新re为第三方re)。&lt;/p&gt;
 &lt;p&gt;因为觉得折腾，而既然手机可以正常使用，那么最好时间花在其他地方吧。&lt;/p&gt;
@@ -1389,41 +1200,24 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 &lt;li&gt;3.选择需要升级的ROM包（也可以是第三方re包如twrp，root包）&lt;/li&gt;
 &lt;li&gt;4.等待刷写设备&lt;/li&gt;
 &lt;/ul&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="flashsys" src="endergeek.com/images/oneplus/flashsys.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="flashsys" src="http://blog.endergeek.com/images/oneplus/flashsys.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;掌握这种方法之后刷成砖也不用怕也不需要麻烦一加客服远程刷机浪费时间了～&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;4. First Strike&lt;/h4&gt;
 &lt;p&gt;成功刷入中意的系统（如CM11s,CM12.1-nightly）后，个人由于对CM12.1系统的re不抱希望（其实nightly版本还是不错的），&lt;strong&gt;强烈建议&lt;/strong&gt;刷如第三方re如TWRP，使用“update线刷”方法可以update系统自带re，刷入TWRP后可以顺便把你可能需要的“联通破解包”“SuperSU包”之类在首次双清后刷入系统，这样进入系统的时候你会发现如果你刷如了SuperSu包会多出一个“授权管理”类的系统应用（例如叫做“超级授权”），这个应用和之前提到的KingRoot是不同的，它接管了打开系统“Root Access”之后的权限管理任务，而KingRoot并没有接管系统权限的资格。&lt;/p&gt;
 &lt;p&gt;一旦开启Root授权，便可以使用前文提到的取消感叹号的方法取消联网状态下感叹号，&lt;a href="http://android.troplet.com/question/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi-or-signal-icon-in-lollipop-100657.html"&gt;原理&lt;/a&gt;：当设备连接互联网的时候，系统会检查能否连接google服务器，如果失败，在Android 5下就会在wifi图标或信号图标下有感叹号。对服务器认证设置修改，同样使用该原理的还有小狐狸Portal Server可以自定义认证服务器，虽然我并没有使用成功（毕竟我们有谜之walled garden）&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="cmshow" src="endergeek.com/images/oneplus/cmshow.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="cmshow" src="http://blog.endergeek.com/images/oneplus/cmshow.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;5. Second Strike&lt;/h4&gt;
 &lt;p&gt;在尝试了CM11s后，感叹号问题完全消失（无论联网还是断网），然而突然发现新的问题：手机RAM实际上应该是3G（2867MB），而上图显示只有1867M（正好相隔1G），莫名奇妙没了1GRAM肯定会很郁闷的，而CM12.1并没有这种问题，之后发现还有些人是这种情况，6月26日出厂的部分会有这种情况，那么来做个运算吧：3 * 0.93 = 2.79，2 * 0.93 = 1.86。&lt;/p&gt;
 &lt;p&gt;而从之后的使用来看，大家都认为手里的是烂尾机，所谓3G内存情况下的发热情况比2G内存情况还要严重，（似乎说明虚拟就是虚拟的，官方也并没有给出建设性的解决方案，让我对一加从此失望，说好的不将就，最终还是这副德性）。&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="cmbenchmark" src="endergeek.com/images/oneplus/cmbenchmark.png"&gt;
-&lt;img alt="cminfo" src="endergeek.com/images/oneplus/cminfo.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="cmbenchmark" src="http://blog.endergeek.com/images/oneplus/cmbenchmark.png"&gt;
 &lt;img alt="cminfo" src="http://blog.endergeek.com/images/oneplus/cminfo.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;没办法，CM11s虽然比CM12s好用多了，2G实在看着不舒服，而30天换货已经过了，所以只能按照文首通过TWRP刷入了CM12.1-nightly，每天更新虽然麻烦，但是可以无视，而且也使如果系统含有BUG手上就有可能的解决方案。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;6. In honor of those days&lt;/h4&gt;
 &lt;p&gt;为了纪念这些天的折腾，
-<<<<<<< HEAD
-&lt;img alt="cmtools" src="endergeek.com/images/oneplus/cmtools.png"&gt;&lt;/p&gt;
-=======
 &lt;img alt="cmtools" src="http://blog.endergeek.com/images/oneplus/cmtools.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;7. More ...&lt;/h4&gt;
 &lt;ul&gt;
@@ -1432,13 +1226,8 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 &lt;li&gt;3.&lt;a href="http://www.oneplusbbs.com/thread-806369-1-1.html"&gt;去感叹号方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;4.&lt;a href="http://android.troplet.com/question/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi-or-signal-icon-in-lollipop-100657.html"&gt;感叹号原理&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;5.&lt;a href="http://www.oneplusbbs.com/thread-476657-1-1.html"&gt;最实用的update线刷方法&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;li&gt;&lt;img alt="cmlog" src="endergeek.com/images/oneplus/cmlog.jpg"&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="cyanogenmod"></category><category term="nb"></category></entry><entry><title>Restart</title><link href="endergeek.com/pages/2015/08/16/restart/" rel="alternate"></link><published>2015-08-16T22:52:00+02:00</published><updated>2015-08-16T22:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-16:endergeek.com/pages/2015/08/16/restart/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;li&gt;&lt;img alt="cmlog" src="http://blog.endergeek.com/images/oneplus/cmlog.jpg"&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><category term="cyanogenmod"></category><category term="nb"></category></entry><entry><title>Restart</title><link href="http://blog.endergeek.com/pages/2015/08/16/restart/" rel="alternate"></link><published>2015-08-16T22:52:00+02:00</published><updated>2015-08-16T22:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-16:/pages/2015/08/16/restart/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;说说最近&lt;/h3&gt;
 &lt;h4&gt;1. 发生的一些事&lt;/h4&gt;
 &lt;p&gt;天津塘沽物流爆炸事件 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
@@ -1476,11 +1265,7 @@ openWRT，简单说吧，都是泪。大杰懒得指导我，伤心。。。&lt;
 &lt;p&gt;然后我就无语了，我都已经ssh上router了就说明LAN是对的，再说我这小路由并没有console口啊哈哈哈哈（算了都是内心活动）&lt;/p&gt;
 &lt;p&gt;今天聊天少年说自己C盘还有20G怕放不了什么东西了（意思啥都会放C盘），我说我C盘70G都塞满过（其实我是安装软件太多）后来重装系统了世界就清净了～少年说咋重装的（内心活动：你不是计算机学院的么。。。）我说自己拿工具烧写个u盘启动盘就行啦，他：哪来的镜像，我说下的啊，他：那不是有很多广告吗，我：我没用过有广告的。。。他：听起来好高端，我（内心活动：这种高端的活也只能拿来骗骗小朋友啊唉。。。我还是好好学习争取有个公司能让我搬个砖啥的）&lt;/p&gt;
 &lt;p&gt;虽然我很水，大杰大神都不愿意指导我。。。
-<<<<<<< HEAD
-但是，加油吧！&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>ceil in C-math.h</title><link href="endergeek.com/pages/2015/07/16/ceil-in-c-mathh/" rel="alternate"></link><published>2015-07-16T08:28:00+02:00</published><updated>2015-07-16T08:28:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-07-16:endergeek.com/pages/2015/07/16/ceil-in-c-mathh/</id><summary type="html">&lt;hr&gt;
-=======
 但是，加油吧！&lt;/p&gt;</content><category term="tips"></category></entry><entry><title>ceil in C-math.h</title><link href="http://blog.endergeek.com/pages/2015/07/16/ceil-in-c-mathh/" rel="alternate"></link><published>2015-07-16T08:28:00+02:00</published><updated>2015-07-16T08:28:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-16:/pages/2015/07/16/ceil-in-c-mathh/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;1.  提出问题&lt;/h4&gt;
 &lt;p&gt;最近翻阅&lt;a href="http://xuec.org/index.html"&gt;《Linux …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  提出问题&lt;/h4&gt;
@@ -1499,11 +1284,7 @@ openWRT，简单说吧，都是泪。大杰懒得指导我，伤心。。。&lt;
 &lt;li&gt;2)对于形如y这样通过值求天棚(&lt;code&gt;ceiling&lt;/code&gt;)：&lt;ul&gt;
 &lt;li&gt;演化1：坐标轴上的点不属于整数的点取天棚总是向坐标轴正半轴方向靠拢。&lt;/li&gt;
 &lt;li&gt;演化2：采用形如&lt;code&gt;x/n&lt;/code&gt;方法，则m=0.9999...，可求解&lt;/li&gt;
-<<<<<<< HEAD
-&lt;li&gt;&lt;img alt="math-ceil" src="endergeek.com/images/ceilinc/math-ceil.svg"&gt;&lt;/li&gt;
-=======
 &lt;li&gt;&lt;img alt="math-ceil" src="http://blog.endergeek.com/images/ceilinc/math-ceil.svg"&gt;&lt;/li&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1622,11 +1403,7 @@ openWRT，简单说吧，都是泪。大杰懒得指导我，伤心。。。&lt;
 &lt;h4&gt;5.  More ...&lt;/h4&gt;
 &lt;p&gt;尽信书，则不如无书&lt;/p&gt;
 &lt;p&gt;有一个种说法，编程=google+stackoverflow，然而一味复制粘贴不仅不能学到知识，反而可能引入不负责任的bug，即使是有“vote up”的解答，也不一定是对的&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;当然，吸收不同的意见，以不同的视角看问题，也会收获颇丰&lt;/p&gt;</content><category term="nb"></category><category term="c"></category><category term="c++"></category></entry><entry><title>使用Aws Ec2搭建Shadowsocks服务器</title><link href="endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/" rel="alternate"></link><published>2015-07-11T11:38:00+02:00</published><updated>2015-07-11T11:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-07-11:endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;p&gt;当然，吸收不同的意见，以不同的视角看问题，也会收获颇丰&lt;/p&gt;</content><category term="nb"></category><category term="c"></category><category term="c++"></category></entry><entry><title>使用Aws Ec2搭建Shadowsocks服务器</title><link href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/" rel="alternate"></link><published>2015-07-11T11:38:00+02:00</published><updated>2015-07-11T11:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-11:/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;1.  Why shadowsocks&lt;/h4&gt;
 &lt;p&gt;shadowsocks类似goagent …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  Why shadowsocks&lt;/h4&gt;
@@ -1649,17 +1426,6 @@ openWRT，简单说吧，都是泪。大杰懒得指导我，伤心。。。&lt;
 &lt;h4&gt;3.  Launch and set up AWS EC2&lt;/h4&gt;
 &lt;p&gt;1.选择&lt;em&gt;region&lt;/em&gt;部署区域，不同区域感受不同，这里不作建议，选择区域完毕后创建实例，如下图：&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="awsec2-create instance" src="endergeek.com/images/awsec2/awsec201.png"&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;2.选择一个&lt;em&gt;Amazon系统映像&lt;/em&gt;(AMI)，这里选择&lt;em&gt;“Ubuntu Server 14.04 LTS”&lt;/em&gt;，如下图：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img alt="awsec2-select AMI" src="endergeek.com/images/awsec2/awsec202.png"&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;3.选择一个&lt;em&gt;实例类型&lt;/em&gt;，由于是免费版本，所以只能选用&lt;em&gt;t2.micro&lt;/em&gt;，如下图：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec203.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="awsec2-create instance" src="http://blog.endergeek.com/images/awsec2/awsec201.png"&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;2.选择一个&lt;em&gt;Amazon系统映像&lt;/em&gt;(AMI)，这里选择&lt;em&gt;“Ubuntu Server 14.04 LTS”&lt;/em&gt;，如下图：&lt;/p&gt;
@@ -1669,27 +1435,18 @@ openWRT，简单说吧，都是泪。大杰懒得指导我，伤心。。。&lt;
 &lt;p&gt;3.选择一个&lt;em&gt;实例类型&lt;/em&gt;，由于是免费版本，所以只能选用&lt;em&gt;t2.micro&lt;/em&gt;，如下图：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec203.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/blockquote&gt;
 &lt;p&gt;4.选择后点击&lt;em&gt;“下一步：配置实例详细信息”&lt;/em&gt;，此处默认配置即可
 5.继续点击&lt;em&gt;“下一步：添加存储”&lt;/em&gt;，此处默认配置即可，也不要超过30G
 6.继续点击&lt;em&gt;“下一步：标签实例”&lt;/em&gt;，此处默认配置即可
 7.点击&lt;em&gt;“配置安全组”&lt;/em&gt;，此处添加规则，如&lt;code&gt;ssh&lt;/code&gt;，具体配置规则自己定义，然后点击&lt;em&gt;“审核和启动”&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec204.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec204.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/blockquote&gt;
 &lt;p&gt;8.核查实例完毕后点击&lt;em&gt;“启动”&lt;/em&gt;，即弹出&lt;em&gt;“选择现有密钥对或创建新密钥对”&lt;/em&gt;，选择&lt;em&gt;“创建新密钥对”&lt;/em&gt;，然后在&lt;em&gt;“密钥对名称”&lt;/em&gt;栏输入密钥对文件名，就可以下载属于你的&lt;code&gt;*.pem&lt;/code&gt;密钥文件了。&lt;/p&gt;
 &lt;p&gt;9.&lt;strong&gt;[注意]&lt;/strong&gt;一定要将密钥文件存储在一个可访问的安全位置，创建文件后将不能再次下载！若遗失则可以删除之前的&lt;code&gt;key pairs&lt;/code&gt;并创建新的，如果希望使用自己的&lt;code&gt;ssh key&lt;/code&gt;, 也可以选择&lt;em&gt;”Import Key Pair”&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec205.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec205.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/blockquote&gt;
 &lt;p&gt;10.下载密钥文件完毕后点击&lt;em&gt;“启动实例”&lt;/em&gt;，
 在本地机器上，将&lt;code&gt;.pem&lt;/code&gt;文件移动到&lt;code&gt;~/.ssh&lt;/code&gt;目录下（如果目录不存在则创建），并更改其权限为600（即&lt;code&gt;rw-------&lt;/code&gt;）：&lt;/p&gt;
@@ -1742,17 +1499,6 @@ $ sudo apt-get install shadowsocks-qt5
 
 &lt;p&gt;2.linux上配置&lt;code&gt;shadowsocks&lt;/code&gt;客户端&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec206.png"&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;3.浏览器安装&lt;a href="https://chrome.google.com/webstore/search/switchy%20omega?utm_source=chrome-ntp-icon&amp;amp;_category=extensions"&gt;SwitchyOmega&lt;/a&gt;，并配置profile：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec207.png"&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h4&gt;6.  More ...&lt;/h4&gt;
-&lt;p&gt;体验了免费的AWS EC2服务，还是很期待体验使用付费流量的:-)&lt;/p&gt;</content><category term="aws"></category><category term="nb"></category><category term="shadowsocks"></category></entry><entry><title>使用Pelican和Github Pages搭建博客(一)</title><link href="endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/" rel="alternate"></link><published>2015-07-11T10:12:00+02:00</published><updated>2015-07-11T10:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-07-11:endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec206.png"&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;3.浏览器安装&lt;a href="https://chrome.google.com/webstore/search/switchy%20omega?utm_source=chrome-ntp-icon&amp;amp;_category=extensions"&gt;SwitchyOmega&lt;/a&gt;，并配置profile：&lt;/p&gt;
@@ -1762,7 +1508,6 @@ $ sudo apt-get install shadowsocks-qt5
 &lt;hr&gt;
 &lt;h4&gt;6.  More ...&lt;/h4&gt;
 &lt;p&gt;体验了免费的AWS EC2服务，还是很期待体验使用付费流量的:-)&lt;/p&gt;</content><category term="aws"></category><category term="nb"></category><category term="shadowsocks"></category></entry><entry><title>使用Pelican和Github Pages搭建博客(一)</title><link href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/" rel="alternate"></link><published>2015-07-11T10:12:00+02:00</published><updated>2015-07-11T10:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-11:/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;1.  Why Pelican?&lt;/h4&gt;
 &lt;p&gt;之前用过 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  Why Pelican?&lt;/h4&gt;
@@ -1801,19 +1546,11 @@ $ pelican-quickstart &lt;span class="c1"&gt;# 进入pelican配置并依据配置
 
 &lt;p&gt;效果如下图：&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="pelican-quickstart" src="endergeek.com/images/pelican/pelican01.png"&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;执行完毕后，文件夹结构如下图：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img alt="pelican-file-structure" src="endergeek.com/images/pelican/pelican02.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="pelican-quickstart" src="http://blog.endergeek.com/images/pelican/pelican01.png"&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;执行完毕后，文件夹结构如下图：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;img alt="pelican-file-structure" src="http://blog.endergeek.com/images/pelican/pelican02.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/blockquote&gt;
 &lt;p&gt;文件作用解释如下：&lt;/p&gt;
 &lt;ul&gt;
@@ -1830,19 +1567,11 @@ $ pelican-quickstart &lt;span class="c1"&gt;# 进入pelican配置并依据配置
 &lt;p&gt;在content文件夹内创建一个&lt;em&gt;[filename]&lt;/em&gt;.md文件，并对其进行编辑。
 博文格式如下图：&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="pelican-markdown-screenshot" src="endergeek.com/images/pelican/pelican03.png"&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;你也可以根据&lt;a href="http://docs.getpelican.com/en/3.6.0/#"&gt;官方文档&lt;/a&gt;更完整定义你的markdown文件头，为了避免每次新建markdown文件要重复安排md文件头，因此就写&lt;a href="https://github.com/sennhviwang/pelican_gum_endergeek/blob/master/generate_template.py"&gt;一个简单的python脚本&lt;/a&gt;以生成md文件，使用方法如下图：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img alt="pelican-md-generator-script" src="endergeek.com/images/pelican/pelican04.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="pelican-markdown-screenshot" src="http://blog.endergeek.com/images/pelican/pelican03.png"&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;你也可以根据&lt;a href="http://docs.getpelican.com/en/3.6.0/#"&gt;官方文档&lt;/a&gt;更完整定义你的markdown文件头，为了避免每次新建markdown文件要重复安排md文件头，因此就写&lt;a href="https://github.com/sennhviwang/pelican_gum_endergeek/blob/master/generate_template.py"&gt;一个简单的python脚本&lt;/a&gt;以生成md文件，使用方法如下图：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;img alt="pelican-md-generator-script" src="http://blog.endergeek.com/images/pelican/pelican04.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h4&gt;5.  Make!&lt;/h4&gt;
@@ -1853,19 +1582,11 @@ $ pelican-quickstart &lt;span class="c1"&gt;# 进入pelican配置并依据配置
 
 &lt;p&gt;如下图：&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="pelican-make-html" src="endergeek.com/images/pelican/pelican05.png"&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;make html&lt;/code&gt; 会按照配置文件将博文生成静态网页文件存放output文件夹中，使用&lt;code&gt;make serve&lt;/code&gt;查看：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img alt="pelican-make-serve" src="endergeek.com/images/pelican/pelican06.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="pelican-make-html" src="http://blog.endergeek.com/images/pelican/pelican05.png"&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;make html&lt;/code&gt; 会按照配置文件将博文生成静态网页文件存放output文件夹中，使用&lt;code&gt;make serve&lt;/code&gt;查看：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;img alt="pelican-make-serve" src="http://blog.endergeek.com/images/pelican/pelican06.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/blockquote&gt;
 &lt;p&gt;在浏览器中输入&lt;a href="http://localhost:8000/"&gt;http://localhost:8000/&lt;/a&gt;查看&lt;/p&gt;
 &lt;hr&gt;
@@ -1881,11 +1602,7 @@ $ pelican-quickstart &lt;span class="c1"&gt;# 进入pelican配置并依据配置
 &lt;h4&gt;7.  Enable Disqus&lt;/h4&gt;
 &lt;p&gt;在Disqus申请账号，创建并使用站点的Shortname，获取自己应用的Secret Key和Public Key并写入pelicanconf.py配置文件中：&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="pelican-disqus-set" src="endergeek.com/images/pelican/pelican07.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="pelican-disqus-set" src="http://blog.endergeek.com/images/pelican/pelican07.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h4&gt;8.  Publish blog&lt;/h4&gt;
@@ -1902,11 +1619,7 @@ $ git push origin master
 
 &lt;p&gt;发布的命令较长，可以修改Makefile文件如下图：&lt;/p&gt;
 &lt;blockquote&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="pelican-makefile-git" src="endergeek.com/images/pelican/pelican08.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="pelican-makefile-git" src="http://blog.endergeek.com/images/pelican/pelican08.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;/blockquote&gt;
 &lt;p&gt;之后就可以在每次编辑完新的文章后，在主目录下使用&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html
@@ -1919,11 +1632,7 @@ $ make github
 &lt;h4&gt;9.  More ...&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;博客主题&lt;a href="https://github.com/sennhviwang/pelican_gum_endergeek"&gt;地址&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="pelican"></category><category term="git"></category><category term="nb"></category></entry><entry><title>Some Tips On It Learning</title><link href="endergeek.com/pages/2015/06/15/some-tips-on-it-learning/" rel="alternate"></link><published>2015-06-15T23:19:00+02:00</published><updated>2015-06-15T23:19:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-15:endergeek.com/pages/2015/06/15/some-tips-on-it-learning/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/ul&gt;</content><category term="pelican"></category><category term="git"></category><category term="nb"></category></entry><entry><title>Some Tips On It Learning</title><link href="http://blog.endergeek.com/pages/2015/06/15/some-tips-on-it-learning/" rel="alternate"></link><published>2015-06-15T23:19:00+02:00</published><updated>2015-06-15T23:19:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/some-tips-on-it-learning/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;给编程初学者的一些建议&lt;/h3&gt;
 &lt;p&gt;&lt;p&gt;
 对编程初学者来说，或者对仍在大学接受高等教育，即将成为编程工作者的人来说 …&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
@@ -1966,11 +1675,7 @@ $ make github
 &lt;h4&gt;参考与来源&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.linuxeden.com/html/news/20140630/153224.html"&gt;linuxeden page&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="tips"></category><category term="nb"></category></entry><entry><title>Git Some Note</title><link href="endergeek.com/pages/2015/06/15/git-some-note/" rel="alternate"></link><published>2015-06-15T07:39:00+02:00</published><updated>2015-06-15T07:39:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-15:endergeek.com/pages/2015/06/15/git-some-note/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/ul&gt;</content><category term="tips"></category><category term="nb"></category></entry><entry><title>Git Some Note</title><link href="http://blog.endergeek.com/pages/2015/06/15/git-some-note/" rel="alternate"></link><published>2015-06-15T07:39:00+02:00</published><updated>2015-06-15T07:39:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/git-some-note/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;一些常用git命令&lt;/h3&gt;
 &lt;h4&gt;1.  安装&lt;/h4&gt;
 &lt;p&gt;在 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
@@ -2143,11 +1848,7 @@ $ git push origin :refs/tags/v0.1 &lt;span class="c1"&gt;# 删除远程标签&lt
 &lt;ul&gt;
 &lt;li&gt;1.&lt;a href="http://yanhaijing.com/git/2014/11/01/my-git-note/"&gt;颜海镜&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;2.&lt;a href="http://www.worldhello.net/gotgit/"&gt;Git权威指南&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="cli"></category><category term="git"></category><category term="nb"></category></entry><entry><title>Autojump Between Dirs</title><link href="endergeek.com/pages/2015/06/15/autojump-between-dirs/" rel="alternate"></link><published>2015-06-15T07:38:00+02:00</published><updated>2015-06-15T07:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-15:endergeek.com/pages/2015/06/15/autojump-between-dirs/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/ul&gt;</content><category term="cli"></category><category term="git"></category><category term="nb"></category></entry><entry><title>Autojump Between Dirs</title><link href="http://blog.endergeek.com/pages/2015/06/15/autojump-between-dirs/" rel="alternate"></link><published>2015-06-15T07:38:00+02:00</published><updated>2015-06-15T07:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/autojump-between-dirs/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;autojump 工具&lt;/h3&gt;
 &lt;p&gt;本文将介绍一个实用的命令行工具，它允许你可以快速跳转到你喜爱的目录 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;autojump 工具&lt;/h3&gt;
@@ -2232,11 +1933,7 @@ $ &lt;span class="nb"&gt;cd&lt;/span&gt; autojump &lt;span class="o"&gt;&amp;amp
 &lt;ul&gt;
 &lt;li&gt;1.&lt;a href="http://xmodulo.com/speed-up-directory-navigation-linux-terminal.html"&gt;Xmodulo Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;2.&lt;a href="https://github.com/joelthelion"&gt;Developer: Joel Schaerer&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="bash"></category><category term="cli"></category><category term="nb"></category></entry><entry><title>Usage Of `Echo`</title><link href="endergeek.com/pages/2015/06/14/usage-of-echo/" rel="alternate"></link><published>2015-06-14T08:07:00+02:00</published><updated>2015-06-14T08:07:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-14:endergeek.com/pages/2015/06/14/usage-of-echo/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/ul&gt;</content><category term="bash"></category><category term="cli"></category><category term="nb"></category></entry><entry><title>Usage Of `Echo`</title><link href="http://blog.endergeek.com/pages/2015/06/14/usage-of-echo/" rel="alternate"></link><published>2015-06-14T08:07:00+02:00</published><updated>2015-06-14T08:07:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/usage-of-echo/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;1.  输出变量的值:&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;3 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;hr&gt;
@@ -2293,11 +1990,7 @@ $ &lt;span class="nb"&gt;echo&lt;/span&gt; * &amp;gt; test.txt 内容重定向
 
 
 &lt;p&gt;should give you access to the complete manual.&lt;/p&gt;
-<<<<<<< HEAD
-&lt;/blockquote&gt;</content><category term="bash"></category><category term="cli"></category></entry><entry><title>Tenth Line</title><link href="endergeek.com/pages/2015/06/14/tenth-line/" rel="alternate"></link><published>2015-06-14T06:02:00+02:00</published><updated>2015-06-14T06:02:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-14:endergeek.com/pages/2015/06/14/tenth-line/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/blockquote&gt;</content><category term="bash"></category><category term="cli"></category></entry><entry><title>Tenth Line</title><link href="http://blog.endergeek.com/pages/2015/06/14/tenth-line/" rel="alternate"></link><published>2015-06-14T06:02:00+02:00</published><updated>2015-06-14T06:02:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/tenth-line/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;1.  How would you …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  How would you print just the 10th line of a file?&lt;/h4&gt;
 &lt;p&gt;最近碰巧看见一道leetcode上的题，刚开始觉得会很简单，然而操作起来就觉得自己太天真了：&lt;/p&gt;
@@ -2353,11 +2046,7 @@ $ &lt;span class="nv"&gt;cnt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt
 &lt;span class="k"&gt;done&lt;/span&gt; &amp;lt; file.txt****
 
 $ &lt;span class="nv"&gt;IFS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\n&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nv"&gt;arr&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&amp;lt;file.txt&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;arr&lt;/span&gt;&lt;span class="p"&gt;[9]&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt; &lt;span class="c1"&gt;# IFS== Internal Field Separator 内部域分隔符，对文本分隔存为数组然后获取第十个&lt;/span&gt;
-<<<<<<< HEAD
-&lt;/pre&gt;&lt;/div&gt;</content><category term="leetcode"></category><category term="bash"></category><category term="cli"></category></entry><entry><title>README</title><link href="endergeek.com/pages/1970/01/01/readme/" rel="alternate"></link><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><author><name>sennhviwang</name></author><id>tag:None,1970-01-01:endergeek.com/pages/1970/01/01/readme/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/pre&gt;&lt;/div&gt;</content><category term="leetcode"></category><category term="bash"></category><category term="cli"></category></entry><entry><title>README</title><link href="http://blog.endergeek.com/pages/1970/01/01/readme/" rel="alternate"></link><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,1970-01-01:/pages/1970/01/01/readme/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;博客文章MD文件备份&lt;/h3&gt;
 &lt;h4&gt;使用请申请，保留著作权。&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;博客文章MD文件备份&lt;/h3&gt;

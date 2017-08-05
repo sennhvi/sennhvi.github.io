@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Linux</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/linux.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2016-09-04T10:01:00+02:00</updated><entry><title>Classic Shell Scripting</title><link href="endergeek.com/pages/2016/09/04/classic-shell-scripting/" rel="alternate"></link><published>2016-09-04T10:01:00+02:00</published><updated>2016-09-04T10:01:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-09-04:endergeek.com/pages/2016/09/04/classic-shell-scripting/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="css" src="endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
-=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Linux</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/linux.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-04T10:01:00+02:00</updated><entry><title>Classic Shell Scripting</title><link href="http://blog.endergeek.com/pages/2016/09/04/classic-shell-scripting/" rel="alternate"></link><published>2016-09-04T10:01:00+02:00</published><updated>2016-09-04T10:01:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-09-04:/pages/2016/09/04/classic-shell-scripting/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="css" src="http://blog.endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;0. Abstract&lt;/h4&gt;
 &lt;p&gt;写作原因：虽然写篇真的很费精力 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="css" src="endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="css" src="http://blog.endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;0. Abstract&lt;/h4&gt;
 &lt;p&gt;写作原因：虽然写篇真的很费精力，看完本书，过几月再回顾的时候，记忆寥寥，用时再查，无论baidu,google，都需要多一步筛选，良莠不齐的回答更是浪费时间&lt;/p&gt;
@@ -138,11 +128,7 @@ $ &lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://linux.cn/article-7161-1.html"&gt;[LFCS系列]如何在 Linux 上使用 GNU sed 等命令来创建、编辑和操作文件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.jobbole.com/99063/"&gt;Linux Shell 文本处理工具集锦&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="linux"></category><category term="shell"></category><category term="nb"></category></entry><entry><title>FAQs in Linux</title><link href="endergeek.com/pages/2016/08/27/faqs-in-linux/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-27:endergeek.com/pages/2016/08/27/faqs-in-linux/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/ul&gt;</content><category term="linux"></category><category term="shell"></category><category term="nb"></category></entry><entry><title>FAQs in Linux</title><link href="http://blog.endergeek.com/pages/2016/08/27/faqs-in-linux/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/faqs-in-linux/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;FAQs in Linux&lt;/h3&gt;
 &lt;hr&gt;
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
@@ -252,35 +238,21 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 &lt;h4&gt;7.&lt;/h4&gt;
 &lt;hr&gt;
 &lt;h4&gt;8.&lt;/h4&gt;
-<<<<<<< HEAD
-&lt;hr&gt;</content><category term="linux"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Ssh Login Without Password</title><link href="endergeek.com/pages/2015/09/24/ssh-login-without-password/" rel="alternate"></link><published>2015-09-24T10:41:00+02:00</published><updated>2015-09-24T10:41:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-09-24:endergeek.com/pages/2015/09/24/ssh-login-without-password/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h2&gt;&lt;img alt="ssh" src="endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
-=======
 &lt;hr&gt;</content><category term="linux"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Ssh Login Without Password</title><link href="http://blog.endergeek.com/pages/2015/09/24/ssh-login-without-password/" rel="alternate"></link><published>2015-09-24T10:41:00+02:00</published><updated>2015-09-24T10:41:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-09-24:/pages/2015/09/24/ssh-login-without-password/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h2&gt;&lt;img alt="ssh" src="http://blog.endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0.&lt;/h4&gt;
 &lt;p&gt;本文十分简单粗浅，旨在减少生活中的重复工作。&lt;/p&gt;
 &lt;p&gt;例如我 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
-<<<<<<< HEAD
-&lt;h2&gt;&lt;img alt="ssh" src="endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
-=======
 &lt;h2&gt;&lt;img alt="ssh" src="http://blog.endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;0.&lt;/h4&gt;
 &lt;p&gt;本文十分简单粗浅，旨在减少生活中的重复工作。&lt;/p&gt;
 &lt;p&gt;例如我，曾经每当&lt;code&gt;11：30&lt;/code&gt;断电我就需要拔下自己的外接屏然后默默地关机，而再次开机时如果忘了插回，则会导致一些不可预测的魔幻效果。&lt;/p&gt;
 &lt;p&gt;Bill Gates说需要利用好那些懒人，因为他们知道如何用最高效的方式完成一项事情。&lt;/p&gt;
 &lt;p&gt;然而我懒&lt;/p&gt;
 &lt;p&gt;使用&lt;code&gt;ssh&lt;/code&gt;控制关机就得了，于是某个应用曾经唯一的价值就是帮我“远程”关机、&lt;code&gt;vps&lt;/code&gt;升级...&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="shutdown" src="endergeek.com/images/sshlogin/shutdown.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="shutdown" src="http://blog.endergeek.com/images/sshlogin/shutdown.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;然而我懒&lt;/p&gt;
 &lt;p&gt;每次&lt;code&gt;ssh&lt;/code&gt;登录输入密码真麻烦，直接丢个证书不就得了，那么就好好利用下&lt;code&gt;ssh-keyge&lt;/code&gt;n吧，这货在使用&lt;code&gt;github&lt;/code&gt;之前还是没有用过的&lt;/p&gt;
 &lt;hr&gt;
@@ -290,11 +262,7 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="sshkeygen" src="endergeek.com/images/sshlogin/sshkeygen.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="sshkeygen" src="http://blog.endergeek.com/images/sshlogin/sshkeygen.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;使用完毕，将在目录下生成&lt;code&gt;id_rsa&lt;/code&gt;和&lt;code&gt;id_rsa.pub&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;之后，将&lt;code&gt;id_rsa&lt;/code&gt;拷贝到&lt;code&gt;/sdcard/&lt;/code&gt;下以使手机应用可以访问，将&lt;code&gt;id_rsa.pub&lt;/code&gt;拷贝到远程机器（使用数据线or&lt;code&gt;FTP&lt;/code&gt;等等），然后在远程机器上将&lt;code&gt;id_rsa.pub&lt;/code&gt;的内容添加到&lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt;中：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys
@@ -305,19 +273,11 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 &lt;hr&gt;
 &lt;h4&gt;2. Config&lt;/h4&gt;
 &lt;p&gt;完成上述步骤就可以从手机登录远程电脑了，需要对ConnectBot简单的配置： 点击&lt;code&gt;Manage Pubkeys&lt;/code&gt;&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="manage" src="endergeek.com/images/sshlogin/manage.png"&gt;&lt;/p&gt;
-&lt;p&gt;点击&lt;code&gt;Import&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="import" src="endergeek.com/images/sshlogin/import.png"&gt;&lt;/p&gt;
-&lt;p&gt;选择&lt;code&gt;id_rsa&lt;/code&gt;私钥导入，首次登录会要求输入该私钥对应密码，之后无需密码 &lt;/p&gt;
-&lt;p&gt;&lt;img alt="done" src="endergeek.com/images/sshlogin/done.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="manage" src="http://blog.endergeek.com/images/sshlogin/manage.png"&gt;&lt;/p&gt;
 &lt;p&gt;点击&lt;code&gt;Import&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="import" src="http://blog.endergeek.com/images/sshlogin/import.png"&gt;&lt;/p&gt;
 &lt;p&gt;选择&lt;code&gt;id_rsa&lt;/code&gt;私钥导入，首次登录会要求输入该私钥对应密码，之后无需密码 &lt;/p&gt;
 &lt;p&gt;&lt;img alt="done" src="http://blog.endergeek.com/images/sshlogin/done.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;3. Optional&lt;/h4&gt;
 &lt;p&gt;取消使用密码： - 可以在&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;中关闭 把文件中的&lt;code&gt;#PasswordAuthentication yes&lt;/code&gt;的&lt;code&gt;#&lt;/code&gt;去掉，并将&lt;code&gt;yes&lt;/code&gt;改成&lt;code&gt;no&lt;/code&gt;&lt;/p&gt;
@@ -326,17 +286,10 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.prosight.me/blogs/1097/?utm_source=rss&amp;amp;utm_medium=rss&amp;amp;utm_campaign=%25e8%25ae%25be%25e7%25bd%25aessh%25e6%2597%25a0%25e5%25af%2586%25e9%2592%25a5%25e7%2599%25bb%25e5%25bd%2595"&gt;ssh&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-key-pairs.html"&gt;ec2 key pairs&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="linux"></category><category term="nb"></category></entry><entry><title>Setup &amp;&amp; Use Ftp Server In Ubuntu Linux</title><link href="endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/" rel="alternate"></link><published>2015-08-21T21:53:00+02:00</published><updated>2015-08-21T21:53:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-21:endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</id><summary type="html">&lt;hr&gt;
-&lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
-&lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server in Ubuntu Linux&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="testspeed" src="endergeek.com/images/ftp/testspeed.png"&gt;&lt;/p&gt;
-=======
 &lt;/ul&gt;</content><category term="linux"></category><category term="nb"></category></entry><entry><title>Setup &amp;&amp; Use Ftp Server In Ubuntu Linux</title><link href="http://blog.endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/" rel="alternate"></link><published>2015-08-21T21:53:00+02:00</published><updated>2015-08-21T21:53:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-21:/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server in Ubuntu Linux&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="testspeed" src="http://blog.endergeek.com/images/ftp/testspeed.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;记录一下在学校的网速，留作纪念:-)&lt;/p&gt;
 &lt;h4&gt;0. Introduction&lt;/h4&gt;
 &lt;p&gt;最近由于寝室共享电影，为了避免U盘传输的麻烦，因此搭建&lt;code&gt;FTP&lt;/code&gt;服务器传输电影，省了不少事，因此也记录一下&lt;/p&gt;
@@ -352,11 +305,7 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 
 
 &lt;p&gt;上述命令将会安装并启动&lt;code&gt;ftp&lt;/code&gt;服务器：&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="checkvsftpd" src="endergeek.com/images/ftp/checkvsftpd.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="checkvsftpd" src="http://blog.endergeek.com/images/ftp/checkvsftpd.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;2. Standalone &amp;amp;&amp;amp; Normal FTP mode&lt;/h4&gt;
 &lt;p&gt;独立模式：&lt;code&gt;vsftpd&lt;/code&gt;默认以独立模式运行，在独立模式下服务器上运行的服务有叫做守护进程(&lt;code&gt;daemon&lt;/code&gt;)的启动脚本，以&lt;code&gt;vsftpd&lt;/code&gt;为例是&lt;code&gt;/etc/init.d/vsftpd&lt;/code&gt;，这个独立守护进程将会在FTP服务启动的时候接管它，并为&lt;code&gt;FTP&lt;/code&gt;管理者提供了一些命令以管理该&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器：&lt;/p&gt;
@@ -412,19 +361,11 @@ banner_fail - 指向列出禁止访问IP的文件
 
 
 &lt;p&gt;为了确保&lt;code&gt;FTP&lt;/code&gt;服务器启动了标准模式且开放了21号端口，可以使用命令：
-<<<<<<< HEAD
-&lt;img alt="xinetdcheck" src="endergeek.com/images/ftp/xinetdcheck.png"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h4&gt;3. Make first FTP connection&lt;/h4&gt;
-&lt;p&gt;无论你是以上述哪种模式启动&lt;code&gt;FTP&lt;/code&gt;服务器你都需要能够建立本地连接。&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器默认是允许匿名访问的，下面，我们将使用匿名用户建立连接以测试&lt;code&gt;FTP&lt;/code&gt;服务器安装成功：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="ftpanon" src="endergeek.com/images/ftp/ftpanon.png"&gt;&lt;/p&gt;
-=======
 &lt;img alt="xinetdcheck" src="http://blog.endergeek.com/images/ftp/xinetdcheck.png"&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;3. Make first FTP connection&lt;/h4&gt;
 &lt;p&gt;无论你是以上述哪种模式启动&lt;code&gt;FTP&lt;/code&gt;服务器你都需要能够建立本地连接。&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器默认是允许匿名访问的，下面，我们将使用匿名用户建立连接以测试&lt;code&gt;FTP&lt;/code&gt;服务器安装成功：&lt;/p&gt;
 &lt;p&gt;&lt;img alt="ftpanon" src="http://blog.endergeek.com/images/ftp/ftpanon.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;p&gt;上述命令仅仅确保了你的&lt;code&gt;FTP&lt;/code&gt;服务器在本地系统上正确装配，为了更好利用&lt;code&gt;FTP&lt;/code&gt;服务器你需要用一些远程主机来测试。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;4. Configuring FTP Server - Anonymous FTP access&lt;/h4&gt;
@@ -437,11 +378,7 @@ banner_fail - 指向列出禁止访问IP的文件
 &lt;p&gt;现在，你的服务器将不允许除了匿名用户之外的用户访问了。那么通过设置&lt;code&gt;/etc/vsftpd.conf&lt;/code&gt;中&lt;code&gt;local_enable&lt;/code&gt;指令来允许所有在&lt;code&gt;/etc/passwd&lt;/code&gt;文件中定义的用户登录，该选项默认是&lt;code&gt;NO&lt;/code&gt;：
 &lt;code&gt;local_enable=YES&lt;/code&gt;
 现在在&lt;code&gt;/etc/passwd&lt;/code&gt;下定义的任何用户都能使用相关密码登录：&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="ftplocalhost" src="endergeek.com/images/ftp/ftplocalhost.png"&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="ftplocalhost" src="http://blog.endergeek.com/images/ftp/ftplocalhost.png"&gt;&lt;/p&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;hr&gt;
 &lt;h4&gt;6. Configuring FTP Server - User Access list&lt;/h4&gt;
 &lt;p&gt;使用文件列出允许访问的用户来配置&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器，通常，你可以在&lt;code&gt;/etc&lt;/code&gt;目录定义这样的文件，它可以是任意文件名，你只需要在这个文件中列出所有可以访问的用户名即可，那么举个例子吧：&lt;/p&gt;
@@ -478,11 +415,7 @@ banner_fail - 指向列出禁止访问IP的文件
 &lt;h4&gt;9. How to connect to FTP with a web browser&lt;/h4&gt;
 &lt;p&gt;用法：
 &lt;code&gt;ftp://YourFtpUser:YourFtpUserPassword@yourdomain.com&lt;/code&gt;&lt;/p&gt;
-<<<<<<< HEAD
-&lt;h2&gt;&lt;img alt="ftpbrowser" src="endergeek.com/images/ftp/ftpbrowser.png"&gt;&lt;/h2&gt;
-=======
 &lt;h2&gt;&lt;img alt="ftpbrowser" src="http://blog.endergeek.com/images/ftp/ftpbrowser.png"&gt;&lt;/h2&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;9. More ...&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;1.&lt;a href="http://linuxconfig.org/how-to-setup-and-use-ftp-server-in-ubuntu-linux"&gt;How to setup and use FTP - LinuxConfig&lt;/a&gt;&lt;/li&gt;
@@ -490,11 +423,7 @@ banner_fail - 指向列出禁止访问IP的文件
 &lt;li&gt;3.&lt;a href="http://www.tldp.org/HOWTO/FTP-3.html"&gt;Using FTP - Howtos&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;4.&lt;a href="https://www.siteground.com/kb/ftp_browser/"&gt;How to connect to FTP with a web browser - siteground&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="plant" src="endergeek.com/images/ftp/plant.gif"&gt;&lt;/p&gt;</content><category term="linux"></category><category term="cli"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Autojump Between Dirs</title><link href="endergeek.com/pages/2015/06/15/autojump-between-dirs/" rel="alternate"></link><published>2015-06-15T07:38:00+02:00</published><updated>2015-06-15T07:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-15:endergeek.com/pages/2015/06/15/autojump-between-dirs/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;p&gt;&lt;img alt="plant" src="http://blog.endergeek.com/images/ftp/plant.gif"&gt;&lt;/p&gt;</content><category term="linux"></category><category term="cli"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Autojump Between Dirs</title><link href="http://blog.endergeek.com/pages/2015/06/15/autojump-between-dirs/" rel="alternate"></link><published>2015-06-15T07:38:00+02:00</published><updated>2015-06-15T07:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/autojump-between-dirs/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h3&gt;autojump 工具&lt;/h3&gt;
 &lt;p&gt;本文将介绍一个实用的命令行工具，它允许你可以快速跳转到你喜爱的目录 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;autojump 工具&lt;/h3&gt;
@@ -579,11 +508,7 @@ $ &lt;span class="nb"&gt;cd&lt;/span&gt; autojump &lt;span class="o"&gt;&amp;amp
 &lt;ul&gt;
 &lt;li&gt;1.&lt;a href="http://xmodulo.com/speed-up-directory-navigation-linux-terminal.html"&gt;Xmodulo Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;2.&lt;a href="https://github.com/joelthelion"&gt;Developer: Joel Schaerer&lt;/a&gt;&lt;/li&gt;
-<<<<<<< HEAD
-&lt;/ul&gt;</content><category term="bash"></category><category term="cli"></category><category term="nb"></category></entry><entry><title>Usage Of `Echo`</title><link href="endergeek.com/pages/2015/06/14/usage-of-echo/" rel="alternate"></link><published>2015-06-14T08:07:00+02:00</published><updated>2015-06-14T08:07:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-14:endergeek.com/pages/2015/06/14/usage-of-echo/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/ul&gt;</content><category term="bash"></category><category term="cli"></category><category term="nb"></category></entry><entry><title>Usage Of `Echo`</title><link href="http://blog.endergeek.com/pages/2015/06/14/usage-of-echo/" rel="alternate"></link><published>2015-06-14T08:07:00+02:00</published><updated>2015-06-14T08:07:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/usage-of-echo/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;1.  输出变量的值:&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;3 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;hr&gt;
@@ -640,11 +565,7 @@ $ &lt;span class="nb"&gt;echo&lt;/span&gt; * &amp;gt; test.txt 内容重定向
 
 
 &lt;p&gt;should give you access to the complete manual.&lt;/p&gt;
-<<<<<<< HEAD
-&lt;/blockquote&gt;</content><category term="bash"></category><category term="cli"></category></entry><entry><title>Tenth Line</title><link href="endergeek.com/pages/2015/06/14/tenth-line/" rel="alternate"></link><published>2015-06-14T06:02:00+02:00</published><updated>2015-06-14T06:02:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-14:endergeek.com/pages/2015/06/14/tenth-line/</id><summary type="html">&lt;hr&gt;
-=======
 &lt;/blockquote&gt;</content><category term="bash"></category><category term="cli"></category></entry><entry><title>Tenth Line</title><link href="http://blog.endergeek.com/pages/2015/06/14/tenth-line/" rel="alternate"></link><published>2015-06-14T06:02:00+02:00</published><updated>2015-06-14T06:02:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/tenth-line/</id><summary type="html">&lt;hr&gt;
->>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
 &lt;h4&gt;1.  How would you …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  How would you print just the 10th line of a file?&lt;/h4&gt;
 &lt;p&gt;最近碰巧看见一道leetcode上的题，刚开始觉得会很简单，然而操作起来就觉得自己太天真了：&lt;/p&gt;

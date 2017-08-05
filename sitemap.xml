@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/</loc>
+<lastmod>2017-08-06T03:38:44-00:00</lastmod>
+=======
+<loc>http://blog.endergeek.com/</loc>
+<lastmod>2017-08-06T03:31:27-00:00</lastmod>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/archives.html</loc>
+<lastmod>2017-08-06T03:38:44-00:00</lastmod>
+=======
+<loc>http://blog.endergeek.com/archives.html</loc>
+<lastmod>2017-08-06T03:31:27-00:00</lastmod>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/categories.html</loc>
+<lastmod>2017-08-06T03:38:44-00:00</lastmod>
+=======
+<loc>http://blog.endergeek.com/categories.html</loc>
+<lastmod>2017-08-06T03:31:27-00:00</lastmod>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/about.html</loc>
+<lastmod>2017-08-06T03:38:44-00:00</lastmod>
+=======
+<loc>http://blog.endergeek.com/pages/about.html</loc>
+<lastmod>2017-08-06T03:31:27-00:00</lastmod>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/reading-list.html</loc>
+<lastmod>2017-08-06T03:38:44-00:00</lastmod>
+=======
+<loc>http://blog.endergeek.com/pages/reading-list.html</loc>
+<lastmod>2017-08-06T03:31:27-00:00</lastmod>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/to-do-list.html</loc>
+<lastmod>2017-08-06T03:38:44-00:00</lastmod>
+=======
+<loc>http://blog.endergeek.com/pages/to-do-list.html</loc>
+<lastmod>2017-08-06T03:31:27-00:00</lastmod>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2016/09/08/android-related/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2016/09/08/android-related/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-08T11:50:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2016/09/04/classic-shell-scripting/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2016/09/04/classic-shell-scripting/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-04T10:01:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2016/08/27/android-screen-support/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2016/08/27/android-screen-support/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-08-27T17:59:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2016/08/27/faqs-in-linux/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2016/08/27/faqs-in-linux/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-08-27T17:59:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2016/08/12/faqs-in-android-dev/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2016/08/12/faqs-in-android-dev/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-08-12T10:52:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-10-15T10:30:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/09/24/ssh-login-without-password/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/09/24/ssh-login-without-password/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-09-24T10:41:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/09/17/at-last/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/09/17/at-last/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-09-17T11:23:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/08/25/how-reading-affects-us/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/08/25/how-reading-affects-us/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-25T14:10:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/08/23/practise-makes-for-success/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/08/23/practise-makes-for-success/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-23T12:17:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/08/22/before-semestersay-thank-you/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/08/22/before-semestersay-thank-you/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-22T22:22:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-21T21:53:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/08/20/disaster-recovery-record/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/08/20/disaster-recovery-record/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-20T21:12:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-19T14:47:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/08/16/restart/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/08/16/restart/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-16T22:52:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/07/16/ceil-in-c-mathh/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/07/16/ceil-in-c-mathh/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-07-16T08:28:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-07-11T11:38:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-07-11T10:12:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/06/15/some-tips-on-it-learning/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/06/15/some-tips-on-it-learning/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-06-15T23:19:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/06/15/git-some-note/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/06/15/git-some-note/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-06-15T07:39:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/06/15/autojump-between-dirs/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/06/15/autojump-between-dirs/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-06-15T07:38:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/06/14/usage-of-echo/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/06/14/usage-of-echo/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-06-14T08:07:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/2015/06/14/tenth-line/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/2015/06/14/tenth-line/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-06-14T06:02:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/pages/1970/01/01/readme/</loc>
+=======
+<loc>http://blog.endergeek.com/pages/1970/01/01/readme/</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>1970-01-01T00:00:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/category/android.html</loc>
+=======
+<loc>http://blog.endergeek.com/category/android.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-08T11:50:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/category/cc.html</loc>
+=======
+<loc>http://blog.endergeek.com/category/cc.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-07-16T08:28:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/category/event.html</loc>
+=======
+<loc>http://blog.endergeek.com/category/event.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-20T21:12:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/category/life.html</loc>
+=======
+<loc>http://blog.endergeek.com/category/life.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-09-17T11:23:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/category/linux.html</loc>
+=======
+<loc>http://blog.endergeek.com/category/linux.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-04T10:01:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/category/python.html</loc>
+=======
+<loc>http://blog.endergeek.com/category/python.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-10-15T10:30:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/category/vcs.html</loc>
+=======
+<loc>http://blog.endergeek.com/category/vcs.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-06-15T07:39:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/pelican.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/pelican.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-20T21:12:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/c.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/c.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-07-16T08:28:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/shell.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/shell.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-04T10:01:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/cli.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/cli.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-21T21:53:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/python.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/python.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-10-15T10:30:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/cyanogenmod.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/cyanogenmod.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-08-19T14:47:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/nb.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/nb.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-08T11:50:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/aws.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/aws.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-07-11T11:38:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/leetcode.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/leetcode.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-06-14T06:02:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/git.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/git.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-07-11T10:12:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/linux.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/linux.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-04T10:01:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/android.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/android.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-08T11:50:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/shadowsocks.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/shadowsocks.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-07-11T11:38:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/tips.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/tips.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2016-09-08T11:50:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<<<<<<< HEAD
+<loc>endergeek.com/tag/bash.html</loc>
+=======
+<loc>http://blog.endergeek.com/tag/bash.html</loc>
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+<lastmod>2015-06-15T07:38:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+</urlset>

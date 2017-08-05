@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Linux</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/linux.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2016-09-04T10:01:00+02:00</updated><entry><title>Classic Shell Scripting</title><link href="endergeek.com/pages/2016/09/04/classic-shell-scripting/" rel="alternate"></link><published>2016-09-04T10:01:00+02:00</published><updated>2016-09-04T10:01:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-09-04:endergeek.com/pages/2016/09/04/classic-shell-scripting/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="css" src="endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Linux</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/linux.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-04T10:01:00+02:00</updated><entry><title>Classic Shell Scripting</title><link href="http://blog.endergeek.com/pages/2016/09/04/classic-shell-scripting/" rel="alternate"></link><published>2016-09-04T10:01:00+02:00</published><updated>2016-09-04T10:01:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-09-04:/pages/2016/09/04/classic-shell-scripting/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="css" src="http://blog.endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;0. Abstract&lt;/h4&gt;
+&lt;p&gt;写作原因：虽然写篇真的很费精力 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;&lt;/h3&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="css" src="endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="css" src="http://blog.endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;0. Abstract&lt;/h4&gt;
+&lt;p&gt;写作原因：虽然写篇真的很费精力，看完本书，过几月再回顾的时候，记忆寥寥，用时再查，无论baidu,google，都需要多一步筛选，良莠不齐的回答更是浪费时间&lt;/p&gt;
+&lt;p&gt;本文目的：复习整理，备忘记录，个人查询&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. Background Knowledge&lt;/h4&gt;
+&lt;p&gt;将设备视为文件，以及特意不将命令解释器或shell整合到操作系统中。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2. Introduction&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;2.1 基本I/O重定向&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat &amp;lt;&amp;lt; ! &amp;gt;&amp;gt; ~/.bashrc
+&amp;gt; ...
+&amp;gt;!
+&lt;span class="c1"&gt;### 实用方法修改并输出，删除dos-file.txt所有回车并写入UNIX-file.txt&lt;/span&gt;
+$ tr -d &lt;span class="s1"&gt;&amp;#39;\r&amp;#39;&lt;/span&gt; &amp;lt; dos-file.txt &amp;gt; UNIX-file.txt
+&lt;span class="c1"&gt;### 实用方法快速新建文本&lt;/span&gt;
+$ cat &amp;gt; nusers
+&amp;gt;who &lt;span class="p"&gt;|&lt;/span&gt; wc -l
+^D
+$
+&lt;span class="c1"&gt;### 与下面效果相同&lt;/span&gt;
+$ cat &amp;gt; nusers &lt;span class="s"&gt;&amp;lt;&amp;lt; EOF&lt;/span&gt;
+&lt;span class="s"&gt;&amp;gt;who | wc -l&lt;/span&gt;
+&lt;span class="s"&gt;&amp;gt;EOF&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;2.2 #!&lt;/strong&gt;
+当&lt;code&gt;Shell&lt;/code&gt;执行一个程序时，会要求&lt;code&gt;UNIX&lt;/code&gt;内核启动一个新的进程，以便在该进程里执行所指定的程序。以&lt;code&gt;#!&lt;/code&gt;为开头的文件，内核会扫描该行其余部分查看是否存在对应解释器的完整路径（如&lt;code&gt;/usr/bin/awk&lt;/code&gt;)，以及是否含有选项。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#!&lt;/code&gt;一行的长度限制: &lt;code&gt;63-1024&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#!&lt;/code&gt;一行若没有选项: &lt;code&gt;#!/bin/bash -&lt;/code&gt;可避免某种程度的欺骗式攻击&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SHELL&lt;/code&gt;识别三种基本命令：内建命令(&lt;code&gt;read&lt;/code&gt;,&lt;code&gt;test&lt;/code&gt;...)、&lt;code&gt;shell&lt;/code&gt;函数(&lt;code&gt;equal&lt;/code&gt;)、外部命令(由&lt;code&gt;shell&lt;/code&gt;的副本执行的命令)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.3 变量赋值:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;myvar&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;this_is_variable
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$myvar&lt;/span&gt;
+$ &lt;span class="nv"&gt;first&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;issac &lt;span class="nv"&gt;middle&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;bashev &lt;span class="nv"&gt;last&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;singer &lt;span class="c1"&gt;### 单行多次赋值&lt;/span&gt;
+$ &lt;span class="nv"&gt;fullname&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;issac bashev singer&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;### 变量包含空格时需要使用引号&lt;/span&gt;
+$ &lt;span class="nv"&gt;oldname&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$fullname&lt;/span&gt; &lt;span class="c1"&gt;### 无需引号&lt;/span&gt;
+$ &lt;span class="nv"&gt;fullname&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$first&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$middle&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$last&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;### 此处需要引号&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;2.4 echo&lt;/strong&gt;
+原本自带&lt;code&gt;"\n"&lt;/code&gt;，&lt;code&gt;BSD&lt;/code&gt;版本的&lt;code&gt;echo&lt;/code&gt;第一个参数为&lt;code&gt;-n&lt;/code&gt;时，会省略&lt;code&gt;"\n"&lt;/code&gt;；&lt;code&gt;System V&lt;/code&gt;版本&lt;code&gt;\c&lt;/code&gt;指示&lt;code&gt;echo&lt;/code&gt;不打印最后的&lt;code&gt;"\n"&lt;/code&gt;。少见的转义序列:&lt;code&gt;\f&lt;/code&gt;清屏，更丰富的输出请使用&lt;code&gt;printf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;tr [options] source-char-list replace-char-list&lt;/code&gt;: 转换字符&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-c:&lt;/code&gt;取&lt;code&gt;source-char-list&lt;/code&gt;的反义(&lt;code&gt;source&lt;/code&gt;取反)，处理二进制字节值&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-C&lt;/code&gt;:同&lt;code&gt;-c&lt;/code&gt;，但处理现行&lt;code&gt;locale&lt;/code&gt;定义的字符
+&lt;code&gt;-d&lt;/code&gt;:从&lt;code&gt;STDIN&lt;/code&gt;删除&lt;code&gt;source-char-list&lt;/code&gt;里所列的字符
+&lt;code&gt;-s&lt;/code&gt;:浓缩重复的字符(来自&lt;code&gt;source-char-list&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.5 两个特殊文件: &lt;code&gt;/dev/null&lt;/code&gt;，&lt;code&gt;/dev/tty&lt;/code&gt;&lt;/strong&gt;
+&lt;code&gt;/dev/null&lt;/code&gt;位桶(&lt;code&gt;bit bucket&lt;/code&gt;)，如果你需要的是命令的退出状态，而非输出，此功能会很有用：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; grep pattern myfile &amp;gt; /dev/null
+&lt;span class="k"&gt;then&lt;/span&gt;
+    ... &lt;span class="c1"&gt;### 找到模式&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;
+    ... &lt;span class="c1"&gt;### 找不到模式时&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;读取&lt;code&gt;/dev/null&lt;/code&gt;则会立即返回文件结束符号(&lt;code&gt;EOF&lt;/code&gt;)
+&lt;code&gt;/dev/tty&lt;/code&gt;，当程序打开此文件时&lt;code&gt;UNIX&lt;/code&gt;会自动讲它重定向到一个终端，在程序必须读取人工输入的时候很有用:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Enter new passwd:&amp;quot;&lt;/span&gt;
+$ stty -echo &lt;span class="c1"&gt;### 关闭自动打印输入字符的功能&lt;/span&gt;
+$ &lt;span class="nb"&gt;read&lt;/span&gt; pass &amp;lt; /dev/tty
+$ &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Enter again&amp;quot;&lt;/span&gt;
+$ &lt;span class="nb"&gt;read&lt;/span&gt; pass2 &amp;lt; /dev/tty
+$ stty &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="c1"&gt;### 打开自动打印输入字符的功能&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;2.6 基本命令查找-设置优先级：&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;:/bin:/usr/bin &lt;span class="c1"&gt;### 先找当前目录&lt;/span&gt;
+$ &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/bin:/usr/bin: &lt;span class="c1"&gt;### 最后查找当前目录&lt;/span&gt;
+$ &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/bin::/usr/bin &lt;span class="c1"&gt;### 当前目录居中&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;2.7 &lt;code&gt;SHELL&lt;/code&gt;脚本参数&lt;/strong&gt;
+基于历史原因，当超过&lt;code&gt;9&lt;/code&gt;时，请用大括号把数字框起来:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;echo&lt;/span&gt; first arg is &lt;span class="nv"&gt;$1&lt;/span&gt;
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; tenth arg is &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;10&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;2.8 简单地执行跟踪-打开跟踪开关&lt;/strong&gt;
+将会显示每个被执行到的命令，并在前面加上&lt;code&gt;"+"&lt;/code&gt;号。在脚本中使用&lt;code&gt;set -x&lt;/code&gt;命令将执行功能打开，&lt;code&gt;set +x&lt;/code&gt;以关闭。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sh -x nusers
++ who
++ wc -l
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;2.9 国际化(&lt;code&gt;i18n&lt;/code&gt;)与本土化(&lt;code&gt;i10n&lt;/code&gt;):&lt;/strong&gt;
+国际化必须将"所要显示的任何信息"包含在特定的程序库调用里，执行期间由此"程序库调用"负责在消息目录中找到适当的译文。一般来说消息的译文就放在软件附带的文本文件中，再通过&lt;code&gt;gencat&lt;/code&gt;或&lt;code&gt;msgfmt&lt;/code&gt;编译成紧凑的二进制文件，以利快速查询。编译后的信息文件会被安装到特定的系统目录树中，例如&lt;code&gt;GNU&lt;/code&gt;的&lt;code&gt;/usr/share/locale&lt;/code&gt;与&lt;code&gt;/usr/local/share/locale&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;LANG&lt;/code&gt; 未设置任何&lt;code&gt;LC_XXX&lt;/code&gt;变量时所使用的默认值 &lt;code&gt;LC_ALL&lt;/code&gt; 用来覆盖掉所有其他&lt;code&gt;LC_XXX&lt;/code&gt;变量的值 &lt;code&gt;LC_COLLATE&lt;/code&gt; 使用特定地区排序规则 &lt;code&gt;LC_CTYPE&lt;/code&gt; 使用特定地区字符集 &lt;code&gt;LC_MESSAGES&lt;/code&gt; 使用特定地区的响应与信息；仅&lt;code&gt;POSIX&lt;/code&gt;适用 &lt;code&gt;LC_MONETARY&lt;/code&gt; 使用特定地区货币格式 &lt;code&gt;LC_NUMERIC&lt;/code&gt; 使用特定地区数字格式 &lt;code&gt;LC_TIME&lt;/code&gt; 使用特定地区日期与时间格式 一般来说，可以用&lt;code&gt;LC_ALL&lt;/code&gt;来强制设置单一&lt;code&gt;locale&lt;/code&gt;，而&lt;code&gt;LANG&lt;/code&gt;则是用来设置&lt;code&gt;locale&lt;/code&gt;的默认值。大多数时候，应避免未任何的&lt;code&gt;LC_XXX&lt;/code&gt;变量赋值。 &lt;code&gt;ISO C&lt;/code&gt;与&lt;code&gt;C++&lt;/code&gt;标准只定义了&lt;code&gt;C&lt;/code&gt;这个标准的&lt;code&gt;locale&lt;/code&gt;名称:用来选择传统的面向&lt;code&gt;ASCII&lt;/code&gt;的行为模式。&lt;code&gt;POSIX&lt;/code&gt;标准则另外定义了&lt;code&gt;POSIX&lt;/code&gt;这个&lt;code&gt;locale&lt;/code&gt;名称，其功能等同于&lt;code&gt;C&lt;/code&gt;。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ locale -a &lt;span class="c1"&gt;### 列出所有locale名称&lt;/span&gt;
+&lt;span class="c1"&gt;### 为执行环境指定locale并以-ck选项与一个LC_XXX变量来执行locale命令&lt;/span&gt;
+$ &lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;da locale -ck LC_TIME &lt;span class="c1"&gt;### 取得Danish的日期时间格式&lt;/span&gt;
+$ &lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;it_IT ls --help &lt;span class="c1"&gt;### 取得GNU ls的Italian辅助说明&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;支持&lt;code&gt;locale&lt;/code&gt;的系统很多，但缺乏标准的&lt;code&gt;locale&lt;/code&gt;名称，因此&lt;code&gt;locale&lt;/code&gt;对&lt;code&gt;shell&lt;/code&gt;脚本的可移植性帮助不大，最多只是将&lt;code&gt;LC_ALL&lt;/code&gt;设置成&lt;code&gt;C&lt;/code&gt;，强制采用传统的&lt;code&gt;locale&lt;/code&gt;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;3.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;4.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;5.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;6.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;7.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;8.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;9. More&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://linux.cn/article-7161-1.html"&gt;[LFCS系列]如何在 Linux 上使用 GNU sed 等命令来创建、编辑和操作文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.jobbole.com/99063/"&gt;Linux Shell 文本处理工具集锦&lt;/a&gt;&lt;/li&gt;
+<<<<<<< HEAD
+&lt;/ul&gt;</content><category term="linux"></category><category term="shell"></category><category term="nb"></category></entry><entry><title>FAQs in Linux</title><link href="endergeek.com/pages/2016/08/27/faqs-in-linux/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-27:endergeek.com/pages/2016/08/27/faqs-in-linux/</id><summary type="html">&lt;hr&gt;
+=======
+&lt;/ul&gt;</content><category term="linux"></category><category term="shell"></category><category term="nb"></category></entry><entry><title>FAQs in Linux</title><link href="http://blog.endergeek.com/pages/2016/08/27/faqs-in-linux/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/faqs-in-linux/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h3&gt;FAQs in Linux&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;FAQs in Linux&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4&gt;0. &lt;strong&gt;VPN设置&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;协议：PPTP&lt;/li&gt;
+&lt;li&gt;高级设置：取消EAP，使能MPPE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. &lt;strong&gt;wireshark初始配置&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;由于没有运行相关程序的权限，&lt;code&gt;wireshark&lt;/code&gt;不能识别网卡，需要
+ - 1.&lt;code&gt;root&lt;/code&gt;用户登陆方式&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo wireshark
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;2.&lt;code&gt;GUID&lt;/code&gt;方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ groupadd -g &lt;span class="m"&gt;130&lt;/span&gt; wireshark &lt;span class="c1"&gt;# 新建一个名为wireshark的用户组,GID从/etc/group最大组ID+1&lt;/span&gt;
+$ usermod -a -G wireshark  &lt;span class="o"&gt;[&lt;/span&gt;USERNAME&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="c1"&gt;# 将用户[USERNAME]添加到wireshark组中&lt;/span&gt;
+$ chgrp wireshark /usr/bin/dumpcap &lt;span class="c1"&gt;# /usr/bin/dumpcap 程序属组更改为wireshark&lt;/span&gt;
+$ chmod &lt;span class="m"&gt;4750&lt;/span&gt; /usr/bin/dumpcap &lt;span class="c1"&gt;# 修改 /usr/bin/dumpcap 的权限 更改为 4750，添加suid权限 &lt;/span&gt;
+$ setcap cap_net_raw,cap_net_admin&lt;span class="o"&gt;=&lt;/span&gt;eip /usr/bin/dumpcap
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;修改完成后重新登陆即可生效。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2. &lt;strong&gt;MTP is a BITCH&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;针对&lt;code&gt;OnePlus One A0001&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get udpate
+$ sudo apt-get install libmtp-common mtp-tools libmtp-dev libmtp-runtime libmtp9 mtpfs
+$ sudo dist-upgrade
+&lt;span class="c1"&gt;# 检查设备是否识别&lt;/span&gt;
+&lt;span class="nv"&gt;$sudo&lt;/span&gt; mtp-detect &lt;span class="p"&gt;|&lt;/span&gt;less
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;对于&lt;code&gt;MTP&lt;/code&gt;出现"&lt;code&gt;the process of mtp died unexpectedly&lt;/code&gt;"，尝试:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;取消&lt;code&gt;USB&lt;/code&gt;调试&lt;/li&gt;
+&lt;li&gt;更改连接至&lt;code&gt;USB 2.0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;3. &lt;strong&gt;SVN in eclipse&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;subversive&lt;/code&gt;: &lt;code&gt;SVN for eclipse&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;选择源:官方即可&lt;/li&gt;
+&lt;li&gt;搜索: &lt;code&gt;subversive&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;选择:&lt;ul&gt;
+&lt;li&gt;[&lt;strong&gt;&amp;middot;&lt;/strong&gt;] &lt;code&gt;Subversive SVN Team Provider&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;&amp;middot;&lt;/strong&gt;] &lt;code&gt;Subversive Revision Graph&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;&amp;middot;&lt;/strong&gt;] &lt;code&gt;Subversive SVN Integration for Mylyn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;&amp;middot;&lt;/strong&gt;] &lt;code&gt;Subversive JDT Ignore Extensions&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安装完毕重启后，进入&lt;code&gt;eclipse&lt;/code&gt;，选择&lt;code&gt;Workbench&lt;/code&gt;-&amp;gt;&lt;code&gt;Windows&lt;/code&gt;-&amp;gt;&lt;code&gt;Perspective&lt;/code&gt;-&amp;gt;&lt;code&gt;Open Perspective&lt;/code&gt;-&amp;gt;&lt;code&gt;SVN Repository Exploring&lt;/code&gt;，选择 &lt;code&gt;SVN Kit&lt;/code&gt;与&lt;code&gt;Native JavaHL&lt;/code&gt;安装&lt;/li&gt;
+&lt;li&gt;如未出现，选择&lt;code&gt;Window&lt;/code&gt;-&amp;gt;&lt;code&gt;Preferences&lt;/code&gt;-&amp;gt;&lt;code&gt;Team&lt;/code&gt;-&amp;gt;&lt;code&gt;SVN&lt;/code&gt;-&amp;gt;&lt;code&gt;SVN Connecotr&lt;/code&gt;-&amp;gt;&lt;code&gt;Get Connectors&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;Subversive SVN connectors&lt;/code&gt;分为: &lt;code&gt;SVNKit connector&lt;/code&gt;与&lt;code&gt;JavaHL connector&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SVNKit&lt;/code&gt;: 纯&lt;code&gt;java&lt;/code&gt;跨平台&lt;code&gt;connectors&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JavaHL&lt;/code&gt;: 指定平台二进制&lt;code&gt;connectors&lt;/code&gt;，仅供&lt;code&gt;Windows&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: 使用&lt;code&gt;SVN&lt;/code&gt;的时候要注意是否开启了代理&lt;/p&gt;
+&lt;p&gt;使用：
+在&lt;code&gt;SVN Repositories Perspective&lt;/code&gt;中，&lt;code&gt;New&lt;/code&gt;-&amp;gt;&lt;code&gt;Repository Location&lt;/code&gt;，按照要求填入仓库地址、授权信息后添加，右键&lt;code&gt;Check Out&lt;/code&gt;将从远程仓库载入本地。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;File&lt;/code&gt;-&amp;gt;&lt;code&gt;import&lt;/code&gt;-&amp;gt;&lt;code&gt;SVN&lt;/code&gt;-&amp;gt;从&lt;code&gt;SVN&lt;/code&gt;检出项目-&amp;gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;File&lt;/code&gt;-&amp;gt;&lt;code&gt;New&lt;/code&gt;-&amp;gt;&lt;code&gt;Other&lt;/code&gt;-&amp;gt;&lt;code&gt;SVN&lt;/code&gt;-&amp;gt;从&lt;code&gt;SVN&lt;/code&gt;检出项目-&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;-&amp;gt;下一步-&amp;gt;选择资源位置-&amp;gt;选择检出的文件夹，可以指定需要的&lt;code&gt;label&lt;/code&gt;，指定项目位置，检出版本，检出深度-&amp;gt;&lt;code&gt;Finish&lt;/code&gt;，等待&lt;strong&gt;检出完成&lt;/strong&gt;，项目内容会出现在&lt;code&gt;Package Explorer&lt;/code&gt;中&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;4. &lt;strong&gt;Ubuntu(VPS)设定locale支持中文&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install language-selector language-env language-pack-zh-hans &lt;span class="c1"&gt;### 安装支持&lt;/span&gt;
+dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
+&lt;span class="c1"&gt;### 向/etc/default/locale中修改&lt;/span&gt;
+&lt;span class="nv"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LANGUAGE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN:zh&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;### 重启shell后查看，应如下&lt;/span&gt;
+&lt;span class="nv"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;zh_CN.UTF-8
+&lt;span class="nv"&gt;LANGUAGE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;zh_CN:zh
+&lt;span class="nv"&gt;LC_CTYPE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_NUMERIC&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_TIME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_COLLATE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_MONETARY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_MESSAGES&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_PAPER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_NAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_ADDRESS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_TELEPHONE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_MEASUREMENT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_IDENTIFICATION&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zh_CN.UTF-8&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;5.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;6.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;7.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;8.&lt;/h4&gt;
+<<<<<<< HEAD
+&lt;hr&gt;</content><category term="linux"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Ssh Login Without Password</title><link href="endergeek.com/pages/2015/09/24/ssh-login-without-password/" rel="alternate"></link><published>2015-09-24T10:41:00+02:00</published><updated>2015-09-24T10:41:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-09-24:endergeek.com/pages/2015/09/24/ssh-login-without-password/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h2&gt;&lt;img alt="ssh" src="endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
+=======
+&lt;hr&gt;</content><category term="linux"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Ssh Login Without Password</title><link href="http://blog.endergeek.com/pages/2015/09/24/ssh-login-without-password/" rel="alternate"></link><published>2015-09-24T10:41:00+02:00</published><updated>2015-09-24T10:41:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-09-24:/pages/2015/09/24/ssh-login-without-password/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h2&gt;&lt;img alt="ssh" src="http://blog.endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;0.&lt;/h4&gt;
+&lt;p&gt;本文十分简单粗浅，旨在减少生活中的重复工作。&lt;/p&gt;
+&lt;p&gt;例如我 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;&lt;/h3&gt;
+<<<<<<< HEAD
+&lt;h2&gt;&lt;img alt="ssh" src="endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
+=======
+&lt;h2&gt;&lt;img alt="ssh" src="http://blog.endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;0.&lt;/h4&gt;
+&lt;p&gt;本文十分简单粗浅，旨在减少生活中的重复工作。&lt;/p&gt;
+&lt;p&gt;例如我，曾经每当&lt;code&gt;11：30&lt;/code&gt;断电我就需要拔下自己的外接屏然后默默地关机，而再次开机时如果忘了插回，则会导致一些不可预测的魔幻效果。&lt;/p&gt;
+&lt;p&gt;Bill Gates说需要利用好那些懒人，因为他们知道如何用最高效的方式完成一项事情。&lt;/p&gt;
+&lt;p&gt;然而我懒&lt;/p&gt;
+&lt;p&gt;使用&lt;code&gt;ssh&lt;/code&gt;控制关机就得了，于是某个应用曾经唯一的价值就是帮我“远程”关机、&lt;code&gt;vps&lt;/code&gt;升级...&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="shutdown" src="endergeek.com/images/sshlogin/shutdown.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="shutdown" src="http://blog.endergeek.com/images/sshlogin/shutdown.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;然而我懒&lt;/p&gt;
+&lt;p&gt;每次&lt;code&gt;ssh&lt;/code&gt;登录输入密码真麻烦，直接丢个证书不就得了，那么就好好利用下&lt;code&gt;ssh-keyge&lt;/code&gt;n吧，这货在使用&lt;code&gt;github&lt;/code&gt;之前还是没有用过的&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. Generate&lt;/h4&gt;
+&lt;p&gt;在本地机器（如我，是手机）中的&lt;code&gt;~/.ssh&lt;/code&gt;（手机中的&lt;code&gt;/data/.ssh&lt;/code&gt;）目录下执行下命令:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ssh-keygen -t rsa -C &lt;span class="s2"&gt;&amp;quot;any_string&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="sshkeygen" src="endergeek.com/images/sshlogin/sshkeygen.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="sshkeygen" src="http://blog.endergeek.com/images/sshlogin/sshkeygen.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;使用完毕，将在目录下生成&lt;code&gt;id_rsa&lt;/code&gt;和&lt;code&gt;id_rsa.pub&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;之后，将&lt;code&gt;id_rsa&lt;/code&gt;拷贝到&lt;code&gt;/sdcard/&lt;/code&gt;下以使手机应用可以访问，将&lt;code&gt;id_rsa.pub&lt;/code&gt;拷贝到远程机器（使用数据线or&lt;code&gt;FTP&lt;/code&gt;等等），然后在远程机器上将&lt;code&gt;id_rsa.pub&lt;/code&gt;的内容添加到&lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt;中：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;注意:目录&lt;code&gt;.ssh&lt;/code&gt;和文件&lt;code&gt;authorized_keys&lt;/code&gt;的权限必须是600.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2. Config&lt;/h4&gt;
+&lt;p&gt;完成上述步骤就可以从手机登录远程电脑了，需要对ConnectBot简单的配置： 点击&lt;code&gt;Manage Pubkeys&lt;/code&gt;&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="manage" src="endergeek.com/images/sshlogin/manage.png"&gt;&lt;/p&gt;
+&lt;p&gt;点击&lt;code&gt;Import&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="import" src="endergeek.com/images/sshlogin/import.png"&gt;&lt;/p&gt;
+&lt;p&gt;选择&lt;code&gt;id_rsa&lt;/code&gt;私钥导入，首次登录会要求输入该私钥对应密码，之后无需密码 &lt;/p&gt;
+&lt;p&gt;&lt;img alt="done" src="endergeek.com/images/sshlogin/done.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="manage" src="http://blog.endergeek.com/images/sshlogin/manage.png"&gt;&lt;/p&gt;
+&lt;p&gt;点击&lt;code&gt;Import&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="import" src="http://blog.endergeek.com/images/sshlogin/import.png"&gt;&lt;/p&gt;
+&lt;p&gt;选择&lt;code&gt;id_rsa&lt;/code&gt;私钥导入，首次登录会要求输入该私钥对应密码，之后无需密码 &lt;/p&gt;
+&lt;p&gt;&lt;img alt="done" src="http://blog.endergeek.com/images/sshlogin/done.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;3. Optional&lt;/h4&gt;
+&lt;p&gt;取消使用密码： - 可以在&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;中关闭 把文件中的&lt;code&gt;#PasswordAuthentication yes&lt;/code&gt;的&lt;code&gt;#&lt;/code&gt;去掉，并将&lt;code&gt;yes&lt;/code&gt;改成&lt;code&gt;no&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;4. More&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.prosight.me/blogs/1097/?utm_source=rss&amp;amp;utm_medium=rss&amp;amp;utm_campaign=%25e8%25ae%25be%25e7%25bd%25aessh%25e6%2597%25a0%25e5%25af%2586%25e9%2592%25a5%25e7%2599%25bb%25e5%25bd%2595"&gt;ssh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-key-pairs.html"&gt;ec2 key pairs&lt;/a&gt;&lt;/li&gt;
+<<<<<<< HEAD
+&lt;/ul&gt;</content><category term="linux"></category><category term="nb"></category></entry><entry><title>Setup &amp;&amp; Use Ftp Server In Ubuntu Linux</title><link href="endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/" rel="alternate"></link><published>2015-08-21T21:53:00+02:00</published><updated>2015-08-21T21:53:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-21:endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server in Ubuntu Linux&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="testspeed" src="endergeek.com/images/ftp/testspeed.png"&gt;&lt;/p&gt;
+=======
+&lt;/ul&gt;</content><category term="linux"></category><category term="nb"></category></entry><entry><title>Setup &amp;&amp; Use Ftp Server In Ubuntu Linux</title><link href="http://blog.endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/" rel="alternate"></link><published>2015-08-21T21:53:00+02:00</published><updated>2015-08-21T21:53:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-21:/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server in Ubuntu Linux&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="testspeed" src="http://blog.endergeek.com/images/ftp/testspeed.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;记录一下在学校的网速，留作纪念:-)&lt;/p&gt;
+&lt;h4&gt;0. Introduction&lt;/h4&gt;
+&lt;p&gt;最近由于寝室共享电影，为了避免U盘传输的麻烦，因此搭建&lt;code&gt;FTP&lt;/code&gt;服务器传输电影，省了不少事，因此也记录一下&lt;/p&gt;
+&lt;p&gt;FTP是几乎所有使用&lt;code&gt;Internet&lt;/code&gt;的人都会使用到的服务，本文将会用简单的几步详细介绍如何在&lt;code&gt;Ubuntu Linux&lt;/code&gt;上配置&lt;code&gt;FTP&lt;/code&gt;服务器，如何配置&lt;code&gt;FTP&lt;/code&gt;服务器以标准模式和独立模式运行，并且对&lt;code&gt;FTP&lt;/code&gt;服务器配置提供一些安全建议，本文将会使用在服务器高负载情况下仍能表现良好的轻量级且高效的&lt;code&gt;FTP&lt;/code&gt;服务器&lt;code&gt;vsFTPd&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;按照惯例，本文会简单地用&lt;code&gt;vsFTPd&lt;/code&gt;指代&lt;code&gt;FTPserver&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;什么是&lt;code&gt;FTP&lt;/code&gt;？&lt;code&gt;FTP&lt;/code&gt;代表&lt;code&gt;File Transfer Protocol&lt;/code&gt;，顾名思义，这个网络协议允许你进行主机间文件或目录的传输，无论是在局域网还是&lt;code&gt;Internet&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vsFTPd&lt;/code&gt;的主要特性：虚拟&lt;code&gt;IP&lt;/code&gt;配置，虚拟用户，独立模式操作，&lt;code&gt;inetd(internet service daemon)&lt;/code&gt;操作，强大的独立用户配置，带宽节流，单源&lt;code&gt;IP&lt;/code&gt;配置，单源&lt;code&gt;IP&lt;/code&gt;限制，&lt;code&gt;IPv6&lt;/code&gt;和通过&lt;code&gt;SSL&lt;/code&gt;集成的加密支持。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. Installation&lt;/h4&gt;
+&lt;p&gt;众多类&lt;code&gt;Ubuntu&lt;/code&gt;的&lt;code&gt;Linux&lt;/code&gt;系统在安装&lt;code&gt;FTP&lt;/code&gt;服务器时都只需要单行命令：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install vsftpd
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;上述命令将会安装并启动&lt;code&gt;ftp&lt;/code&gt;服务器：&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="checkvsftpd" src="endergeek.com/images/ftp/checkvsftpd.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="checkvsftpd" src="http://blog.endergeek.com/images/ftp/checkvsftpd.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;2. Standalone &amp;amp;&amp;amp; Normal FTP mode&lt;/h4&gt;
+&lt;p&gt;独立模式：&lt;code&gt;vsftpd&lt;/code&gt;默认以独立模式运行，在独立模式下服务器上运行的服务有叫做守护进程(&lt;code&gt;daemon&lt;/code&gt;)的启动脚本，以&lt;code&gt;vsftpd&lt;/code&gt;为例是&lt;code&gt;/etc/init.d/vsftpd&lt;/code&gt;，这个独立守护进程将会在FTP服务启动的时候接管它，并为&lt;code&gt;FTP&lt;/code&gt;管理者提供了一些命令以管理该&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;code&gt;start or stop&lt;/code&gt; - 启动或停止&lt;/li&gt;
+&lt;li&gt;2.&lt;code&gt;status&lt;/code&gt; - 获取当前&lt;code&gt;FTP&lt;/code&gt;服务器状态信息&lt;/li&gt;
+&lt;li&gt;3.&lt;code&gt;restart&lt;/code&gt; - 作为&lt;code&gt;stop&lt;/code&gt;后&lt;code&gt;start&lt;/code&gt;命令序列的替换，在&lt;code&gt;FTP&lt;/code&gt;停止的状态下，该命令会启动服务&lt;/li&gt;
+&lt;li&gt;4.&lt;code&gt;reload&lt;/code&gt; - 使得&lt;code&gt;FTP&lt;/code&gt;服务器重新载入所有新配置，与&lt;code&gt;restart&lt;/code&gt;的区别是不会关闭&lt;code&gt;FTP&lt;/code&gt;而是使用新配置重新载入，因此不会重置运行时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用&lt;code&gt;service&lt;/code&gt;功能以启动，重启，获取信息：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo service vsftpd start
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;标准模式：以标准模式启动&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器意味着&lt;code&gt;xinetd&lt;/code&gt;超服务器(&lt;code&gt;superserver&lt;/code&gt;)将会负责&lt;code&gt;FTP&lt;/code&gt;服务器的运行，因此我们需要安装&lt;code&gt;xinetd&lt;/code&gt;超服务器：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install xinetd
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;以上命令将会安装并启动&lt;code&gt;xinetd&lt;/code&gt;超服务器，然后，在&lt;code&gt;/etc/xinetd.d/&lt;/code&gt;文件夹下创建名为&lt;code&gt;vsftpd&lt;/code&gt;且含有以下内容的文件：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;service ftp
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="nv"&gt;disable&lt;/span&gt;             &lt;span class="o"&gt;=&lt;/span&gt; no
+    &lt;span class="nv"&gt;socket_type&lt;/span&gt;         &lt;span class="o"&gt;=&lt;/span&gt; stream
+    &lt;span class="nb"&gt;wait&lt;/span&gt;                &lt;span class="o"&gt;=&lt;/span&gt; no
+    &lt;span class="nv"&gt;user&lt;/span&gt;                &lt;span class="o"&gt;=&lt;/span&gt; root
+    &lt;span class="nv"&gt;server&lt;/span&gt;              &lt;span class="o"&gt;=&lt;/span&gt; /usr/sbin/vsftpd
+    &lt;span class="nv"&gt;per_source&lt;/span&gt;          &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;5&lt;/span&gt;
+    &lt;span class="nv"&gt;instances&lt;/span&gt;           &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;200&lt;/span&gt;
+    &lt;span class="nv"&gt;no_access&lt;/span&gt;           &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt;.1.1.10
+    &lt;span class="nv"&gt;banner_fail&lt;/span&gt;         &lt;span class="o"&gt;=&lt;/span&gt; /etc/vsftpd.busy
+    &lt;span class="nv"&gt;log_on_success&lt;/span&gt;      &lt;span class="o"&gt;+=&lt;/span&gt; PID HOST DURATION
+    &lt;span class="nv"&gt;log_on_failure&lt;/span&gt;      &lt;span class="o"&gt;+=&lt;/span&gt; HOST
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;同时，你可以根据你的需求调整这些选项，以下是你需要注意的选项：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;server - 在命令行下使用 which vsftpd以获取其路径
+no_access - 禁止列出的IP访问
+banner_fail - 指向列出禁止访问IP的文件
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;然后，我们需要配置&lt;code&gt;/etc/vsftpd.conf&lt;/code&gt;文件，改&lt;code&gt;listen=YES&lt;/code&gt;为&lt;code&gt;listen=NO&lt;/code&gt;，这将使&lt;code&gt;FTP&lt;/code&gt;服务器本身不开放任何端口而把权限都交由&lt;code&gt;xinetd&lt;/code&gt;超服务器管理，&lt;strong&gt;注意&lt;/strong&gt;，在使用&lt;code&gt;xinetd&lt;/code&gt;以标准模式启动&lt;code&gt;FTP&lt;/code&gt;服务器之前请确保&lt;code&gt;vsftpd&lt;/code&gt;守护进程已经关闭：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo service vsftpd stop
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;那么，我们就可以使用以下命令来以标准模式启动&lt;code&gt;FTP&lt;/code&gt;服务器了：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo service xinetd restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;为了确保&lt;code&gt;FTP&lt;/code&gt;服务器启动了标准模式且开放了21号端口，可以使用命令：
+<<<<<<< HEAD
+&lt;img alt="xinetdcheck" src="endergeek.com/images/ftp/xinetdcheck.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;3. Make first FTP connection&lt;/h4&gt;
+&lt;p&gt;无论你是以上述哪种模式启动&lt;code&gt;FTP&lt;/code&gt;服务器你都需要能够建立本地连接。&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器默认是允许匿名访问的，下面，我们将使用匿名用户建立连接以测试&lt;code&gt;FTP&lt;/code&gt;服务器安装成功：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ftpanon" src="endergeek.com/images/ftp/ftpanon.png"&gt;&lt;/p&gt;
+=======
+&lt;img alt="xinetdcheck" src="http://blog.endergeek.com/images/ftp/xinetdcheck.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;3. Make first FTP connection&lt;/h4&gt;
+&lt;p&gt;无论你是以上述哪种模式启动&lt;code&gt;FTP&lt;/code&gt;服务器你都需要能够建立本地连接。&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器默认是允许匿名访问的，下面，我们将使用匿名用户建立连接以测试&lt;code&gt;FTP&lt;/code&gt;服务器安装成功：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ftpanon" src="http://blog.endergeek.com/images/ftp/ftpanon.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;上述命令仅仅确保了你的&lt;code&gt;FTP&lt;/code&gt;服务器在本地系统上正确装配，为了更好利用&lt;code&gt;FTP&lt;/code&gt;服务器你需要用一些远程主机来测试。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;4. Configuring FTP Server - Anonymous FTP access&lt;/h4&gt;
+&lt;p&gt;下面我们将列出一些基本的配置选项&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：当对配置进行修改了以后，务必使用&lt;code&gt;restart/reload&lt;/code&gt;以应用所有更改的配置。&lt;/p&gt;
+&lt;p&gt;配置匿名&lt;code&gt;FTP&lt;/code&gt;访问：&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器默认是只允许任何匿名访问的，如果你准备这样使用&lt;code&gt;FTP&lt;/code&gt;服务器，那么你可以取消访问密码以使匿名访问更加方便，最安全使用&lt;code&gt;FTP&lt;/code&gt;服务器的方法是不要允许用户使用简单的文本格式验证密码，那么可以通过编辑&lt;code&gt;/etc/vsftpd.conf&lt;/code&gt;以取消匿名访问的密码限制，设置&lt;code&gt;no_anon_password&lt;/code&gt;为&lt;code&gt;NO&lt;/code&gt;：
+&lt;code&gt;no_anon_password=YES&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;5. Configuring FTP Server - Local users FTP access&lt;/h4&gt;
+&lt;p&gt;现在，你的服务器将不允许除了匿名用户之外的用户访问了。那么通过设置&lt;code&gt;/etc/vsftpd.conf&lt;/code&gt;中&lt;code&gt;local_enable&lt;/code&gt;指令来允许所有在&lt;code&gt;/etc/passwd&lt;/code&gt;文件中定义的用户登录，该选项默认是&lt;code&gt;NO&lt;/code&gt;：
+&lt;code&gt;local_enable=YES&lt;/code&gt;
+现在在&lt;code&gt;/etc/passwd&lt;/code&gt;下定义的任何用户都能使用相关密码登录：&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="ftplocalhost" src="endergeek.com/images/ftp/ftplocalhost.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="ftplocalhost" src="http://blog.endergeek.com/images/ftp/ftplocalhost.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;6. Configuring FTP Server - User Access list&lt;/h4&gt;
+&lt;p&gt;使用文件列出允许访问的用户来配置&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器，通常，你可以在&lt;code&gt;/etc&lt;/code&gt;目录定义这样的文件，它可以是任意文件名，你只需要在这个文件中列出所有可以访问的用户名即可，那么举个例子吧：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;echo&lt;/span&gt; sennhviwang &amp;gt; /etc/vsftpd.userlist
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;然后，就在&lt;code&gt;/etc/vsftpd.conf&lt;/code&gt;文件中定义上述创建的文件并且使其有效：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;userlist_file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/etc/vsftpd.userlist
+&lt;span class="nv"&gt;userlist_enable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;YES
+&lt;span class="nv"&gt;userlist_deny&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;NO
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;如果只想要该文件中列出的用户可以访问，设置&lt;code&gt;userlist_deny&lt;/code&gt;选项为&lt;code&gt;NO&lt;/code&gt;，该文件的格式是每行一个用户名。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;7. Configuring FTP Server - Changing default port number&lt;/h4&gt;
+&lt;p&gt;通常，任何&lt;code&gt;FTP&lt;/code&gt;服务器按照标准都使用21号端口提供用户验证，20号端口作为数据传输。&lt;code&gt;vsftpd FTP&lt;/code&gt;服务器也不例外，如果需要改变监听端口，更改&lt;code&gt;/etc/vsftpd.conf&lt;/code&gt;配置文件中&lt;code&gt;listen_port&lt;/code&gt;选项即可，如&lt;code&gt;listen_port=2222&lt;/code&gt;,别忘了要重启&lt;code&gt;FTP&lt;/code&gt;服务器哦！&lt;/p&gt;
+&lt;p&gt;然而，这仅仅在独立模式下是有用的，如果你使用&lt;code&gt;xinetd&lt;/code&gt;超服务器在标准模式下运行&lt;code&gt;FTP&lt;/code&gt;服务，则需要修改&lt;code&gt;/etc/services&lt;/code&gt;文件且重启&lt;code&gt;xinetd&lt;/code&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo service xinetd restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;8. Configuring FTP Server - Other Configuration Options&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;vsftpd&lt;/code&gt;服务器有许多配置选项可以满足你的需求，在此我们列出值得关注的一些：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;code&gt;max_clients&lt;/code&gt; - 设置同时使用&lt;code&gt;FTP&lt;/code&gt;服务的最大用户数，&lt;code&gt;0&lt;/code&gt;代表不限制&lt;/li&gt;
+&lt;li&gt;2.&lt;code&gt;max_per_ip&lt;/code&gt; - 设置来自同一&lt;code&gt;IP&lt;/code&gt;地址的最大用户数&lt;/li&gt;
+&lt;li&gt;3.&lt;code&gt;download_enable&lt;/code&gt; - 设置是否允许下载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;vsftpd&lt;/code&gt;有大约125项配置，在此不具体罗列，等待你的发掘:-)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;9. How to connect to FTP with a web browser&lt;/h4&gt;
+&lt;p&gt;用法：
+&lt;code&gt;ftp://YourFtpUser:YourFtpUserPassword@yourdomain.com&lt;/code&gt;&lt;/p&gt;
+<<<<<<< HEAD
+&lt;h2&gt;&lt;img alt="ftpbrowser" src="endergeek.com/images/ftp/ftpbrowser.png"&gt;&lt;/h2&gt;
+=======
+&lt;h2&gt;&lt;img alt="ftpbrowser" src="http://blog.endergeek.com/images/ftp/ftpbrowser.png"&gt;&lt;/h2&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;9. More ...&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;a href="http://linuxconfig.org/how-to-setup-and-use-ftp-server-in-ubuntu-linux"&gt;How to setup and use FTP - LinuxConfig&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2.&lt;a href="http://help.aliyun.com/knowledge_detail.htm?knowledgeId=5973912"&gt;Linux FTP setup - aliyun&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;3.&lt;a href="http://www.tldp.org/HOWTO/FTP-3.html"&gt;Using FTP - Howtos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;4.&lt;a href="https://www.siteground.com/kb/ftp_browser/"&gt;How to connect to FTP with a web browser - siteground&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="plant" src="endergeek.com/images/ftp/plant.gif"&gt;&lt;/p&gt;</content><category term="linux"></category><category term="cli"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Autojump Between Dirs</title><link href="endergeek.com/pages/2015/06/15/autojump-between-dirs/" rel="alternate"></link><published>2015-06-15T07:38:00+02:00</published><updated>2015-06-15T07:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-15:endergeek.com/pages/2015/06/15/autojump-between-dirs/</id><summary type="html">&lt;hr&gt;
+=======
+&lt;p&gt;&lt;img alt="plant" src="http://blog.endergeek.com/images/ftp/plant.gif"&gt;&lt;/p&gt;</content><category term="linux"></category><category term="cli"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Autojump Between Dirs</title><link href="http://blog.endergeek.com/pages/2015/06/15/autojump-between-dirs/" rel="alternate"></link><published>2015-06-15T07:38:00+02:00</published><updated>2015-06-15T07:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/autojump-between-dirs/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h3&gt;autojump 工具&lt;/h3&gt;
+&lt;p&gt;本文将介绍一个实用的命令行工具，它允许你可以快速跳转到你喜爱的目录 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;autojump 工具&lt;/h3&gt;
+&lt;p&gt;本文将介绍一个实用的命令行工具，它允许你可以快速跳转到你喜爱的目录。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;1.  安装&lt;/h4&gt;
+&lt;p&gt;在Ubuntu或Debian上安装autojump：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install autojump
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在CentOS或Fedora上安装autojump，请使用yum命令。在CentOS上，你需要先启用EPEL仓库才行。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo yum install autojump
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在Archlinux上安装autojump：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo pacman -S autojump
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;如果你找不到适合你的版本的包，你可以从&lt;a href="https://github.com/joelthelion/autojump"&gt;GitHub&lt;/a&gt;上下载源码包来编译:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone git://github.com/joelthelion/autojump.git
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; autojump &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./install.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;2.  autojump的基本用法&lt;/h4&gt;
+&lt;p&gt;autojump的工作方式很简单：它会在你每次启动命令时记录你当前位置，并把它添加进它自身的数据库中。
+这样，某些目录比其它一些目录添加的次数多，它们的“权重”也会较大。
+现在不管你在哪个目录，你都可以使用下面的语法来直接跳转到这些目录：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ autojump &lt;span class="o"&gt;[&lt;/span&gt;目录的名字或名字的一部分&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;示例:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ j &lt;span class="o"&gt;[&lt;/span&gt;目录的名字或名字的一部分&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;autojump支持zsh和自动补完。使用TAB召唤更多信息～&lt;/h2&gt;
+&lt;h4&gt;3.  高级功能&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;访问并修改目录数据库&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;手动添加一个目录：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ autojump -a &lt;span class="o"&gt;[&lt;/span&gt;目录&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;增加当前目录的权重：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ autojump -i &lt;span class="o"&gt;[&lt;/span&gt;权重&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;减少当前目录的权重：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ autojump -d &lt;span class="o"&gt;[&lt;/span&gt;权重&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;显示数据库中的统计数据：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ autojump -s 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;把不再存在的目录从数据库中移除：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ autojump --purge
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;4.  参考与来源&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;a href="http://xmodulo.com/speed-up-directory-navigation-linux-terminal.html"&gt;Xmodulo Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2.&lt;a href="https://github.com/joelthelion"&gt;Developer: Joel Schaerer&lt;/a&gt;&lt;/li&gt;
+<<<<<<< HEAD
+&lt;/ul&gt;</content><category term="bash"></category><category term="cli"></category><category term="nb"></category></entry><entry><title>Usage Of `Echo`</title><link href="endergeek.com/pages/2015/06/14/usage-of-echo/" rel="alternate"></link><published>2015-06-14T08:07:00+02:00</published><updated>2015-06-14T08:07:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-14:endergeek.com/pages/2015/06/14/usage-of-echo/</id><summary type="html">&lt;hr&gt;
+=======
+&lt;/ul&gt;</content><category term="bash"></category><category term="cli"></category><category term="nb"></category></entry><entry><title>Usage Of `Echo`</title><link href="http://blog.endergeek.com/pages/2015/06/14/usage-of-echo/" rel="alternate"></link><published>2015-06-14T08:07:00+02:00</published><updated>2015-06-14T08:07:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/usage-of-echo/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;1.  输出变量的值:&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;3 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h4&gt;1.  输出变量的值:&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt;
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nv"&gt;$xj&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/blockquote&gt;
+&lt;h4&gt;2.  &lt;em&gt;[Option]&lt;/em&gt; -e&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;-E   取消对'\'的转义（默认） &lt;/li&gt;
+&lt;li&gt;'\n' 换行&lt;/li&gt;
+&lt;li&gt;'\b' 退格&lt;/li&gt;
+&lt;li&gt;'\t'     水平制表符 &lt;/li&gt;
+&lt;li&gt;'\v'  垂直制表符&lt;/li&gt;
+&lt;li&gt;'\r'  指定输出中的回车符 [ 会覆盖行至行开头]&lt;/li&gt;
+&lt;li&gt;'\c'  会抑制输出后面的所有字符且不会换新行&lt;/li&gt;
+&lt;li&gt;'\a'  警告声&lt;/li&gt;
+&lt;li&gt;'\e'  escape&lt;/li&gt;
+&lt;li&gt;'\f'      换页&lt;/li&gt;
+&lt;li&gt;'\0NNN'  八进制表示的字节（1～3位数）&lt;/li&gt;
+&lt;li&gt;'\xHH'   十六进制表示的字节（1～2位数） &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;3.  &lt;em&gt;[Option]&lt;/em&gt; -n&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;抑制新行的输出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;4.  命令的替代&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;echo&lt;/span&gt; * 列出目录下所有文件
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; *.jpg 列出指定类型文件
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; * &amp;gt; test.txt 内容重定向
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/blockquote&gt;
+&lt;h4&gt;5.  SEE ALSO&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;The  full  documentation  for echo is maintained as a Texinfo manual. If the info and echo programs are properly installed at your site, the command:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h5&gt;&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ info coreutils &lt;span class="s1"&gt;&amp;#39;echo invocation&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;should give you access to the complete manual.&lt;/p&gt;
+<<<<<<< HEAD
+&lt;/blockquote&gt;</content><category term="bash"></category><category term="cli"></category></entry><entry><title>Tenth Line</title><link href="endergeek.com/pages/2015/06/14/tenth-line/" rel="alternate"></link><published>2015-06-14T06:02:00+02:00</published><updated>2015-06-14T06:02:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-14:endergeek.com/pages/2015/06/14/tenth-line/</id><summary type="html">&lt;hr&gt;
+=======
+&lt;/blockquote&gt;</content><category term="bash"></category><category term="cli"></category></entry><entry><title>Tenth Line</title><link href="http://blog.endergeek.com/pages/2015/06/14/tenth-line/" rel="alternate"></link><published>2015-06-14T06:02:00+02:00</published><updated>2015-06-14T06:02:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/tenth-line/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;1.  How would you …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h4&gt;1.  How would you print just the 10th line of a file?&lt;/h4&gt;
+&lt;p&gt;最近碰巧看见一道leetcode上的题，刚开始觉得会很简单，然而操作起来就觉得自己太天真了：&lt;/p&gt;
+&lt;p&gt;Q: 你将如何打印一个文件的第十行? 示例文件filt.txt 含有如下内容:
+    Line 1
+    Line 2
+    Line 3
+    Line 4
+    Line 5
+    Line 6
+    Line 7
+    Line 8
+    Line 9
+    Line 10&lt;/p&gt;
+&lt;h4&gt;2.  你会怎么做&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;第一反应会这样&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ head -10 file.txt&lt;span class="p"&gt;|&lt;/span&gt;tail -1
+然而结果报错：
+Input:
+&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="m"&gt;6&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="m"&gt;9&lt;/span&gt;
+Output:
+&lt;span class="m"&gt;9&lt;/span&gt;
+Expected:
+
+原来指的是无论第十行是否存在都会输出第十行（即不存在输出为空）
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;于是有了正确的版本：&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ tail -n +10 file.txt &lt;span class="p"&gt;|&lt;/span&gt; head -1
+&lt;span class="o"&gt;[&lt;/span&gt;Option&lt;span class="o"&gt;]&lt;/span&gt; -n, --lines&lt;span class="o"&gt;=&lt;/span&gt;k 输出最后k行（默认是10），或者使用-n +k 产生从第k行开始（到结尾）的输出
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;然后开始解锁更多方案&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#使用awk&lt;/span&gt;
+$ awk &lt;span class="s1"&gt;&amp;#39;FNR == 10 {print }&amp;#39;&lt;/span&gt;  file.txt
+$ awk &lt;span class="s1"&gt;&amp;#39;NR == 10&amp;#39;&lt;/span&gt; file.txt
+
+&lt;span class="c1"&gt;#使用sed&lt;/span&gt;
+$ sed -n 10p file.txt
+
+&lt;span class="c1"&gt;#使用bash&lt;/span&gt;
+$ &lt;span class="nv"&gt;cnt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="nb"&gt;read&lt;/span&gt; line &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$cnt&lt;/span&gt; -le &lt;span class="m"&gt;10&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="nb"&gt;let&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;cnt = cnt + 1&amp;#39;&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$cnt&lt;/span&gt; -eq &lt;span class="m"&gt;10&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$line&lt;/span&gt;
+    &lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
+  &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="k"&gt;done&lt;/span&gt; &amp;lt; file.txt****
+
+$ &lt;span class="nv"&gt;IFS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\n&amp;#39;&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nv"&gt;arr&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&amp;lt;file.txt&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;arr&lt;/span&gt;&lt;span class="p"&gt;[9]&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt; &lt;span class="c1"&gt;# IFS== Internal Field Separator 内部域分隔符，对文本分隔存为数组然后获取第十个&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="leetcode"></category><category term="bash"></category><category term="cli"></category></entry></feed>

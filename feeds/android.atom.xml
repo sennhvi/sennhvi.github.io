@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Android</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/android.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2016-09-08T11:50:00+02:00</updated><entry><title>Android Related</title><link href="endergeek.com/pages/2016/09/08/android-related/" rel="alternate"></link><published>2016-09-08T11:50:00+02:00</published><updated>2016-09-08T11:50:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-09-08:endergeek.com/pages/2016/09/08/android-related/</id><summary type="html">&lt;hr&gt;
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Android</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/android.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-08T11:50:00+02:00</updated><entry><title>Android Related</title><link href="http://blog.endergeek.com/pages/2016/09/08/android-related/" rel="alternate"></link><published>2016-09-08T11:50:00+02:00</published><updated>2016-09-08T11:50:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-09-08:/pages/2016/09/08/android-related/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;0. &lt;strong&gt;Android布局学习&lt;/strong&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;textview&lt;/code&gt;属性 …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h4&gt;0. &lt;strong&gt;Android布局学习&lt;/strong&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;textview&lt;/code&gt;属性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;android:layout_alignParentLeft="true"&lt;/code&gt;::控制该组件是否与布局容器左边对齐&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:ellipsize="marquee"&lt;/code&gt;::设置当文字过长时,该控件该如何显示。有如下值设置：”start”--省略号显示在开头;”end”--省略号显示在结尾;”middle”--省略号显示在中间;”marquee” ——以跑马灯的方式显示(动画横向移动).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:maxLines="5"&lt;/code&gt;::android:maxLines设置文本的最大显示行数，与width或者layout_width结合使用，超出部分自动换行，超出行数将不显示.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:scrollHorizontally="true"&lt;/code&gt;::设置文本超出TextView的宽度的情况下，是否出现横拉条.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:singleLine="true"&lt;/code&gt;::设置单行显示.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:includeFontPadding="false"&lt;/code&gt;::设置文本是否包含顶部和底部额外空白，默认为true.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:layout_gravity="center"&lt;/code&gt;::属性是对该view中内容的限定．比如一个button 上面的text. 你可以设置该text 相对于view的靠左，靠右等位置.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:gravity="center"&lt;/code&gt;::是用来设置该view相对与父view 的位置．比如一个button 在linearlayout里，你想把该button放在linearlayout里靠左、靠右等位置就可以通过该属性设置.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;控件位置：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;android:layout_below&lt;/code&gt;="@id/xxx" -- 将控件置于给定id控件之下&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:layout_toLeftOf&lt;/code&gt;="@id/xxx" -- 将控件的右边缘和给定ID控件的左边缘对齐&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:layout_alignLeft&lt;/code&gt;="@id/xxx" -- 将控件的左边缘和给定ID控件的左边缘对齐&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:layout_alignParentLeft&lt;/code&gt;="true"  --将控件的左边缘和父控件的左边缘对齐&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android:layout_centerInParent&lt;/code&gt;="true"  --将控件置于父控件的中心位置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tools&lt;/code&gt;：&lt;a href="http://tools.android.com/tech-docs/tools-attributes"&gt;Tools Attributes文档&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;xml&lt;/code&gt;中的辅助功能，如&lt;code&gt;include&lt;/code&gt;另一个&lt;code&gt;xml&lt;/code&gt;，是看不到界面的，加入&lt;code&gt;tools:showlayoutin=""&lt;/code&gt;可以显示，&lt;code&gt;scrollview&lt;/code&gt;类似&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tools:context=""&lt;/code&gt;将&lt;code&gt;layout&lt;/code&gt;和某些&lt;code&gt;Activity&lt;/code&gt;关联，仅用于可见即可得效果，因为和&lt;code&gt;activities&lt;/code&gt;相关的&lt;code&gt;theme&lt;/code&gt;在&lt;code&gt;manifest&lt;/code&gt;中定义，而不是布局，且并不需要给出&lt;code&gt;activity&lt;/code&gt;类的绝对路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;CoordinatorLayout&lt;/code&gt;&lt;a href="https://developer.android.com/reference/android/support/design/widget/CoordinatorLayout.html"&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;作为应用的顶层装饰或&lt;code&gt;chrome&lt;/code&gt;布局&lt;/li&gt;
+&lt;li&gt;作为与一个或多个子视图进行指定交互的容器&lt;/li&gt;
+&lt;li&gt;举个栗子：&lt;a href="http://blog.csdn.net/huachao1001/article/details/51554608"&gt;csdn实例&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Toolbar,AppBarLayout,CollapsingToolbarLayout：&lt;a href="http://blog.csdn.net/huachao1001/article/details/51558835"&gt;csdn实例&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Toolbar&lt;/code&gt;：具有更多的灵活性，用以取代固定在顶部的ActionBar，因此需要隐藏ActionBar&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AppBarLayout&lt;/code&gt;：继承自LinearLayout，布局方向为垂直方向。所以你可以把它当成垂直布局的LinearLayout来使用。AppBarLayout是在LinearLayou上加了一些材料设计的概念，可以让你定制当某个可滚动View的滚动手势发生变化时，其内部的子View实现何种动作&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CollapsingToolbarLayout&lt;/code&gt;：用来对Toolbar进行再次包装的ViewGroup，主要是用于实现折叠（其实就是看起来像伸缩~）的App Bar效果。&lt;/li&gt;
+&lt;/ol&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602133921216.jpg"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602111843383.gif"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602110406047.gif"&gt;&lt;img alt="gifs" src="endergeek.com/images/androidrelated/20160602131315362.gif"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602133921216.jpg"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602111843383.gif"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602110406047.gif"&gt;&lt;img alt="gifs" src="http://blog.endergeek.com/images/androidrelated/20160602131315362.gif"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Android Drawable XML Documentation&lt;/code&gt;：&lt;a href="http://idunnolol.com/android/drawables.html"&gt;Android Drawable XML文档&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;1.  &lt;strong&gt;Android方法学习&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;code&gt;setlayoutparams&lt;/code&gt;：&lt;ul&gt;
+&lt;li&gt;1.应用于构建动态布局，LayoutParams继承于Android.View.ViewGroup.LayoutParams.&lt;/li&gt;
+&lt;li&gt;2.LayoutParams相当于一个Layout的信息包，它封装了Layout的位置、高、宽等信息。假设在屏幕上一块区域是由一个Layout占领的，如果将一个View添加到一个Layout中，最好告诉Layout用户期望的布局方式，也就是将一个认可的layoutParams传递进去。&lt;/li&gt;
+&lt;li&gt;3.LayoutParams类也只是简单的描述了宽高，宽和高都可以设置成三种值：&lt;ul&gt;
+&lt;li&gt;1.一个确定的值&lt;/li&gt;
+&lt;li&gt;2.FILL_PARENT，即填满（和父容器一样大小）；&lt;/li&gt;
+&lt;li&gt;3.WRAP_CONTENT，即包裹住组件就好。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;setLayoutParams&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;LayoutParams&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LayoutParams&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;FILL_PARENT&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;LayoutParams&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;FILL_PARENT&lt;/span&gt;&lt;span class="o"&gt;));&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+<<<<<<< HEAD
+&lt;hr&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Android Screen Support</title><link href="endergeek.com/pages/2016/08/27/android-screen-support/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-27:endergeek.com/pages/2016/08/27/android-screen-support/</id><summary type="html">&lt;hr&gt;
+=======
+&lt;hr&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Android Screen Support</title><link href="http://blog.endergeek.com/pages/2016/08/27/android-screen-support/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/android-screen-support/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h3&gt;Android Screen Support&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Android Screen Support&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4&gt;0. Android手机目前常见的分辨率&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;手机常见分辨率:&lt;ul&gt;
+&lt;li&gt;4:3&lt;ul&gt;
+&lt;li&gt;VGA   640*480 (Video Graphics Array)&lt;/li&gt;
+&lt;li&gt;VGA   320*240 (Quarter VGA)&lt;/li&gt;
+&lt;li&gt;HVGA  480*320 (Half-size VGA)&lt;/li&gt;
+&lt;li&gt;SVGA  800*600 (Super VGA)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;5:3&lt;ul&gt;
+&lt;li&gt;WVGA  800*480 (Wide VGA)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;16:9&lt;ul&gt;
+&lt;li&gt;FWVGA 854*480 (Full Wide VGA)&lt;/li&gt;
+&lt;li&gt;HD    1920*1080 High Definition&lt;/li&gt;
+&lt;li&gt;QHD   960*540&lt;/li&gt;
+&lt;li&gt;720p  1280*720  标清&lt;/li&gt;
+&lt;li&gt;1080p 1920*1080 高清&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;手机&lt;ul&gt;
+&lt;li&gt;phone 4/4s    960*640 (3:2)&lt;/li&gt;
+&lt;li&gt;iphone5       1136*640&lt;/li&gt;
+&lt;li&gt;小米1          854*480(FWVGA)&lt;/li&gt;
+&lt;li&gt;小米2          1280*720&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;分辨率对应DPI&lt;ul&gt;
+&lt;li&gt;"HVGA     mdpi"&lt;/li&gt;
+&lt;li&gt;"WVGA     hdpi "&lt;/li&gt;
+&lt;li&gt;"FWVGA    hdpi "&lt;/li&gt;
+&lt;li&gt;"QHD      hdpi "&lt;/li&gt;
+&lt;li&gt;"720P     xhdpi"&lt;/li&gt;
+&lt;li&gt;"1080P    xxhdpi "&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. 屏幕适配的注意事项&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;基本设置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AndroidManifest.xml&lt;/code&gt;设置&lt;ol&gt;
+&lt;li&gt;在中&lt;code&gt;Manifest&lt;/code&gt;中添加子元素&lt;code&gt;android:anyDensity="true"&lt;/code&gt;时，应用程序安装在不同密度的终端上时，程序会分别加载xxhdpi、xhdpi、hdpi、mdpi、ldpi文件夹中的资源。
+相反，如果设为false，即使在文件夹下拥有相同资源，应用不会自动地去相应文件夹下寻找资源：&lt;/li&gt;
+&lt;li&gt;如果drawable-hdpi、drawable-mdpi、drawable-ldpi三个文件夹中有同一张图片资源的不同密度表示，那么系统会去加载drawable_mdpi文件夹中的资源；&lt;/li&gt;
+&lt;li&gt;如果drawable-hpdi中有高密度图片，其它两个文件夹中没有对应图片资源，那么系统会去加载drawable-hdpi中的资源，其他同理；&lt;/li&gt;
+&lt;li&gt;如果drawable-hdpi,drawable-mdpi中有图片资源，drawable-ldpi中没有，系统会加载drawable-mdpi中的资源，其他同理，使用最接近的密度级别。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;横屏竖屏目录区分&lt;ol&gt;
+&lt;li&gt;drawable-hdpi该图片即适用于横屏，也适用于竖屏；&lt;/li&gt;
+&lt;li&gt;drawable-land-hdpi,当屏幕为横屏，且为高密度时，加载此文件夹的资源；&lt;/li&gt;
+&lt;li&gt;drawable-port-hdpi,当屏幕为竖屏，且为高密度时，加载此文件夹中的资源。其他同理。&lt;/li&gt;
+&lt;li&gt;在res目录下建立layout-port和layout-land两个目录，里面分别放置竖屏和横屏两种布局文件，以适应对横屏竖屏自动切换。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;多屏幕适配的4条黄金原则&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在layout文件中设置控件尺寸时应采用fill_parent、wrap_content、match_parent和dp；
+具体来说，设置view的属性&lt;code&gt;android:layout_width&lt;/code&gt;和&lt;code&gt;android:layout_height&lt;/code&gt;的值时，wrap_content，match_parent或dp比px更好，文字大小应该使用sp来定义。&lt;/li&gt;
+&lt;li&gt;在程序的代码中不要出现具体的像素值，在dimens.xml中定义；
+为了使代码简单，android内部使用pix为单位表示控件的尺寸，但这是基于当前屏幕基础上的。为了适应多种屏幕，android建议开发者不要使用具体的像素来表示控件尺寸。&lt;/li&gt;
+&lt;li&gt;不使用AbsoluteLayout(android1.5已废弃) ，可以使用RelativeLayout替代；&lt;/li&gt;
+&lt;li&gt;对不同的屏幕提供合适大小的图片。
+不同大小屏幕用不同大小的图片，low:medium:high:extra-high图片大小的比例为3:4:6:8；举例来说，对于中等密度(medium)的屏幕你的图片像素大小为48×48，那么低密度(low)屏幕的图片大小应为36×36，高(high)的为72×72，extra-high为96×96。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用9-patch PNG图片&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用图片资源时，如果出现拉伸，因为图片处理的原因，会变形，导致界面走形。9-patch PNG图片也是一种标准的PGN图片，在原生PNG图片四周空出一个像素间隔，用来标识PNG图片中哪些部分可以拉伸、哪些不可以拉伸、背景上的边框位置等。&lt;/li&gt;
+&lt;li&gt;“上、左”定义可拉伸区域，“右、下”定义显示区域，如果用到完整填充的背景图，建议不要通过&lt;code&gt;android:padding&lt;/code&gt;来设置边距，而是通过9-patch方式来定义。&lt;/li&gt;
+&lt;li&gt;Android SDK中提供了编辑9-Patch图片的工具，在tools目录下draw9patch.bat，能够立刻看到编辑后的拉伸效果，也可以直接用其他图片编辑工具编辑，但是看不到效果。&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cnblogs.com/tinyphp/p/3826219.html"&gt;9-patch使用细节参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不同的layout&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Android手机屏幕大小不一，有480x320, 640x360, 800x480...&lt;/li&gt;
+&lt;li&gt;怎样才能让Application自动适应不同的屏幕呢？&lt;/li&gt;
+&lt;li&gt;其实很简单，只需要在res目录下创建不同的layout文件夹，比如：layout-640x360、layout-800x480……所有的layout文件在编译之后都会写入R.java里，而系统会根据屏幕的大小自己选择合适的layout进行使用。&lt;br&gt;需要注意的是：&lt;br&gt;values在values-ldpi之前先找到，系统认为values比values-ldpi更接近。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在res/目录下创建一个不同的layout文件夹、values文件夹、drawable文件夹等资源文件夹&lt;br&gt;资源文件夹命名：资源名-属性1-属性2-属性3-属性4-属性5.....（ values-ldpi、values-land-mdpi）&lt;br&gt;即以&lt;code&gt;&amp;lt;resources_name&amp;gt;-&amp;lt;qualifier&amp;gt;&lt;/code&gt;格式命名系统会根据屏幕的大小自己选择合适的进行使用。&lt;br&gt;其中resources_name资源名就是资源类型名，包括:drawable, values, layout, anim, raw, menu, color, animator, xml;&lt;br&gt;&lt;code&gt;&amp;lt;qualifier&amp;gt;&lt;/code&gt; 是一个配置限定符，指定对应的屏幕参数，限定符可以参考以下表：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="scrren" src="endergeek.com/images/androidss/ss.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="scrren" src="http://blog.endergeek.com/images/androidss/ss.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;2.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;3.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;4.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;5.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;6.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;7.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;8.&lt;/h4&gt;
+&lt;hr&gt;
+<<<<<<< HEAD
+&lt;h4&gt;9.&lt;/h4&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Android Dev</title><link href="endergeek.com/pages/2016/08/12/faqs-in-android-dev/" rel="alternate"></link><published>2016-08-12T10:52:00+02:00</published><updated>2016-08-12T10:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2016-08-12:endergeek.com/pages/2016/08/12/faqs-in-android-dev/</id><summary type="html">&lt;hr&gt;
+=======
+&lt;h4&gt;9.&lt;/h4&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Android Dev</title><link href="http://blog.endergeek.com/pages/2016/08/12/faqs-in-android-dev/" rel="alternate"></link><published>2016-08-12T10:52:00+02:00</published><updated>2016-08-12T10:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-12:/pages/2016/08/12/faqs-in-android-dev/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;0. &lt;strong&gt;gradle相关&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.PSI …&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h4&gt;0. &lt;strong&gt;gradle相关&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.PSI and index do not match: PSI and index do not match on Android Studio.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;File -&amp;gt; Invalidate caches and restart.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.&lt;code&gt;Gradle Error: could not execute build using gradle distribution&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Try(1). or Delete gradle file (.gradle/wrapper/dists/gradle-2.10-all/HASH_FOLDER)
+and relaunch Android Studio to make it download gradle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3.&lt;code&gt;Android Studio Gradle DSL method not found: 'android' -- Error(17, 0).&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;cause you can't define it at the top level build.gradle,because the android build plugin isn't loaded just yet.
+Need to define the compile version and build tools version in app level.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Delete code segment:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="n"&gt;android&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;compileSdkVersion&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;
+        &lt;span class="n"&gt;buildToolsVersion&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;4.&lt;code&gt;Error: Configuration with name 'default' not found in Android Studio.&lt;/code&gt;、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure that each submodule in project has its own build.gradle file. 
+The name 'default' happens because outer build.gradle is trying to build a project that doesn't know how to build itself, thus it is given the name 'default'.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;5.&lt;a href="http://blog.csdn.net/linghu_java/article/details/6701666"&gt;打包签名&lt;/a&gt;未签名会安装包解析失败&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;6.&lt;a href="https://developer.android.com/studio/build/manifest-merge.html"&gt;Manifest.xml合并可能产生多余内容&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;7.&lt;a href="http://stackoverflow.com/questions/16977739/how-to-add-gradle-backing-to-existing-project"&gt;Module ... is note backed by gradle&lt;/a&gt;
+从eclipse导入项目到as，可能会出现，需要重启as，将ide项目正确链接到gradlle项目&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;8.[查看模块依赖]左下角：Build Variants-&amp;gt;点击细节&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;9.统计方法数 &lt;a href="https://github.com/mihaip/dex-method-counts"&gt;dex-method-counts&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dx&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;dex&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;jar&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;jar&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;生成dex文件&lt;/span&gt;
+&lt;span class="n"&gt;cat&lt;/span&gt; &lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;dex&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;head&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="mi"&gt;92&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;tail&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;hexdump&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;%d\n&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;简单命令行方式统计输出&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="n"&gt;或&lt;/span&gt;&lt;span class="err"&gt;：&lt;/span&gt;
+&lt;span class="n"&gt;dex&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;method&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;counts&lt;/span&gt; &lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;dex&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;使用构建命令行工具统计&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;1. &lt;strong&gt;设备相关&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.&lt;code&gt;Android Studio&lt;/code&gt;识别物理设备为&lt;code&gt;Null&lt;/code&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect As: &lt;code&gt;Camera(PTP)&lt;/code&gt; other than &lt;code&gt;Media device(MTP)&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;由于系统权限问题，HTC wildfire需要Android Studio以root权限运行。
+通过设置SUID临时root权限来尽可能减少安全风险:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="c1"&gt;# 设置adb执行文件的所有权&lt;/span&gt;
+    $ chown root:user_group adb
+    &lt;span class="c1"&gt;# 使用SUID设置权限&lt;/span&gt;
+    $ chmod &lt;span class="m"&gt;4550&lt;/span&gt; adb
+    &lt;span class="c1"&gt;#产生: -r-sr-x---&lt;/span&gt;
+    $ adb devices
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;2.mtp支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /home/wangsenhui/tmp/
+wget -nc https://sourceforge.net/projects/libmtp/files/libmtp/1.1.11/libmtp-1.1.11.tar.gz
+tar xvf libmtp-1.1.11.tar.gz 
+&lt;span class="nb"&gt;cd&lt;/span&gt; libmtp-1.1.11/
+./configure --prefix&lt;span class="o"&gt;=&lt;/span&gt;/usr --disable-mtpz
+make
+make install
+cp &lt;span class="m"&gt;69&lt;/span&gt;-libmtp.rules /etc/udev/rules.d/
+mtp-detect
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;2. &lt;strong&gt;Linux相关&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.通过&lt;code&gt;adb&lt;/code&gt;获取应用名列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ adb shell pm list packages
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;2.在&lt;code&gt;Linux&lt;/code&gt;系统&lt;code&gt;vim&lt;/code&gt;中设置文件编码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;fileencoding&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;utf&lt;span class="m"&gt;-8&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;3.&lt;code&gt;git&lt;/code&gt;查看文件修改历史&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git log --pretty&lt;span class="o"&gt;=&lt;/span&gt;oneline &lt;span class="o"&gt;[&lt;/span&gt;FILE_NAME&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;3. &lt;strong&gt;快捷键相关&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.在&lt;code&gt;Android Studio&lt;/code&gt;中查找文件名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;Ctrl+Alt+N&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;4. &lt;strong&gt;运行相关&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;code&gt;Android&lt;/code&gt;自定义控件，会存在&lt;code&gt;npe&lt;/code&gt;问题&lt;ul&gt;
+&lt;li&gt;无视即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2.&lt;code&gt;Android 6.0&lt;/code&gt;需要在运行时查看权限，否则报&lt;code&gt;java.io.IOException: open failed: EACCES (Permission denied)&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;stackoverflow诊断：&lt;a href="http://stackoverflow.com/questions/33030933/android-6-0-open-failed-eacces-permission-denied"&gt;STACKOVERFLOW&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;6.0权限管理：&lt;a href="http://forum.xda-developers.com/android/software/tutorial-manage-permissions-android-t3458683"&gt;Android 6.0 XDA教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;5. &lt;strong&gt;报错相关&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;exception&lt;/span&gt; &lt;span class="n"&gt;raised&lt;/span&gt; &lt;span class="n"&gt;during&lt;/span&gt; &lt;span class="n"&gt;rendering&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;Binary&lt;/span&gt; &lt;span class="n"&gt;XML&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;error&lt;/span&gt; &lt;span class="n"&gt;inflating&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;unknown&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;NoSuchMethodError&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;android&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;graphics&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;drawable&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;VectorDrawable_Delegate&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;nCreateTreeFromCopy&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;JJ&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;Solution&lt;/code&gt;:升级Android Studio到v2.2即可；低于此版本以下则需要更改API低于24&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;IllegalStateException&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;You&lt;/span&gt; &lt;span class="n"&gt;need&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;Theme&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;AppCompat&lt;/span&gt; &lt;span class="nf"&gt;theme&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;or&lt;/span&gt; &lt;span class="n"&gt;descendant&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt; &lt;span class="n"&gt;activity&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;Solution&lt;/code&gt;:产生此问题的原因是试图将dialog主题应用到需要Appcompat主题的Activity。可以更改继承的Activity类型或添加android:theme&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;RuntimeException&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Unable&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="n"&gt;service&lt;/span&gt; &lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;example&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;prankapp&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;BackgroundVideoRecorder&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;android&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;view&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;WindowManager$BadTokenException&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Unable&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;window&lt;/span&gt; &lt;span class="n"&gt;android&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;view&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;ViewRootImpl$W&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="mi"&gt;418&lt;/span&gt;&lt;span class="n"&gt;c0b68&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt; &lt;span class="n"&gt;permission&lt;/span&gt; &lt;span class="n"&gt;denied&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt; &lt;span class="n"&gt;window&lt;/span&gt; &lt;span class="n"&gt;type&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;Solution&lt;/code&gt;:缺少相关权限，需要请求 android.permission.SYSTEM_ALERT_WINDOW权限，对于Android 6.0设备，可以引导用户手动设置该权限：Setting-&amp;gt;Apps-&amp;gt;Draw over other apps（SYSTEM_ALERT_WINDOW)，引导代码如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Build&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;VERSION&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;SDK_INT&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="n"&gt;Build&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;VERSION_CODES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;M&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
+    &lt;span class="c1"&gt;// Show alert dialog to the user saying a separate permission is needed&lt;/span&gt;
+    &lt;span class="c1"&gt;// Launch the settings activity if the user prefers&lt;/span&gt;
+    &lt;span class="n"&gt;Intent&lt;/span&gt; &lt;span class="n"&gt;myIntent&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;Intent&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Settings&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;ACTION_MANAGE_OVERLAY_PERMISSION&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+    &lt;span class="n"&gt;startActivity&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;myIntent&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;4.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Cannot&lt;/span&gt; &lt;span class="n"&gt;resolve&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt; &lt;span class="nf"&gt;makeText&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;anonymous&lt;/span&gt; &lt;span class="n"&gt;android&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;view&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;View&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;OnClickListener&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;Toast&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;makeText&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;,,...);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;this&lt;/code&gt;并没有指代清楚哪个对象，可能是类的，也可能是数据的，&lt;code&gt;Toast.makeText&lt;/code&gt;第一个参数为&lt;code&gt;Context&lt;/code&gt;，此处需要明确指定为&lt;code&gt;Activity.this&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5.
+查看android源码，
+只需要重新设置一下android sdk的位置即可：
+Android SDK-&amp;gt;Edit，然后一路next下去，点击finish就一切ok了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;6.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nl"&gt;Error:&lt;/span&gt;&lt;span class="n"&gt;Attempt&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;invoke&lt;/span&gt; &lt;span class="n"&gt;virtual&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;String&lt;/span&gt; &lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Object&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;toString&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt; &lt;span class="n"&gt;object&lt;/span&gt; &lt;span class="n"&gt;reference&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;因：List&lt;code&gt;&amp;lt;String&amp;gt;&lt;/code&gt;中元素为null&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;7.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;NullPointerException&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;println&lt;/span&gt; &lt;span class="n"&gt;needs&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/11449589/java-lang-nullpointerexception-println-needs-a-message"&gt;解答&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;8.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nl"&gt;Error:&lt;/span&gt;&lt;span class="n"&gt;java&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;NullPointerException&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Attempt&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;length&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt; &lt;span class="n"&gt;sendTextMessage&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;要检查每个值存在不为null&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;9.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Service&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;registered&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;增加flag判断&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;6.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;7.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;8.&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4&gt;9.&lt;/h4&gt;</content><category term="linux"></category><category term="android"></category><category term="nb"></category></entry></feed>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Vcs</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/vcs.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2015-06-15T07:39:00+02:00</updated><entry><title>Git Some Note</title><link href="endergeek.com/pages/2015/06/15/git-some-note/" rel="alternate"></link><published>2015-06-15T07:39:00+02:00</published><updated>2015-06-15T07:39:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-06-15:endergeek.com/pages/2015/06/15/git-some-note/</id><summary type="html">&lt;hr&gt;
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Vcs</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/vcs.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-06-15T07:39:00+02:00</updated><entry><title>Git Some Note</title><link href="http://blog.endergeek.com/pages/2015/06/15/git-some-note/" rel="alternate"></link><published>2015-06-15T07:39:00+02:00</published><updated>2015-06-15T07:39:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/git-some-note/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h3&gt;一些常用git命令&lt;/h3&gt;
+&lt;h4&gt;1.  安装&lt;/h4&gt;
+&lt;p&gt;在 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;一些常用git命令&lt;/h3&gt;
+&lt;h4&gt;1.  安装&lt;/h4&gt;
+&lt;p&gt;在 Windows 上安装 Git 同样轻松，有个叫做 &lt;a href="http://msysgit.github.io/"&gt;msysGit&lt;/a&gt; 的项目提供了安装包。
+完成安装之后，就可以使用命令行的 git 工具（已经自带了 ssh 客户端）了，另外还有一个图形界面的 Git 项目管理工具。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2.  配置&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;首先是配置帐号信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git config --global user.name sennhviwang
+$ git config --global user.email sennhviwang
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;设置一些别名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# 注册别名被所有用户使用&lt;/span&gt;
+$ sudo git config --system alias.st status
+$ sudo git config --system alias.ci commit
+&lt;span class="c1"&gt;# 对本用户全局配置&lt;/span&gt;
+$ git config --global alias.st status
+$ git config --global alias.ci commit
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;在Git命令输出中开启颜色显示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git config --global color.ui &lt;span class="nb"&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;查看配置的信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git config --list
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;获取帮助信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git &lt;span class="nb"&gt;help&lt;/span&gt; config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;配置自动换行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global core.autocrlf input &lt;span class="c1"&gt;# 提交到git是自动将换行符转换为lf&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;配置密钥&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ssh-keygen -t rsa -C yanhaijing@yeah.net &lt;span class="c1"&gt;# 生成密钥 &lt;/span&gt;
+$ ssh -T git@github.com &lt;span class="c1"&gt;# 测试是否成功&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;3.  新建仓库&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git init &lt;span class="c1"&gt;# 初始化&lt;/span&gt;
+$ git status &lt;span class="c1"&gt;# 查询仓库状态&lt;/span&gt;
+$ git add &lt;span class="o"&gt;[&lt;/span&gt;file&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="c1"&gt;# .或*代表全部添加&lt;/span&gt;
+$ git commit -m &lt;span class="s2"&gt;&amp;quot;commit msg&amp;quot;&lt;/span&gt;
+$ git remote add origin git@github.com:sennhviwang/test.git &lt;span class="c1"&gt;# 添加remote仓库&lt;/span&gt;
+$ git push -u origin master &lt;span class="c1"&gt;# push同时设置默认提交分支&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;从现有仓库克隆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone git://github.com/sennhviwang/test.git
+$ git clone git://github.com/schacon/grit.git /path/to/repo/dir &lt;span class="c1"&gt;# 克隆到dir&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;4.  添加与提交&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;本地&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git add * &lt;span class="c1"&gt;# 添加新文件&lt;/span&gt;
+$ rm &lt;span class="o"&gt;[&lt;/span&gt;file&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; git rm &lt;span class="o"&gt;[&lt;/span&gt;file&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="c1"&gt;# 移除文件file&lt;/span&gt;
+$ git rm -f * &lt;span class="c1"&gt;# 移除文件&lt;/span&gt;
+$ git rm --cached * &lt;span class="c1"&gt;# 取消跟踪&lt;/span&gt;
+$ git mv file_from file_to &lt;span class="c1"&gt;# 重命名跟踪文件 &lt;/span&gt;
+$ git log &lt;span class="c1"&gt;# 查看提交记录 &lt;/span&gt;
+$ git commit &lt;span class="c1"&gt;# 提交更新&lt;/span&gt;
+$ git commit -m &lt;span class="s1"&gt;&amp;#39;commit msg&amp;#39;&lt;/span&gt;
+$ git commit -a &lt;span class="c1"&gt;# 跳过使用暂存区域，把所有已经跟踪过的文件暂存起来一并提交&lt;/span&gt;
+$ git commit --amend &lt;span class="c1"&gt;# 修改最后一次提交&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;5.  重置与调整&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git reset HEAD * &lt;span class="c1"&gt;# 取消已经暂存的文件&lt;/span&gt;
+$ git checkout -- file &lt;span class="c1"&gt;# 取消对文件的修改（从暂存区去除file）&lt;/span&gt;
+$ git checkout branch&lt;span class="p"&gt;|&lt;/span&gt;tag&lt;span class="p"&gt;|&lt;/span&gt;commit -- file_name &lt;span class="c1"&gt;# 从仓库取出file覆盖当前分支&lt;/span&gt;
+$ git checkout -- . &lt;span class="c1"&gt;# 从暂存区去除文件覆盖工作区&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;6.  分支&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git branch &lt;span class="c1"&gt;# 列出本地分支&lt;/span&gt;
+$ git branch -r &lt;span class="c1"&gt;# 列出远端分支&lt;/span&gt;
+$ git branch -a &lt;span class="c1"&gt;# 列出所有分支&lt;/span&gt;
+$ git branch -v &lt;span class="c1"&gt;# 查看各个分支最后一个提交对象的信息&lt;/span&gt;
+$ git branch --merge &lt;span class="c1"&gt;# 查看已经合并到当前分支的分支&lt;/span&gt;
+$ git branch --no-merge &lt;span class="c1"&gt;# 查看为合并到当前分支的分支&lt;/span&gt;
+$ git branch &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="c1"&gt;# 新建test分支&lt;/span&gt;
+$ git checkout &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="c1"&gt;# 切换到test分支&lt;/span&gt;
+$ git checkout -b &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="c1"&gt;# 新建+切换到test分支&lt;/span&gt;
+$ git checkout -b &lt;span class="nb"&gt;test&lt;/span&gt; dev &lt;span class="c1"&gt;# 基于dev新建test分支，并切换 &lt;/span&gt;
+$ git branch -d &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="c1"&gt;# 删除test分支&lt;/span&gt;
+$ git branch -D &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="c1"&gt;# 强制删除test分支&lt;/span&gt;
+$ git merge &lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="c1"&gt;# 将test分支合并到当前分支&lt;/span&gt;
+$ git rebase master &lt;span class="c1"&gt;# 将master分之上超前的提交，变基到当前分支&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;7.  远端&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git fetch originname branchname &lt;span class="c1"&gt;# 拉去远端上指定分支&lt;/span&gt;
+$ git merge originname branchname &lt;span class="c1"&gt;# 合并远端上指定分支&lt;/span&gt;
+$ git push originname branchname &lt;span class="c1"&gt;# 推送到远端上指定分支&lt;/span&gt;
+$ git push originname localbranch:serverbranch &lt;span class="c1"&gt;# 推送到远端上指定分支 &lt;/span&gt;
+$ git checkout -b &lt;span class="nb"&gt;test&lt;/span&gt; origin/dev &lt;span class="c1"&gt;# 基于远端dev新建test分支&lt;/span&gt;
+$ git push origin :server &lt;span class="c1"&gt;# 删除远端分支源&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;添加多个远端仓库[本人用来做本地备份]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git init --bare &lt;span class="c1"&gt;# 在远端[REPO.git]文件夹中执行，以初始化远端仓库,git remote add origin ../ProjectGit/tmp.git/&lt;/span&gt;
+$ git remote add origin git@&lt;span class="o"&gt;[&lt;/span&gt;PATH_TO_GIT_REPO.git&lt;span class="o"&gt;]&lt;/span&gt;
+$ git remot e &lt;span class="c1"&gt;# 显示全部源&lt;/span&gt;
+$ git remote -v &lt;span class="c1"&gt;# 显示全部源和详细信息&lt;/span&gt;
+$ git remote rename origin1 origin2 &lt;span class="c1"&gt;# 重命名&lt;/span&gt;
+$ git remote rm origin1 &lt;span class="c1"&gt;# 删除远端仓库&lt;/span&gt;
+$ git remote show origin1 &lt;span class="c1"&gt;# 查看指定源的全部信息&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;8. 标签&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git tag &lt;span class="c1"&gt;# 列出现有标签&lt;/span&gt;
+$ git tag v0.1 &lt;span class="c1"&gt;# 新建标签&lt;/span&gt;
+$ git tag -a v0.1 -m &lt;span class="s1"&gt;&amp;#39;my version 1.4&amp;#39;&lt;/span&gt; &lt;span class="c1"&gt;# 新建带注释标签&lt;/span&gt;
+$ git checkout tagname &lt;span class="c1"&gt;# 切换到标签&lt;/span&gt;
+$ git push origin v1.5 &lt;span class="c1"&gt;# 推送分支到源上&lt;/span&gt;
+$ git push origin --tags &lt;span class="c1"&gt;# 一次性推送所有分支&lt;/span&gt;
+$ git tag -d v0.1 &lt;span class="c1"&gt;# 删除标签&lt;/span&gt;
+$ git push origin :refs/tags/v0.1 &lt;span class="c1"&gt;# 删除远程标签&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;9.  参考与来源&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;a href="http://yanhaijing.com/git/2014/11/01/my-git-note/"&gt;颜海镜&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2.&lt;a href="http://www.worldhello.net/gotgit/"&gt;Git权威指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="cli"></category><category term="git"></category><category term="nb"></category></entry></feed>

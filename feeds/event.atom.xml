@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Event</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/event.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2015-08-20T21:12:00+02:00</updated><entry><title>Disaster Recovery Record</title><link href="endergeek.com/pages/2015/08/20/disaster-recovery-record/" rel="alternate"></link><published>2015-08-20T21:12:00+02:00</published><updated>2015-08-20T21:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-20:endergeek.com/pages/2015/08/20/disaster-recovery-record/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;灾难恢复记录&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Disaster" src="endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
+&lt;h4&gt;0. Why we …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;灾难恢复记录&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Disaster" src="endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Event</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/event.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-08-20T21:12:00+02:00</updated><entry><title>Disaster Recovery Record</title><link href="http://blog.endergeek.com/pages/2015/08/20/disaster-recovery-record/" rel="alternate"></link><published>2015-08-20T21:12:00+02:00</published><updated>2015-08-20T21:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-20:/pages/2015/08/20/disaster-recovery-record/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;灾难恢复记录&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Disaster" src="http://blog.endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
+&lt;h4&gt;0. Why we …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;灾难恢复记录&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Disaster" src="http://blog.endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;0. Why we need disaster recovery?&lt;/h4&gt;
+&lt;p&gt;首先，解释下什么是&lt;a href="https://en.wikipedia.org/wiki/Disaster"&gt;disaster&lt;/a&gt;：对能够给人类和人类赖以生存的环境造成破坏性影响的事物总称。当我们执行的操作破坏了现有的稳定或者平衡的时候，便发生了人为灾难。最近，由于操作不当，致使&lt;code&gt;/etc&lt;/code&gt;下某些文件损坏，造成了不可挽回的灾难，因此需要执行灾难恢复操作，也有了这篇恢复记录，以节省更多恢复的时间。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. Typist&lt;/h4&gt;
+&lt;p&gt;出于备份考虑，系统安装的时候系统挂载在&lt;code&gt;"/"&lt;/code&gt;(根目录)下，用户文件挂载在&lt;code&gt;/home&lt;/code&gt;分区下，这样每次安装系统（强烈建议最好不要总折腾浪费时间的安装系统，能恢复备份更好）时&lt;code&gt;home&lt;/code&gt;分区并不需要被重写，只需要重新安装OS即可，恢复的事情就变成了安装一打软件的打字任务：&lt;/p&gt;
+&lt;p&gt;在更改了合适的&lt;code&gt;source&lt;/code&gt;后(例如我使用&lt;code&gt;jlu&lt;/code&gt;的镜像源，因此需要更改&lt;code&gt;/etc/apt/sources.list.d/official-package-repositories.list&lt;/code&gt;文件)，开始打字 ...&lt;/p&gt;
+&lt;p&gt;安装常用软件:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get -y install autojump &lt;span class="c1"&gt;# 文件夹间快速跳转，折腾pelican必备&lt;/span&gt;
+$ sudo apt-get -y install yakuake  &lt;span class="c1"&gt;# 要挂科，快速访问模拟终端&lt;/span&gt;
+$ sudo apt-get -y install dropbox skype wine
+$ sudo apt-get -y install ipython ipython-notebook python-pip &lt;span class="c1"&gt;# 必装&lt;/span&gt;
+$ sudo pip install pelican markdown scipy scikit-learn pandas
+$ sudo apt-get -y install retext retext-wpgen python3-docutils python3-markdown &lt;span class="c1"&gt;# python3*是retext使用live preview需要的模块。&lt;/span&gt;
+&lt;span class="c1"&gt;# 另外需要手动安装 google-chrome (非chromium-browser)，IntelliJ IDEA&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://sourceforge.net/p/retext/tickets/104/"&gt;Reference: retext sf&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2. IntelliJ Idea Related&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;IntelliJ IDEA&lt;/code&gt; 解压后执行&lt;code&gt;idea.sh&lt;/code&gt;报错:
+    &lt;code&gt;JDK Required: 'tools.jar' seems to be not in IDEA classpath.  
+    Please ensure JAVA_HOME points to JDK rather than JRE.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;解决办法:安装&lt;code&gt;jdk&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get update
+$ sudo apt-get install openjdk-7-jdk
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;IntelliJ IDEA&lt;/code&gt; 创建快捷方式:进入&lt;code&gt;idea&lt;/code&gt;--&amp;gt;&lt;code&gt;Tools&lt;/code&gt;--&amp;gt;&lt;code&gt;Create Desktop Entry/Create Command Line Launcher&lt;/code&gt;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;3. Shadowsocks Related&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;通过&lt;code&gt;PPA&lt;/code&gt;源安装&lt;a href="https://github.com/librehat/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97"&gt;shadowsocks&lt;/a&gt;，仅支持&lt;code&gt;Ubuntu14.04&lt;/code&gt;或更高版本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo add-apt-repository ppa:hzwhuang/ss-qt5
+$ sudo apt-get update
+$ sudo apt-get install shadowsocks-qt5
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;4. fcitx Related&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;安装&lt;code&gt;fcitx&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo add-apt-repository ppa:fcitx-team/nightly
+$ sudo apt-get update
+$ sudo apt-get install fcitx im-switch
+$ im-switch -s fcitx
+$ sudo apt-get install fcitx-frontend-qt4
+$ sudo apt-get install qt4-qtconfig fcitx-table-all fcitx-googlepinyin
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;之后，运行&lt;code&gt;qtconfig-qt&lt;/code&gt;4后在&lt;code&gt;interface&lt;/code&gt;栏中选择&lt;code&gt;fcitx&lt;/code&gt;.
+运行&lt;code&gt;fcitx -r&lt;/code&gt;报错:&lt;code&gt;no usable user interface&lt;/code&gt;，没有用户界面，那么安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install fcitx-ui-classic fcitx-ui-qimpanel fcitx-config-common  fcitx-frontend-qt4 fcitx-googlepinyin fcitx-module-dbus
+fcitx-modules fcitx-module-X11  kde-config-fcitx 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;之后，运行&lt;code&gt;fcitx -r&lt;/code&gt;警告:&lt;code&gt;fcitx -r :(WARN-16299 /build/buildd/fcitx-4.2.8.5/src/frontend/xim/xim.c:161) Please set XMODIFIERS&lt;/code&gt;.可以无视，然而由于输入法只能在&lt;code&gt;kde&lt;/code&gt;应用如&lt;code&gt;konsole&lt;/code&gt;下使用，并不能在一些&lt;code&gt;gtk&lt;/code&gt;应用下使用，因此，可以卸载&lt;code&gt;fcitx-frontend-gtk2 fcitx-frontend-gtk3&lt;/code&gt;后重装发现在一般&lt;code&gt;gtk&lt;/code&gt;应用如&lt;code&gt;gedit&lt;/code&gt;上可以使用，而&lt;code&gt;chrome&lt;/code&gt;下仍然不能使用，这时需要注销后重新登录。&lt;a href="http://ears.iteye.com/blog/1656836"&gt;Reference: fcitx kde diagnostic&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于&lt;code&gt;fcitx&lt;/code&gt;安装更多细节请参考&lt;a href="https://fcitx-im.org/wiki/Fcitx"&gt;英文Wiki&lt;/a&gt;和&lt;a href="https://wiki.archlinux.org/index.php/Fcitx_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)"&gt;中文ArchWiki&lt;/a&gt;，个人经验，有时无论你怎么百度怎么&lt;code&gt;google&lt;/code&gt;都不如直接看&lt;code&gt;Official manual&lt;/code&gt;有效且快速。&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="RTFM" src="endergeek.com/images/disasterrecovery/RTFM.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;5. Pelican Related - first Step&lt;/h4&gt;
+&lt;p&gt;在安装了&lt;code&gt;pelican&lt;/code&gt;(注意，使用&lt;code&gt;apt-get&lt;/code&gt;和&lt;code&gt;pip&lt;/code&gt;安装的&lt;code&gt;pelican&lt;/code&gt;版本是不一样的，可能会导致你需要的特性找不到，个人推荐使用&lt;code&gt;pip&lt;/code&gt;安装)之后，便进入了自己&lt;code&gt;blog&lt;/code&gt;目录，使用命令&lt;code&gt;make html&lt;/code&gt;(具体定义参见&lt;code&gt;Makefile&lt;/code&gt;文件)后报错：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelicanhandler" src="endergeek.com/images/disasterrecovery/pelicanhander.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;No module named html&lt;/code&gt;提示在处理&lt;code&gt;ipynb&lt;/code&gt;的时候发现&lt;code&gt;python&lt;/code&gt;模块并没有被安装，因此重新安装&lt;a href="https://github.com/getpelican/pelican-plugins"&gt;pelican-plugins&lt;/a&gt;相应插件，&lt;code&gt;ipynb&lt;/code&gt;需要插件&lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags"&gt;liquid_tags&lt;/a&gt;，参考文档重新安装，需要&lt;code&gt;pip install ipython==2.4.1&lt;/code&gt;，之后继续&lt;code&gt;make html&lt;/code&gt;，依然报错：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelicanhandler1" src="endergeek.com/images/disasterrecovery/pelicanhander1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Pandoc wasn't found&lt;/code&gt;提示去&lt;a href="http://johnmacfarlane.net/pandoc/installing.html"&gt;Pandoc&lt;/a&gt;官方网站安装，由于使用&lt;code&gt;Linux 64-bit Debian/Ubuntu&lt;/code&gt;系，因此前往&lt;a href="https://github.com/jgm/pandoc/releases/tag/1.15.0.6"&gt;github&lt;/a&gt;下载&lt;code&gt;.deb&lt;/code&gt;文件安装即可。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelicanhandlerdone" src="endergeek.com/images/disasterrecovery/pelicanhanderdone.png"&gt;&lt;/p&gt;
+&lt;p&gt;此时没有&lt;code&gt;Error&lt;/code&gt;而有&lt;code&gt;UserWarning&lt;/code&gt;，&lt;code&gt;nodejs&lt;/code&gt;没有安装，因此&lt;code&gt;apt-get install nodejs&lt;/code&gt;即可。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelicannodejs1" src="endergeek.com/images/disasterrecovery/pelicannodejs1.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="RTFM" src="http://blog.endergeek.com/images/disasterrecovery/RTFM.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;5. Pelican Related - first Step&lt;/h4&gt;
+&lt;p&gt;在安装了&lt;code&gt;pelican&lt;/code&gt;(注意，使用&lt;code&gt;apt-get&lt;/code&gt;和&lt;code&gt;pip&lt;/code&gt;安装的&lt;code&gt;pelican&lt;/code&gt;版本是不一样的，可能会导致你需要的特性找不到，个人推荐使用&lt;code&gt;pip&lt;/code&gt;安装)之后，便进入了自己&lt;code&gt;blog&lt;/code&gt;目录，使用命令&lt;code&gt;make html&lt;/code&gt;(具体定义参见&lt;code&gt;Makefile&lt;/code&gt;文件)后报错：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelicanhandler" src="http://blog.endergeek.com/images/disasterrecovery/pelicanhander.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;No module named html&lt;/code&gt;提示在处理&lt;code&gt;ipynb&lt;/code&gt;的时候发现&lt;code&gt;python&lt;/code&gt;模块并没有被安装，因此重新安装&lt;a href="https://github.com/getpelican/pelican-plugins"&gt;pelican-plugins&lt;/a&gt;相应插件，&lt;code&gt;ipynb&lt;/code&gt;需要插件&lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags"&gt;liquid_tags&lt;/a&gt;，参考文档重新安装，需要&lt;code&gt;pip install ipython==2.4.1&lt;/code&gt;，之后继续&lt;code&gt;make html&lt;/code&gt;，依然报错：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelicanhandler1" src="http://blog.endergeek.com/images/disasterrecovery/pelicanhander1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Pandoc wasn't found&lt;/code&gt;提示去&lt;a href="http://johnmacfarlane.net/pandoc/installing.html"&gt;Pandoc&lt;/a&gt;官方网站安装，由于使用&lt;code&gt;Linux 64-bit Debian/Ubuntu&lt;/code&gt;系，因此前往&lt;a href="https://github.com/jgm/pandoc/releases/tag/1.15.0.6"&gt;github&lt;/a&gt;下载&lt;code&gt;.deb&lt;/code&gt;文件安装即可。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelicanhandlerdone" src="http://blog.endergeek.com/images/disasterrecovery/pelicanhanderdone.png"&gt;&lt;/p&gt;
+&lt;p&gt;此时没有&lt;code&gt;Error&lt;/code&gt;而有&lt;code&gt;UserWarning&lt;/code&gt;，&lt;code&gt;nodejs&lt;/code&gt;没有安装，因此&lt;code&gt;apt-get install nodejs&lt;/code&gt;即可。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pelicannodejs1" src="http://blog.endergeek.com/images/disasterrecovery/pelicannodejs1.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;类似问题往往只是需要你查看报错信息，检查系统完整性，然后根据信息安装缺少依赖就解决了，因此默认英语较好或像我这样英语不好耐心学习英语。&lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;Reference: ipynb &lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;6. Pelican Related - TBD&lt;/h4&gt;
+&lt;p&gt;这个问题属于&lt;code&gt;TBD&lt;/code&gt;，在使用&lt;code&gt;ipynb&lt;/code&gt;相关模块后，会使得每个页面头部被暴力地加上&lt;code&gt;_nb_header.html&lt;/code&gt;，这会在每次&lt;code&gt;make html&lt;/code&gt;的时候产生很大的处理工作量，因此&lt;code&gt;pelican&lt;/code&gt;提供了擦车功能--&lt;code&gt;cache&lt;/code&gt;，在&lt;code&gt;cache&lt;/code&gt;目录下的文件是&lt;code&gt;make&lt;/code&gt;后生成的缓存文件，根据每次&lt;code&gt;make&lt;/code&gt;时&lt;code&gt;content&lt;/code&gt;的改变决定是否更新&lt;code&gt;cache&lt;/code&gt;，这样如同&lt;code&gt;git&lt;/code&gt;提交时会比较两个版本配置文件，如果存在差别则重写&lt;code&gt;cache&lt;/code&gt;，如果相同则修改&lt;code&gt;content&lt;/code&gt;部分即可。&lt;/p&gt;
+&lt;p&gt;由于发现每次&lt;code&gt;make&lt;/code&gt;使用时间过长(约150s)，因此根据&lt;a href="https://github.com/getpelican/pelican/blob/master/docs/settings.rst"&gt;pelican文档&lt;/a&gt;，因此指定&lt;code&gt;cache&lt;/code&gt;文件夹：&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="pelicanusecache1" src="endergeek.com/images/disasterrecovery/pelicanusecache1.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="pelicanusecache1" src="http://blog.endergeek.com/images/disasterrecovery/pelicanusecache1.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;再次&lt;code&gt;make&lt;/code&gt;时间缩减为5s，但是并没有像以往一样生成&lt;code&gt;cache&lt;/code&gt;文件夹且目录下含有俩个文件，因此目前只能猜测pelican进行的更新修改了目录结构，&lt;code&gt;cache&lt;/code&gt;功能需要指定开启。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;7. Pelican Related - Theme&lt;/h4&gt;
+&lt;p&gt;由于之前在&lt;code&gt;github&lt;/code&gt;上备份了&lt;code&gt;output&lt;/code&gt;文件夹(即博客)和主题文件夹，因此恢复配置也相对方便，然而由于并没有及时同步，一些后期修改的配置依然失去了，只能手动恢复，不得不进入主题目录修改：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;code&gt;base.html&lt;/code&gt;：在&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;内添加&lt;code&gt;EXTRA_HEADER&lt;/code&gt;和&lt;code&gt;GOOGLE_ANALYTICS_ID&lt;/code&gt;，在&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;内添加&lt;code&gt;Fork GITHUB&lt;/code&gt;并设置&lt;code&gt;src&lt;/code&gt;，在&lt;code&gt;&amp;lt;ul class="columns"&amp;gt;&lt;/code&gt;内设置&lt;code&gt;Pages&lt;/code&gt;，在&lt;code&gt;&amp;lt;footer id="credits" class="row"&amp;gt;&lt;/code&gt;的&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;内添加&lt;code&gt;FOOTER&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.&lt;code&gt;sidebar.html&lt;/code&gt;修改头像外部链接为内部链接，增加&lt;code&gt;SOCIAL&lt;/code&gt;和&lt;code&gt;LINKS&lt;/code&gt;内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="siderbaricon2" src="endergeek.com/images/disasterrecovery/siderbaricon2.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="siderbaricon2" src="http://blog.endergeek.com/images/disasterrecovery/siderbaricon2.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3.&lt;code&gt;style.css&lt;/code&gt;增加&lt;code&gt;.avatar { border-radius: 50%; width: 186px;}&lt;/code&gt;使&lt;code&gt;sidebar&lt;/code&gt;头像为圆形&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;4.&lt;code&gt;gumby.css&lt;/code&gt;增加样式内容以加入链接图标，其余按之前优化保持不变&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="siderbaricon" src="endergeek.com/images/disasterrecovery/siderbaricon.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="siderbaricon" src="http://blog.endergeek.com/images/disasterrecovery/siderbaricon.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;至此，恢复阶段的恢复和优化工作结束:-)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;8. More ...&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;a href="http://docs.getpelican.com/en/3.5.0/"&gt;pelican docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2.&lt;a href="https://github.com/getpelican/pelican-themes"&gt;pelican-theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;3.&lt;a href="https://github.com/getpelican/pelican-plugins"&gt;pelican-plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;4.&lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags"&gt;liquid-tags plugin for ipynb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;5.&lt;a href="https://github.com/sennhviwang/pelican_gum_endergeek/tree/master/templates"&gt;personal theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;6.&lt;a href="http://ears.iteye.com/blog/1656836"&gt;fcitx kde diagnostic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;7.&lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;reference for ipynb &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;8.&lt;a href="http://sourceforge.net/p/retext/tickets/104/"&gt;retext sf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+<<<<<<< HEAD
+&lt;hr&gt;</content><category term="nb"></category><category term="pelican"></category><category term="linux"></category></entry><entry><title>Oneplus One 折腾记录</title><link href="endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/" rel="alternate"></link><published>2015-08-19T14:47:00+02:00</published><updated>2015-08-19T14:47:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-08-19:endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="cmhead" src="endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
+&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="cmhead" src="endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
+=======
+&lt;hr&gt;</content><category term="nb"></category><category term="pelican"></category><category term="linux"></category></entry><entry><title>Oneplus One 折腾记录</title><link href="http://blog.endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/" rel="alternate"></link><published>2015-08-19T14:47:00+02:00</published><updated>2015-08-19T14:47:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-19:/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="cmhead" src="http://blog.endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
+&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="cmhead" src="http://blog.endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;0. Abstract&lt;/h4&gt;
+&lt;p&gt;自从四年前使用CM 7 for Moto Defy Android v2.7.6后，便深深被CM系列所吸引，随着科技的进步，Defy的性能已经远远落后，渐渐也出现了“不支持”的应用，作者深深感受到被世界潮流的抛弃感，之后便使用了“老人机”系列如联想A380,华为Y320,酷派大神F1,加起来浪费的钱都快够买现在使用的一加1了，而忍受过“国产定制”“应用市场”“虚假root”等一系列强迫定制后，感受到对CM的日益怀念，又获知一加官方支持刷CM系统，于是在7月17日入手了一台，首先感谢财政支持！&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. Butterfly effect&lt;/h4&gt;
+&lt;p&gt;新机到手，立马刷入&lt;a href="http://www.oneplusbbs.com/thread-725776-1-1.html"&gt;CM12.1&lt;/a&gt;[&lt;a href="http://pan.baidu.com/s/1i3eRPE9"&gt;下载地址&lt;/a&gt;]，当然选择最新的，刷入后便迫不及待开始熟悉Android5.0.2，然而发现信号栏会出现让强迫症抓狂的感叹号，如图&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="!" src="endergeek.com/images/oneplus/cmbug.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="!" src="http://blog.endergeek.com/images/oneplus/cmbug.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;尝试论坛各种“教程”之后发现刷入CM12.1的Recovery(后称re)并不能用，这意味这什么呢，意味这re作为管理员只认识自己认识的人允许其进入手机(如更新，安装软件等），而不会接受re其他家庭的管理员认识的人进入手机，听起来很安全啊，那么这有什么问题呢？问题出在re自己认识的人太少，大家都说支持，你说不支持，那咋办，就把自己自闭了呗。&lt;/p&gt;
+&lt;p&gt;而解决感叹号问题，需要让这个版本re像其他版本re一样认识很多人，虚心升级自我。现实是糟糕的，re不仅自闭，还拒绝学习其他同行的知识(不可更新re为第三方re)。&lt;/p&gt;
+&lt;p&gt;因为觉得折腾，而既然手机可以正常使用，那么最好时间花在其他地方吧。&lt;/p&gt;
+&lt;p&gt;某天，就此跟大神交流才知道这极有可能是版本问题，大神使用手机版本为CM11s且一直拒绝更新，同时大神把我感叹号鄙视了一通，这便让我下定决心把感叹号灭掉。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2. First Attempt&lt;/h4&gt;
+&lt;p&gt;根据&lt;a href="http://www.oneplusbbs.com/thread-806369-1-1.html"&gt;论坛方法&lt;/a&gt;，发现自己手机并没有Root授权(Root Access)，而在设置里搜索“Root”却会出现该项，点不进去，实在奇葩无比，于是考虑应该需要Root授权才能灭掉感叹号了。&lt;/p&gt;
+&lt;p&gt;Root授权获取方式有很多，大致分为俩种：其一在ROM包中集成，安装Android系统便会自带Root(需要按一定步骤开启才可使用)，其二是系统上升级，升级方式可以是使用Root包通过re输入(管理员学习先进知识)，也可以是通过软件刷入如“刷机精灵”“root大师”等。&lt;/p&gt;
+&lt;p&gt;由此可见，首选第一种，第二种中首选Root压缩包通过re升级，最后再去求助各种大师，而根据经验来看，前面方法不行，大师往往也并没有什么用。&lt;/p&gt;
+&lt;p&gt;由于是First Attempt，因此我并没有选择ROM包集成Root授权，而在re不能使用的情况下，只能求助大师们，绝大多数的大师都是“大师”，其中KingRoot让手机刷入了自家的“Root权限管理”，其实是假Root，当然应付管理所有应用权限这种活King大师可以轻松处理，而修改状态栏感叹号这种任务下King大师依然还是“大师”。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;3. Second Attempt&lt;/h4&gt;
+&lt;p&gt;[&lt;em&gt;Note&lt;/em&gt;]乱刷ROM会导致各种状况，如：手机卡在logo界面;卡在re界面，手机黑屏只能进入fastboot模式不能进入re等等。&lt;/p&gt;
+&lt;p&gt;解释下&lt;a href="http://www.kingoapp.com/help/fastboot-mode.htm"&gt;Fastboot&lt;/a&gt;:Fastboot是可以用来刷写设备分区(刷写Android设备文件系统，是除Recovery模式外在安卓系统上进行安装或者更新操作另一种模式。&lt;/p&gt;
+&lt;p&gt;而一旦手机不能正常进入系统，且re处于“无力学习”的情况，那么就需要对设备刷写新ROM的文件系统，这时可以使用临时的re也可以使用fastboot模式刷入ROM，而手机CM12.1每当在“一加万能工具箱”重写过程中，并不能重启后进入临时re（刷写re失败），于是只能求助fastboot模式。&lt;/p&gt;
+&lt;p&gt;先放上最后多次实验得出&lt;a href="http://www.oneplusbbs.com/thread-476657-1-1.html"&gt;最实用的update线刷方法&lt;/a&gt;[链接: http://pan.baidu.com/s/1sjwZKbN 密码: ygtd]，以及简单介绍最有效update线刷方法[链接: http://pan.baidu.com/s/1mg1TFSW 密码: bcpe]。&lt;/p&gt;
+&lt;p&gt;update线刷方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.手机关机后同时按住“音量+”和“电源”键即可进入fastboot mode&lt;/li&gt;
+&lt;li&gt;2.手机数据线连上电脑，运行“update线刷包”，解锁确认后，执行update线刷&lt;/li&gt;
+&lt;li&gt;3.选择需要升级的ROM包（也可以是第三方re包如twrp，root包）&lt;/li&gt;
+&lt;li&gt;4.等待刷写设备&lt;/li&gt;
+&lt;/ul&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="flashsys" src="endergeek.com/images/oneplus/flashsys.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="flashsys" src="http://blog.endergeek.com/images/oneplus/flashsys.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;掌握这种方法之后刷成砖也不用怕也不需要麻烦一加客服远程刷机浪费时间了～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;4. First Strike&lt;/h4&gt;
+&lt;p&gt;成功刷入中意的系统（如CM11s,CM12.1-nightly）后，个人由于对CM12.1系统的re不抱希望（其实nightly版本还是不错的），&lt;strong&gt;强烈建议&lt;/strong&gt;刷如第三方re如TWRP，使用“update线刷”方法可以update系统自带re，刷入TWRP后可以顺便把你可能需要的“联通破解包”“SuperSU包”之类在首次双清后刷入系统，这样进入系统的时候你会发现如果你刷如了SuperSu包会多出一个“授权管理”类的系统应用（例如叫做“超级授权”），这个应用和之前提到的KingRoot是不同的，它接管了打开系统“Root Access”之后的权限管理任务，而KingRoot并没有接管系统权限的资格。&lt;/p&gt;
+&lt;p&gt;一旦开启Root授权，便可以使用前文提到的取消感叹号的方法取消联网状态下感叹号，&lt;a href="http://android.troplet.com/question/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi-or-signal-icon-in-lollipop-100657.html"&gt;原理&lt;/a&gt;：当设备连接互联网的时候，系统会检查能否连接google服务器，如果失败，在Android 5下就会在wifi图标或信号图标下有感叹号。对服务器认证设置修改，同样使用该原理的还有小狐狸Portal Server可以自定义认证服务器，虽然我并没有使用成功（毕竟我们有谜之walled garden）&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="cmshow" src="endergeek.com/images/oneplus/cmshow.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="cmshow" src="http://blog.endergeek.com/images/oneplus/cmshow.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;5. Second Strike&lt;/h4&gt;
+&lt;p&gt;在尝试了CM11s后，感叹号问题完全消失（无论联网还是断网），然而突然发现新的问题：手机RAM实际上应该是3G（2867MB），而上图显示只有1867M（正好相隔1G），莫名奇妙没了1GRAM肯定会很郁闷的，而CM12.1并没有这种问题，之后发现还有些人是这种情况，6月26日出厂的部分会有这种情况，那么来做个运算吧：3 * 0.93 = 2.79，2 * 0.93 = 1.86。&lt;/p&gt;
+&lt;p&gt;而从之后的使用来看，大家都认为手里的是烂尾机，所谓3G内存情况下的发热情况比2G内存情况还要严重，（似乎说明虚拟就是虚拟的，官方也并没有给出建设性的解决方案，让我对一加从此失望，说好的不将就，最终还是这副德性）。&lt;/p&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="cmbenchmark" src="endergeek.com/images/oneplus/cmbenchmark.png"&gt;
+&lt;img alt="cminfo" src="endergeek.com/images/oneplus/cminfo.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="cmbenchmark" src="http://blog.endergeek.com/images/oneplus/cmbenchmark.png"&gt;
+&lt;img alt="cminfo" src="http://blog.endergeek.com/images/oneplus/cminfo.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;p&gt;没办法，CM11s虽然比CM12s好用多了，2G实在看着不舒服，而30天换货已经过了，所以只能按照文首通过TWRP刷入了CM12.1-nightly，每天更新虽然麻烦，但是可以无视，而且也使如果系统含有BUG手上就有可能的解决方案。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;6. In honor of those days&lt;/h4&gt;
+&lt;p&gt;为了纪念这些天的折腾，
+<<<<<<< HEAD
+&lt;img alt="cmtools" src="endergeek.com/images/oneplus/cmtools.png"&gt;&lt;/p&gt;
+=======
+&lt;img alt="cmtools" src="http://blog.endergeek.com/images/oneplus/cmtools.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;7. More ...&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.&lt;a href="http://www.kingoapp.com/help/fastboot-mode.htm"&gt;FastBoot Mode解释&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2.&lt;a href="http://www.oneplusbbs.com/thread-725776-1-1.html"&gt;刷入CM12.1方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;3.&lt;a href="http://www.oneplusbbs.com/thread-806369-1-1.html"&gt;去感叹号方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;4.&lt;a href="http://android.troplet.com/question/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi-or-signal-icon-in-lollipop-100657.html"&gt;感叹号原理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;5.&lt;a href="http://www.oneplusbbs.com/thread-476657-1-1.html"&gt;最实用的update线刷方法&lt;/a&gt;&lt;/li&gt;
+<<<<<<< HEAD
+&lt;li&gt;&lt;img alt="cmlog" src="endergeek.com/images/oneplus/cmlog.jpg"&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="cyanogenmod"></category><category term="nb"></category></entry><entry><title>使用Aws Ec2搭建Shadowsocks服务器</title><link href="endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/" rel="alternate"></link><published>2015-07-11T11:38:00+02:00</published><updated>2015-07-11T11:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-07-11:endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/</id><summary type="html">&lt;hr&gt;
+=======
+&lt;li&gt;&lt;img alt="cmlog" src="http://blog.endergeek.com/images/oneplus/cmlog.jpg"&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="cyanogenmod"></category><category term="nb"></category></entry><entry><title>使用Aws Ec2搭建Shadowsocks服务器</title><link href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/" rel="alternate"></link><published>2015-07-11T11:38:00+02:00</published><updated>2015-07-11T11:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-11:/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;1.  Why shadowsocks&lt;/h4&gt;
+&lt;p&gt;shadowsocks类似goagent …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h4&gt;1.  Why shadowsocks&lt;/h4&gt;
+&lt;p&gt;shadowsocks类似goagent，是一种快速隧道代理，帮助你绕过防火墙。shadowsocks需要使用自己的服务器，当然选择不同价格的服务器决定了服务的质量:-)&lt;/p&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可以免费：shadowsocks可以利用免费的Aws EC2，公有服务器还是不考虑吧，毕竟时间更宝贵。&lt;/li&gt;
+&lt;li&gt;表现稳定：有过使用goagent的经验，经常会丢包&lt;/li&gt;
+&lt;li&gt;速度较快：还是那句话，一分钱一分货&lt;/li&gt;
+&lt;li&gt;多平台支持：感谢开源，无论Linux，win*，MacOS，iOS，Android平台均可以安装shadowsocks客户端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;2.  Sign up&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;注册AWS账号，需要信用卡（由于某宝的存在，虚拟信用卡果然变得容易获得了呢:-))&lt;/li&gt;
+&lt;li&gt;进入&lt;a href="http://aws.amazon.com/cn/"&gt;aws主页&lt;/a&gt;，按照提示完成注册，然后需要进一步通过手机验证&lt;em&gt;“Identity Verification by Telephone”&lt;/em&gt;，输入电话号码后点击&lt;em&gt;“call me now”&lt;/em&gt;，稍后Amazon便会有电话拨来，按照提示在电话上输入屏幕上的&lt;em&gt;“Your PIN：”&lt;/em&gt;给出的四个数字即可。&lt;/li&gt;
+&lt;li&gt;之后选择&lt;em&gt;Amazon Support Plan&lt;/em&gt;，这里选择&lt;em&gt;Basic（Free）&lt;/em&gt;，注册成功后会进入欢迎界面，选择&lt;em&gt;“启动Aws管理控制台”&lt;/em&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;3.  Launch and set up AWS EC2&lt;/h4&gt;
+&lt;p&gt;1.选择&lt;em&gt;region&lt;/em&gt;部署区域，不同区域感受不同，这里不作建议，选择区域完毕后创建实例，如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="awsec2-create instance" src="endergeek.com/images/awsec2/awsec201.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2.选择一个&lt;em&gt;Amazon系统映像&lt;/em&gt;(AMI)，这里选择&lt;em&gt;“Ubuntu Server 14.04 LTS”&lt;/em&gt;，如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="awsec2-select AMI" src="endergeek.com/images/awsec2/awsec202.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;3.选择一个&lt;em&gt;实例类型&lt;/em&gt;，由于是免费版本，所以只能选用&lt;em&gt;t2.micro&lt;/em&gt;，如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec203.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="awsec2-create instance" src="http://blog.endergeek.com/images/awsec2/awsec201.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2.选择一个&lt;em&gt;Amazon系统映像&lt;/em&gt;(AMI)，这里选择&lt;em&gt;“Ubuntu Server 14.04 LTS”&lt;/em&gt;，如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="awsec2-select AMI" src="http://blog.endergeek.com/images/awsec2/awsec202.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;3.选择一个&lt;em&gt;实例类型&lt;/em&gt;，由于是免费版本，所以只能选用&lt;em&gt;t2.micro&lt;/em&gt;，如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec203.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/blockquote&gt;
+&lt;p&gt;4.选择后点击&lt;em&gt;“下一步：配置实例详细信息”&lt;/em&gt;，此处默认配置即可
+5.继续点击&lt;em&gt;“下一步：添加存储”&lt;/em&gt;，此处默认配置即可，也不要超过30G
+6.继续点击&lt;em&gt;“下一步：标签实例”&lt;/em&gt;，此处默认配置即可
+7.点击&lt;em&gt;“配置安全组”&lt;/em&gt;，此处添加规则，如&lt;code&gt;ssh&lt;/code&gt;，具体配置规则自己定义，然后点击&lt;em&gt;“审核和启动”&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec204.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec204.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/blockquote&gt;
+&lt;p&gt;8.核查实例完毕后点击&lt;em&gt;“启动”&lt;/em&gt;，即弹出&lt;em&gt;“选择现有密钥对或创建新密钥对”&lt;/em&gt;，选择&lt;em&gt;“创建新密钥对”&lt;/em&gt;，然后在&lt;em&gt;“密钥对名称”&lt;/em&gt;栏输入密钥对文件名，就可以下载属于你的&lt;code&gt;*.pem&lt;/code&gt;密钥文件了。&lt;/p&gt;
+&lt;p&gt;9.&lt;strong&gt;[注意]&lt;/strong&gt;一定要将密钥文件存储在一个可访问的安全位置，创建文件后将不能再次下载！若遗失则可以删除之前的&lt;code&gt;key pairs&lt;/code&gt;并创建新的，如果希望使用自己的&lt;code&gt;ssh key&lt;/code&gt;, 也可以选择&lt;em&gt;”Import Key Pair”&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec205.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec205.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/blockquote&gt;
+&lt;p&gt;10.下载密钥文件完毕后点击&lt;em&gt;“启动实例”&lt;/em&gt;，
+在本地机器上，将&lt;code&gt;.pem&lt;/code&gt;文件移动到&lt;code&gt;~/.ssh&lt;/code&gt;目录下（如果目录不存在则创建），并更改其权限为600（即&lt;code&gt;rw-------&lt;/code&gt;）：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ mv ~/PATH_TO_FILE/test.pem ~/.ssh/ &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;  chmod &lt;span class="m"&gt;600&lt;/span&gt; ~/.ssh/test.pem
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;11.使用&lt;code&gt;ssh&lt;/code&gt;登录&lt;em&gt;AWS EC2实例&lt;/em&gt;，由于使用的是&lt;em&gt;Ubuntu server&lt;/em&gt;，所以登录名为&lt;code&gt;ubuntu&lt;/code&gt;，&lt;code&gt;public.ip&lt;/code&gt;为&lt;em&gt;[AWS控制台-描述-公有ip/公有DNS]&lt;/em&gt;。如果登录出现问题，在命令后添加&lt;code&gt;-v&lt;/code&gt;参数，以查看debug信息&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ssh -i ~/.ssh/test.pem ubuntu@public.ip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;12.到此，就完成了配置和启动AWS EC2的过程&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;4.  Install shadowsocks on AWS EC2&lt;/h4&gt;
+&lt;p&gt;1.在服务器端，安装&lt;code&gt;shadowsocks&lt;/code&gt;，参考&lt;a href="https://pypi.python.org/pypi/shadowsocks"&gt;官方文档&lt;/a&gt;和&lt;a href="https://github.com/shadowsocks/shadowsocks"&gt;Github&lt;/a&gt;，&lt;em&gt;Ubuntu server&lt;/em&gt;示例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ apt-get install python-pip &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;  pip install shadowsocks
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;2.临时开启&lt;code&gt;shadowsocks&lt;/code&gt;服务,&lt;code&gt;-p&lt;/code&gt;指定端口，&lt;code&gt;-k&lt;/code&gt;指定密码（password为密码），&lt;code&gt;-m&lt;/code&gt;指定加密方式（常用aes-256-cfb）&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ssserver -p &lt;span class="m"&gt;80&lt;/span&gt; -k password -m aes-256-cfb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;3.后台运行&lt;code&gt;shadowsocks&lt;/code&gt;服务：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo ssserver -p &lt;span class="m"&gt;443&lt;/span&gt; -k password -m aes-256-cfb -d start
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;4.停止&lt;code&gt;shadowsocks&lt;/code&gt;服务：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo ssserver -d stop
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;5.查看日志：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo less /var/log/shadowsocks.log
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;6.也可以通过配置&lt;code&gt;/etc/shadowsocks.json&lt;/code&gt;文件来实现，具体定义见&lt;a href="https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File"&gt;文档&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;5. Surf the Internet&lt;/h4&gt;
+&lt;p&gt;1.服务器端&lt;code&gt;shadowsocks&lt;/code&gt;已经配置并且在后台运行，此时便可以通过在各种平台上安装&lt;a href="https://www.shadowsocks.com/client.html"&gt;shadowsocks客户端&lt;/a&gt;来实现上网，例如linux平台安装&lt;a href="https://github.com/librehat/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97"&gt;shadowsocks-qt5&lt;/a&gt;，对于Ubuntu平台：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo add-apt-repository ppa:hzwhuang/ss-qt5
+$ sudo apt-get update
+$ sudo apt-get install shadowsocks-qt5
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;2.linux上配置&lt;code&gt;shadowsocks&lt;/code&gt;客户端&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec206.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;3.浏览器安装&lt;a href="https://chrome.google.com/webstore/search/switchy%20omega?utm_source=chrome-ntp-icon&amp;amp;_category=extensions"&gt;SwitchyOmega&lt;/a&gt;，并配置profile：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="endergeek.com/images/awsec2/awsec207.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4&gt;6.  More ...&lt;/h4&gt;
+&lt;p&gt;体验了免费的AWS EC2服务，还是很期待体验使用付费流量的:-)&lt;/p&gt;</content><category term="aws"></category><category term="nb"></category><category term="shadowsocks"></category></entry><entry><title>使用Pelican和Github Pages搭建博客(一)</title><link href="endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/" rel="alternate"></link><published>2015-07-11T10:12:00+02:00</published><updated>2015-07-11T10:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-07-11:endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/</id><summary type="html">&lt;hr&gt;
+=======
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec206.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;3.浏览器安装&lt;a href="https://chrome.google.com/webstore/search/switchy%20omega?utm_source=chrome-ntp-icon&amp;amp;_category=extensions"&gt;SwitchyOmega&lt;/a&gt;，并配置profile：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="awsec2-select Instance type" src="http://blog.endergeek.com/images/awsec2/awsec207.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4&gt;6.  More ...&lt;/h4&gt;
+&lt;p&gt;体验了免费的AWS EC2服务，还是很期待体验使用付费流量的:-)&lt;/p&gt;</content><category term="aws"></category><category term="nb"></category><category term="shadowsocks"></category></entry><entry><title>使用Pelican和Github Pages搭建博客(一)</title><link href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/" rel="alternate"></link><published>2015-07-11T10:12:00+02:00</published><updated>2015-07-11T10:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-11:/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;1.  Why Pelican?&lt;/h4&gt;
+&lt;p&gt;之前用过 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h4&gt;1.  Why Pelican?&lt;/h4&gt;
+&lt;p&gt;之前用过&lt;a href="https://hexo.io/"&gt;hexo&lt;/a&gt;+&lt;a href="https://pages.github.com/"&gt;github pages&lt;/a&gt;搭建个人博客，虽然hexo官网是支持linux及实现的，但是本人折腾几次hexo并不能将目录初始化，因此用了很长一段时间的windows来写博客。随着对linux环境的使用产生习惯性依赖（因为windows基本被用来打游戏:-))，因此一直在寻找一个在linux平台下的替代品,直到发现了&lt;a href="http://docs.getpelican.com/en/3.6.0/"&gt;pelican&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;因此，本文是基于Debian/Ubuntu系Linux操作系统的:-)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2.  Before start,you need some stuff ...&lt;/h4&gt;
+&lt;p&gt;搭建过程中会使用或涉及以下知识或工具，如果对于写代码感到困惑，也没关系——你既可以选择使用固定模板搭建博客框架，自己负责创作,也可以选择修改或创建模板。
+对于有兴趣发现更多特性的朋友，可以耐心参看官方文档，往往比“百度一下”要快哦:-),当然建议使用Google,毕竟结果会不同(梗),如果被墙了，请参看另一篇文章&lt;a href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/"&gt;使用Aws EC2搭建shadowsocks服务器&lt;/a&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/"&gt;github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.git-scm.com/"&gt;git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pages.github.com/"&gt;github pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.python.org/"&gt;python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pip.pypa.io/en/latest/"&gt;pip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.getpelican.com/en/3.6.0/#"&gt;pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://sourceforge.net/projects/retext/"&gt;retext&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ apt-get install git
+$ apt-get install python-pip &lt;span class="c1"&gt;# 建议参考官方文档安装&lt;/span&gt;
+$ pip install pelican
+$ apt-get install retext
+$ pip install markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;3.  Let's start!&lt;/h4&gt;
+&lt;p&gt;首先创建一个属于个人博客的文件夹，例如：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="c1"&gt;# 先确保你会在用户主目录&lt;/span&gt;
+$ mkdir -p sites/blog/endergeek &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$_&lt;/span&gt; &lt;span class="c1"&gt;# 创建文件夹endergeek并进入文件夹&lt;/span&gt;
+$ pelican-quickstart &lt;span class="c1"&gt;# 进入pelican配置并依据配置初始化当前文件夹&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;效果如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="pelican-quickstart" src="endergeek.com/images/pelican/pelican01.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;执行完毕后，文件夹结构如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="pelican-file-structure" src="endergeek.com/images/pelican/pelican02.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="pelican-quickstart" src="http://blog.endergeek.com/images/pelican/pelican01.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;执行完毕后，文件夹结构如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="pelican-file-structure" src="http://blog.endergeek.com/images/pelican/pelican02.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/blockquote&gt;
+&lt;p&gt;文件作用解释如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;content&lt;/strong&gt;：存放markdown或rst博客文章源文件，以及之后可选择创建的文件夹images,pages,notebooks等（notebooks需要启用插件&lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags"&gt;liquid_tags.notebook&lt;/a&gt;，images文件夹存放所有博客文件中引用到的图片，pages文件夹存放自己创建的静态页面）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;output&lt;/strong&gt;：执行make html命令后生成的静态博客&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;develop_server.sh&lt;/strong&gt;：本地测试服务器，地址&lt;a href="http://localhost:8000/"&gt;http://localhost:8000/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Makefile&lt;/strong&gt;：管理博客的makefile文件，定义了一系列make的参数行为&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pelicanconf.py&lt;/strong&gt;：博客配置文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;publishconf.py&lt;/strong&gt;：发布文件，非必需&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cache&lt;/strong&gt;： 缓存文件，可删除，删除后需要使用make html以重新生成。注意，删除cache文件夹内容可能导致自定义的样式被修改等问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;4.  Write something ...&lt;/h4&gt;
+&lt;p&gt;在content文件夹内创建一个&lt;em&gt;[filename]&lt;/em&gt;.md文件，并对其进行编辑。
+博文格式如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="pelican-markdown-screenshot" src="endergeek.com/images/pelican/pelican03.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;你也可以根据&lt;a href="http://docs.getpelican.com/en/3.6.0/#"&gt;官方文档&lt;/a&gt;更完整定义你的markdown文件头，为了避免每次新建markdown文件要重复安排md文件头，因此就写&lt;a href="https://github.com/sennhviwang/pelican_gum_endergeek/blob/master/generate_template.py"&gt;一个简单的python脚本&lt;/a&gt;以生成md文件，使用方法如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="pelican-md-generator-script" src="endergeek.com/images/pelican/pelican04.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="pelican-markdown-screenshot" src="http://blog.endergeek.com/images/pelican/pelican03.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;你也可以根据&lt;a href="http://docs.getpelican.com/en/3.6.0/#"&gt;官方文档&lt;/a&gt;更完整定义你的markdown文件头，为了避免每次新建markdown文件要重复安排md文件头，因此就写&lt;a href="https://github.com/sennhviwang/pelican_gum_endergeek/blob/master/generate_template.py"&gt;一个简单的python脚本&lt;/a&gt;以生成md文件，使用方法如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="pelican-md-generator-script" src="http://blog.endergeek.com/images/pelican/pelican04.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4&gt;5.  Make!&lt;/h4&gt;
+&lt;p&gt;创作完毕后，回到endergeek文件夹（即content文件夹的父文件夹），执行命令：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html &lt;span class="c1"&gt;# make命令具体细节在Makefile中定义&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="pelican-make-html" src="endergeek.com/images/pelican/pelican05.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt; 会按照配置文件将博文生成静态网页文件存放output文件夹中，使用&lt;code&gt;make serve&lt;/code&gt;查看：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="pelican-make-serve" src="endergeek.com/images/pelican/pelican06.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="pelican-make-html" src="http://blog.endergeek.com/images/pelican/pelican05.png"&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt; 会按照配置文件将博文生成静态网页文件存放output文件夹中，使用&lt;code&gt;make serve&lt;/code&gt;查看：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="pelican-make-serve" src="http://blog.endergeek.com/images/pelican/pelican06.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/blockquote&gt;
+&lt;p&gt;在浏览器中输入&lt;a href="http://localhost:8000/"&gt;http://localhost:8000/&lt;/a&gt;查看&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;6.  Choose your favourite theme&lt;/h4&gt;
+&lt;p&gt;在博客主目录（即endergeek文件夹）下，使用git下载&lt;a href="https://github.com/getpelican/pelican-themes"&gt;pelican主题&lt;/a&gt;仓库到本地，主题预览网址&lt;a href="http://pelicanthemes.com/"&gt;pelicanthemes&lt;/a&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/getpelican/pelican-themes.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;打开并编辑pelicanconf.py配置文件，更改或添加THEME为主题名称：
+&lt;code&gt;THEME = 'pelican-themes/gum'&lt;/code&gt;，具体配置设置参考&lt;a href="http://docs.getpelican.com/en/3.6.0/settings.html"&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;7.  Enable Disqus&lt;/h4&gt;
+&lt;p&gt;在Disqus申请账号，创建并使用站点的Shortname，获取自己应用的Secret Key和Public Key并写入pelicanconf.py配置文件中：&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="pelican-disqus-set" src="endergeek.com/images/pelican/pelican07.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="pelican-disqus-set" src="http://blog.endergeek.com/images/pelican/pelican07.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4&gt;8.  Publish blog&lt;/h4&gt;
+&lt;p&gt;发布博文，使用github pages作为站点服务器，参考&lt;a href="https://help.github.com/articles/creating-pages-with-the-automatic-generator/"&gt;官方教程&lt;/a&gt;简单几步即可，这样，你就获得一个github.io的二级域名以及建立了一个网站文件版本库，也可以使用自己的域名重定向到&lt;em&gt;[username]&lt;/em&gt;.github.io二级域名这样就可以通过访问你的个人域名访问你的博客了。&lt;/p&gt;
+&lt;p&gt;进入博客主目录(endergeek)下的output文件夹，执行如下命令（命令解释可以在另一篇&lt;a href="http://blog.endergeek.com/pages/2015/06/15/git-some-note/"&gt;Git博文&lt;/a&gt;找到：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git init 
+$ git add .
+$ git remote add origin https://github.com/&lt;span class="o"&gt;[&lt;/span&gt;username&lt;span class="o"&gt;]&lt;/span&gt;/&lt;span class="o"&gt;[&lt;/span&gt;username&lt;span class="o"&gt;]&lt;/span&gt;.github.io
+$ git pull origin master
+$ git commit -m &lt;span class="s2"&gt;&amp;quot;first blog&amp;quot;&lt;/span&gt;
+$ git push origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;发布的命令较长，可以修改Makefile文件如下图：&lt;/p&gt;
+&lt;blockquote&gt;
+<<<<<<< HEAD
+&lt;p&gt;&lt;img alt="pelican-makefile-git" src="endergeek.com/images/pelican/pelican08.png"&gt;&lt;/p&gt;
+=======
+&lt;p&gt;&lt;img alt="pelican-makefile-git" src="http://blog.endergeek.com/images/pelican/pelican08.png"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/blockquote&gt;
+&lt;p&gt;之后就可以在每次编辑完新的文章后，在主目录下使用&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html
+$ make github
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;来更新你的博客了～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;9.  More ...&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;博客主题&lt;a href="https://github.com/sennhviwang/pelican_gum_endergeek"&gt;地址&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="pelican"></category><category term="git"></category><category term="nb"></category></entry></feed>

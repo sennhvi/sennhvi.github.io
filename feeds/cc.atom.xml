@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - C/c++</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/cc.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2015-07-16T08:28:00+02:00</updated><entry><title>ceil in C-math.h</title><link href="endergeek.com/pages/2015/07/16/ceil-in-c-mathh/" rel="alternate"></link><published>2015-07-16T08:28:00+02:00</published><updated>2015-07-16T08:28:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-07-16:endergeek.com/pages/2015/07/16/ceil-in-c-mathh/</id><summary type="html">&lt;hr&gt;
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - C/c++</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/cc.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-07-16T08:28:00+02:00</updated><entry><title>ceil in C-math.h</title><link href="http://blog.endergeek.com/pages/2015/07/16/ceil-in-c-mathh/" rel="alternate"></link><published>2015-07-16T08:28:00+02:00</published><updated>2015-07-16T08:28:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-16:/pages/2015/07/16/ceil-in-c-mathh/</id><summary type="html">&lt;hr&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;h4&gt;1.  提出问题&lt;/h4&gt;
+&lt;p&gt;最近翻阅&lt;a href="http://xuec.org/index.html"&gt;《Linux …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h4&gt;1.  提出问题&lt;/h4&gt;
+&lt;p&gt;最近翻阅&lt;a href="http://xuec.org/index.html"&gt;《Linux C 一站式学习》&lt;/a&gt;时遇到一个基础数学问题，摘录如下：&lt;/p&gt;
+&lt;p&gt;假设变量&lt;code&gt;x&lt;/code&gt;和&lt;code&gt;n&lt;/code&gt;是两个正整数，我们知道&lt;code&gt;x/n&lt;/code&gt;这个表达式的结果要取&lt;code&gt;floor&lt;/code&gt;，例如x是17，&lt;code&gt;n&lt;/code&gt;是4，则结果是4。如果希望结果取&lt;code&gt;ceiling&lt;/code&gt;应该怎么写表达式呢？例如&lt;code&gt;x&lt;/code&gt;是17，&lt;code&gt;n&lt;/code&gt;是4，则结果是5；&lt;code&gt;x&lt;/code&gt;是16，&lt;code&gt;n&lt;/code&gt;是4，则结果是4。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2.  问题转换/简化&lt;/h4&gt;
+&lt;p&gt;不要着急借助搜索引擎，其实这道习题需要考虑如何对表达式结果取天棚(&lt;code&gt;ceiling&lt;/code&gt;)，我们知道C语言中除法“/”默认取的是地板(&lt;code&gt;floor&lt;/code&gt;)，那么就有几种思考方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1)对于形如&lt;code&gt;x/n&lt;/code&gt;这样通过表达式结果来求天棚(&lt;code&gt;ceiling&lt;/code&gt;)：&lt;ul&gt;
+&lt;li&gt;演化1：将一长为&lt;code&gt;x&lt;/code&gt;的绳子以长度&lt;code&gt;n&lt;/code&gt;为间隔打结，打结完毕后如发现有不足长度&lt;code&gt;n&lt;/code&gt;的段（已有结点&lt;code&gt;k&lt;/code&gt;个），补上其长度以完成最后一个结（结点个数为&lt;code&gt;k+1&lt;/code&gt;）。&lt;/li&gt;
+&lt;li&gt;演化2：由于长度&lt;code&gt;n&lt;/code&gt;固定，因此另外准备一条长度&lt;code&gt;n&lt;/code&gt;的线段，以取代打结完毕后发现长度不足&lt;code&gt;n&lt;/code&gt;的段。&lt;/li&gt;
+&lt;li&gt;演化3：计算机做简单数值运算时，由于除法取地板，那么将单独准备的一条线段&lt;code&gt;m&lt;/code&gt;直接添加在原线段上，并使得其值无限接近于&lt;code&gt;n&lt;/code&gt;，这样并不会由于添加线段长度为&lt;code&gt;n&lt;/code&gt;的段而使得&lt;code&gt;k&lt;/code&gt;在不需要&lt;code&gt;+1&lt;/code&gt;的情况（&lt;code&gt;x/n&lt;/code&gt;已为整数）下&lt;code&gt;+1&lt;/code&gt;,且可使得长度不足&lt;code&gt;n&lt;/code&gt;的段在补足后必然大于&lt;code&gt;n&lt;/code&gt;，进而&lt;code&gt;k+1&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2)对于形如y这样通过值求天棚(&lt;code&gt;ceiling&lt;/code&gt;)：&lt;ul&gt;
+&lt;li&gt;演化1：坐标轴上的点不属于整数的点取天棚总是向坐标轴正半轴方向靠拢。&lt;/li&gt;
+&lt;li&gt;演化2：采用形如&lt;code&gt;x/n&lt;/code&gt;方法，则m=0.9999...，可求解&lt;/li&gt;
+<<<<<<< HEAD
+&lt;li&gt;&lt;img alt="math-ceil" src="endergeek.com/images/ceilinc/math-ceil.svg"&gt;&lt;/li&gt;
+=======
+&lt;li&gt;&lt;img alt="math-ceil" src="http://blog.endergeek.com/images/ceilinc/math-ceil.svg"&gt;&lt;/li&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;3.  求解问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1)对于形如&lt;code&gt;x/n&lt;/code&gt;这样的表达式结果求天棚(&lt;code&gt;ceiling&lt;/code&gt;)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;解得：&lt;code&gt;(x+n-1)/n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;设：&lt;code&gt;x=kn+b，b∈(0, n)且b∈Z&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;当&lt;code&gt;b=0&lt;/code&gt;时，&lt;code&gt;(x+z)/n=k&lt;/code&gt;，即&lt;code&gt;(kn+z)/n=k&lt;/code&gt;，&lt;code&gt;z&lt;/code&gt;最大为&lt;code&gt;n-1&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;当&lt;code&gt;b≠0&lt;/code&gt;时，&lt;code&gt;(x+z)/n=k+1&lt;/code&gt;，即&lt;code&gt;(kn+b+z)/n=k+1&lt;/code&gt;  =&amp;gt;&lt;code&gt;(b+z)/n=1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;由&lt;code&gt;b∈(0, n)且b∈Z&lt;/code&gt;，故&lt;code&gt;b&lt;/code&gt;可取最小值&lt;code&gt;1&lt;/code&gt;，此时&lt;code&gt;z&lt;/code&gt;为&lt;code&gt;n-1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当&lt;code&gt;b&lt;/code&gt;取&lt;code&gt;2&lt;/code&gt;时，&lt;code&gt;z&lt;/code&gt;为&lt;code&gt;n-2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;当&lt;code&gt;b=n-1&lt;/code&gt;时，&lt;code&gt;z=1&lt;/code&gt;，可见不考虑特殊情况时，&lt;code&gt;z&lt;/code&gt;最大为&lt;code&gt;n-1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;而当&lt;code&gt;b=n-1&lt;/code&gt;时，&lt;code&gt;z&lt;/code&gt;若为&lt;code&gt;n-1&lt;/code&gt;，则&lt;code&gt;(b+z)/n=2-2/n&amp;lt;2&lt;/code&gt; =&amp;gt; &lt;code&gt;(kn+b+z)/n&amp;lt;k+2&lt;/code&gt;，依然可以取&lt;code&gt;ceiling&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;所以无论怎样&lt;code&gt;z&lt;/code&gt;都可为&lt;code&gt;n-1&lt;/code&gt;，即&lt;code&gt;z=n-1&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2)对于形如y这样通过值求天棚(&lt;code&gt;ceiling&lt;/code&gt;)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;舍入方向--&lt;a href="http://en.cppreference.com/w/c/numeric/fenv/feround"&gt;fegetround,fesetround&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;取整模式--&lt;a href="http://en.cppreference.com/w/c/numeric/math/rint"&gt;rint&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;math.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+    &lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;fenv.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+    &lt;span class="cp"&gt;#pragma STDC FENV_ACCESS ON         &lt;/span&gt;&lt;span class="c1"&gt;// 设置该参数表示可以访问浮点运算异常的状态值&lt;/span&gt;
+    &lt;span class="kt"&gt;double&lt;/span&gt; &lt;span class="nf"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;double&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="kt"&gt;double&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;save_round&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;fegetround&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;  &lt;span class="c1"&gt;// 获得当前的舍入方向，表示为一个舍入方向宏值&lt;/span&gt;
+        &lt;span class="n"&gt;fesetround&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FE_UPWARD&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;          &lt;span class="c1"&gt;// FE_UPWARD：向正无穷大(+Inf)舍入 &lt;/span&gt;
+        &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;rint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;               &lt;span class="c1"&gt;// or nearbyint &lt;/span&gt;
+        &lt;span class="n"&gt;fesetround&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;save_round&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;         &lt;span class="c1"&gt;// 设置舍入方向，成功时返回0&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;测试函数：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;math.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+    &lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ceil(+2.4) = %+.1f&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;2.4&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+        &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ceil(-2.4) = %+.1f&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;2.4&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+        &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ceil(-0.0) = %+.1f&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+        &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ceil(-Inf) = %+f&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;   &lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;INFINITY&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;运行结果：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mf"&gt;2.4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mf"&gt;3.0&lt;/span&gt;
+    &lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;2.4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;2.0&lt;/span&gt;
+    &lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;
+    &lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Inf&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;inf&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;4.  其他实现&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.来自&lt;a href="http://stackoverflow.com/questions/2796639/implementation-of-ceil-function-in-c"&gt;Stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cp"&gt;#define CEILING_POS(X) ((X-(int)(X)) &amp;gt; 0 ? (int)(X+1) : (int)(X))&lt;/span&gt;
+    &lt;span class="cp"&gt;#define CEILING_NEG(X) ((X-(int)(X)) &amp;lt; 0 ? (int)(X-1) : (int)(X))&lt;/span&gt;
+    &lt;span class="cp"&gt;#define CEILING(X) ( ((X) &amp;gt; 0) ? CEILING_POS(X) : CEILING_NEG(X))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;然而这个实现并不是正确的，&lt;em&gt;ceiling(x) =  ceil x is the smallest integer not less than x&lt;/em&gt;.[&lt;a href="https://en.wikipedia.org/wiki/Floor_and_ceiling_functions"&gt;wiki&lt;/a&gt;]，&lt;code&gt;int()&lt;/code&gt;强制类型转换使得尾数(mantissa)部分被丢去，例如&lt;code&gt;int(-2.5)==-2&lt;/code&gt;，正是对负数取天棚需要的，而使用三元操作符&lt;code&gt;(?:)&lt;/code&gt;是为了判断&lt;code&gt;=0&lt;/code&gt;和&lt;code&gt;≠0&lt;/code&gt;的两种关系。&lt;/li&gt;
+&lt;li&gt;因此，这个答案应该修正为：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cp"&gt;#define CEILING_POS(X) ((X-(int)(X)) &amp;gt; 0 ? (int)(X+1) : (int)(X))&lt;/span&gt;
+    &lt;span class="cp"&gt;#define CEILING_NEG(X) (int)(x)&lt;/span&gt;
+    &lt;span class="cp"&gt;#define CEILING(X) ( ((X) &amp;gt; 0) ? CEILING_POS(X) : CEILING_NEG(X))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;2.来自&lt;a href="http://www.linuxquestions.org/questions/programming-9/ceiling-function-c-programming-637404/"&gt;Linux Question Org&lt;/a&gt;     &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cp"&gt;#define CEILING(x) (int)(x) + (1 - (int)( (int)((x) + 1) - (x) ))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;对于一般的数测试没有问题，&lt;code&gt;(1 - (int)( (int)((x) + 1) - (x) ))&lt;/code&gt;实质是利用判断是否含有尾数部分决定对正负数的&lt;code&gt;int(x)&lt;/code&gt;是否&lt;code&gt;+1&lt;/code&gt;，分三种情况讨论：&lt;/li&gt;
+&lt;li&gt;1)正数&lt;ul&gt;
+&lt;li&gt;含有尾数：&lt;code&gt;(1 - (int)( (int)((x) + 1) - (x) ))≡1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;不含尾数：&lt;code&gt;(1 - (int)( (int)((x) + 1) - (x) ))≡0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2)负数&lt;ul&gt;
+&lt;li&gt;含有尾数：&lt;code&gt;(1 - (int)( (int)((x) + 1) - (x) ))≡0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;不含尾数：&lt;code&gt;(1 - (int)( (int)((x) + 1) - (x) ))≡0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3)零         &lt;code&gt;(1 - (int)( (int)((x) + 1) - (x) ))≡0&lt;/code&gt;,不会改变结果&lt;/li&gt;
+&lt;li&gt;然而，他们并不准备处理超出&lt;code&gt;int&lt;/code&gt;范围的数（例如1e15)，因此，仍然推荐使用&lt;code&gt;ceil in math.h&lt;/code&gt;，当然，更大范围的数（例如1e20）则ceil可能失效，此时进位1已经会被无视了:-)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;5.  More ...&lt;/h4&gt;
+&lt;p&gt;尽信书，则不如无书&lt;/p&gt;
+&lt;p&gt;有一个种说法，编程=google+stackoverflow，然而一味复制粘贴不仅不能学到知识，反而可能引入不负责任的bug，即使是有“vote up”的解答，也不一定是对的&lt;/p&gt;
+&lt;p&gt;当然，吸收不同的意见，以不同的视角看问题，也会收获颇丰&lt;/p&gt;</content><category term="nb"></category><category term="c"></category><category term="c++"></category></entry></feed>

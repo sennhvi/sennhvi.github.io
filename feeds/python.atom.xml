@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Python</title><link href="endergeek.com/" rel="alternate"></link><link href="endergeek.com/feeds/python.atom.xml" rel="self"></link><id>endergeek.com/</id><updated>2015-10-15T10:30:00+02:00</updated><entry><title>Tips On 《Head First Pyt》</title><link href="endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/" rel="alternate"></link><published>2015-10-15T10:30:00+02:00</published><updated>2015-10-15T10:30:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:None,2015-10-15:endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Tips on HFPython&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="tts" src="endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Tips on HFPython&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="tts" src="endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Python</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/python.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-10-15T10:30:00+02:00</updated><entry><title>Tips On 《Head First Pyt》</title><link href="http://blog.endergeek.com/pages/2015/10/15/tips-on-head-first-pyt/" rel="alternate"></link><published>2015-10-15T10:30:00+02:00</published><updated>2015-10-15T10:30:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-10-15:/pages/2015/10/15/tips-on-head-first-pyt/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Tips on HFPython&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="tts" src="http://blog.endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Tips on HFPython&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="tts" src="http://blog.endergeek.com/images/tipsonhfp/hfp.jpg"&gt;&lt;/p&gt;
+>>>>>>> 4e385242c46c94a5fe7636da4ab60c3566713a50
+&lt;hr&gt;
+&lt;h4&gt;0. &lt;strong&gt;关于数据处理&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;建议C01(Chapter01，后同)C05和C11一起看，今天看完C11正符合了5月份帮人处理csv文件的需求，demo值得初学者一试，有基础的话看代码就懂。&lt;/p&gt;
+&lt;p&gt;相关知识点推荐： - 列表推导(list comprehension不知道为什么这么翻译，交互式python中学的词组) - 函数式编程，可以深入展开 - 正则表达式re，科学计算numpy,scipy,pandas,matplotlib，机器学习scikit-learn，图像处理PIL&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. &lt;strong&gt;关于函数模块和异常&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;C02、C03并没有很详细讲，C02可以体会到：模块发布和共享，模块导入，命名空间（循环导入，依赖错误等没有），模块API设计（相关C07函数修饰符没有详细讲）。处理异常部分实例还是足够的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;2. &lt;strong&gt;关于数据存储&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;C04数据存储，pickle腌制--dump保存，load恢复（C08json类似），with处理文件（不够详细，相关需要了解：读写模式，读取行为，迭代器使用，写缓存，文件指针，文件属性，文件命令行参数，文件转码，os模块打开文件），C09介绍了python数据库API，可以结合pickle学习sqlite，可以继续学习ORM。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;3. &lt;strong&gt;关于class&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;C06简单介绍了class，相关需要了解：新式类和经典类，类的一些特殊属性如__dict__,__str__都非常有用，多重继承，private,protected变量声明，描述符，property等。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;4. &lt;strong&gt;关于web开发和移动开发&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;C07C08C10介绍了web开发和移动开发，web开发：mvc，cgi，调试，模拟服务器处理post,get请求，异常处理（错误代码），使用GAE（书中要求py2.5，很多模块已不支持），GAE使用django表单验证框架，datastore存储数据，部署GAE应用。 android开发需要旧版安卓系统（2.2～2.7最好），sl4a和python4android应用安装（源码已转移，已使用AVD折腾，强烈不建议，条件难以高度还原且现有条件不支持，虚拟机中需搭梯子）。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;5. &lt;strong&gt;关于最后十个问题&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;IDE：django-pycharm，一般脚本vim||sublime text
+处理作用域：global，变量声明规范等
+测试：unittest||doctest测试框架
+高级语言特性：匿名函数（lambda很久没用），生成器（yield，相关iter，reduce，map等），定义异常，函数修饰符，元类（好像还没用过）
+正则表达式：看完《精通正则表达式》语言之前通用部分（perl解释）即可，了解NFA，DFA正则表达式匹配原理，捕获优先，占有优先，环视等，python相关re模块，compile，search，replace,match等。
+web框架：django，web2py等，相关jinja，urllib2
+ORM和NoSQL：知道，没用过
+GUI编程：《交互式python》中使用simplegui，而常见使用的是Tkinter，wxPython
+GIL：避免使用python线程，更多：分布式计算
+其他python书：python标准库，pyMOTW，learn python the hard way，python essential reference，core python programming&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;6. More&lt;/h4&gt;
+&lt;p&gt;要熄灯了，洗洗睡吧&lt;/p&gt;</content><category term="tips"></category><category term="python"></category><category term="nb"></category></entry></feed>

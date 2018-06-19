@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Android</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/android.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-08T11:50:00+02:00</updated><entry><title>Android Related</title><link href="http://blog.endergeek.com/pages/2016/09/08/android-related/" rel="alternate"></link><published>2016-09-08T11:50:00+02:00</published><updated>2016-09-08T11:50:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-09-08:/pages/2016/09/08/android-related/</id><summary type="html">&lt;hr&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Android</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/android.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-08T11:50:00+02:00</updated><entry><title>Android Related</title><link href="http://blog.endergeek.com/pages/2016/09/08/android-related/" rel="alternate"></link><published>2016-09-08T11:50:00+02:00</published><updated>2016-09-08T11:50:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2016-09-08:/pages/2016/09/08/android-related/</id><summary type="html">&lt;hr&gt;
 &lt;h4&gt;0. &lt;strong&gt;Android布局学习&lt;/strong&gt;&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -76,7 +76,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;hr&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Android Screen Support</title><link href="http://blog.endergeek.com/pages/2016/08/27/android-screen-support/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/android-screen-support/</id><summary type="html">&lt;hr&gt;
+&lt;hr&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Android Screen Support</title><link href="http://blog.endergeek.com/pages/2016/08/27/android-screen-support/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/android-screen-support/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Android Screen Support&lt;/h3&gt;
 &lt;hr&gt;
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
@@ -195,7 +195,7 @@
 &lt;hr&gt;
 &lt;h4&gt;8.&lt;/h4&gt;
 &lt;hr&gt;
-&lt;h4&gt;9.&lt;/h4&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Android Dev</title><link href="http://blog.endergeek.com/pages/2016/08/12/faqs-in-android-dev/" rel="alternate"></link><published>2016-08-12T10:52:00+02:00</published><updated>2016-08-12T10:52:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-12:/pages/2016/08/12/faqs-in-android-dev/</id><summary type="html">&lt;hr&gt;
+&lt;h4&gt;9.&lt;/h4&gt;</content><category term="android"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>FAQs in Android Dev</title><link href="http://blog.endergeek.com/pages/2016/08/12/faqs-in-android-dev/" rel="alternate"></link><published>2016-08-12T10:52:00+02:00</published><updated>2016-08-12T10:52:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2016-08-12:/pages/2016/08/12/faqs-in-android-dev/</id><summary type="html">&lt;hr&gt;
 &lt;h4&gt;0. &lt;strong&gt;gradle相关&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;

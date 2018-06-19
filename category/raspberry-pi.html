@@ -1573,20 +1573,20 @@ jQuery(document).ready(function($) {
 
 
 
-        <title>使用Pelican和Github Pages搭建博客(一)</title>
+        <title>endergeek</title>
         <meta charset="utf-8" />
         <link href="http://blog.endergeek.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="endergeek Full Atom Feed" />
-        <link href="http://blog.endergeek.com/feeds/event.atom.xml" type="application/atom+xml" rel="alternate" title="endergeek Categories Atom Feed" />
+        <link href="http://blog.endergeek.com/feeds/raspberry-pi.atom.xml" type="application/atom+xml" rel="alternate" title="endergeek Categories Atom Feed" />
 
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="../../../../../theme/gumby.css" />
-        <link rel="stylesheet" type="text/css" href="../../../../../theme/style.css" />
-        <link rel="stylesheet" type="text/css" href="../../../../../theme/pygment.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/pygment.css" />
 
-        <script src="../../../../../theme/js/libs/modernizr-2.6.2.min.js"></script>
+        <script src="../theme/js/libs/modernizr-2.6.2.min.js"></script>
 
 
               <script>
@@ -1605,15 +1605,15 @@ jQuery(document).ready(function($) {
 
 <body id="index" class="home">
 <!-- Fork me on Github -->
-<a target="_blank" href="https://github.com/sennhviwang">
-    <img width="149px" height="149px" style="position: absolute; top: 0px; right: 0; border: 0;" src="../../../../../theme/icons/forkme.png" alt="Fork me on Github"></a>
+<a target="_blank" href="https://github.com/sennhvi">
+    <img width="149px" height="149px" style="position: absolute; top: 0px; right: 0; border: 0;" src="../theme/icons/forkme.png" alt="Fork me on Github"></a>
 </a>
     <div class="container">
 
         <div class="row">
 
           <header id="banner" class="body">
-                  <h1><a href="../../../../../">endergeek </a></h1>
+                  <h1><a href="../">endergeek </a></h1>
           </header><!-- /#banner -->
 
             <div id="navigation" class="navbar row">
@@ -1634,171 +1634,47 @@ jQuery(document).ready(function($) {
               </ul>
             </div>
 
-<section id="content" class="body">
+<section id="content">
+
 
    <div class="row">
+
+
         <div class="eleven columns">
+                 <ol id="post-list">
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="../pages/2018/06/19/raspberry-notebook/" rel="bookmark" title="Raspberry Notebook">Raspberry Notebook</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2018-06-19T22:53:00+02:00"> Tue 19 June 2018 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="../author/sennhvi.html"> sennhvi</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <hr>
+<h3>Raspberry Pi 3B+ Notebook …</h3> </div><!-- /.entry-content -->
+
+                                <div class="medium primary btn"><a href="../pages/2018/06/19/raspberry-notebook/" rel="bookmark" title="Permalink to Raspberry Notebook">Read more <i class="icon-arrow-right"></i></a></div>
 
 
-            <header>
-              <h2 class="entry-title">
-                <a href="../../../../../pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/" rel="bookmark"
-                   title="Permalink to 使用Pelican和Github Pages搭建博客(一)">使用Pelican和Github Pages搭建博客(一)</a></h2>
-           
-            </header>
-            <footer class="post-info">
-              <abbr class="published" title="2015-07-11T10:12:00+02:00">
-                Sat 11 July 2015
-              </abbr>
-              <address class="vcard author">By 
-                <a class="url fn" href="../../../../../author/sennhviwang.html"> sennhviwang</a>
-              </address>
-            </footer><!-- /.post-info -->
-            <div class="entry-content">
-              <hr>
-<h4>1.  Why Pelican?</h4>
-<p>之前用过<a href="https://hexo.io/">hexo</a>+<a href="https://pages.github.com/">github pages</a>搭建个人博客，虽然hexo官网是支持linux及实现的，但是本人折腾几次hexo并不能将目录初始化，因此用了很长一段时间的windows来写博客。随着对linux环境的使用产生习惯性依赖（因为windows基本被用来打游戏:-))，因此一直在寻找一个在linux平台下的替代品,直到发现了<a href="http://docs.getpelican.com/en/3.6.0/">pelican</a>。</p>
-<p>因此，本文是基于Debian/Ubuntu系Linux操作系统的:-)</p>
-<hr>
-<h4>2.  Before start,you need some stuff ...</h4>
-<p>搭建过程中会使用或涉及以下知识或工具，如果对于写代码感到困惑，也没关系——你既可以选择使用固定模板搭建博客框架，自己负责创作,也可以选择修改或创建模板。
-对于有兴趣发现更多特性的朋友，可以耐心参看官方文档，往往比“百度一下”要快哦:-),当然建议使用Google,毕竟结果会不同(梗),如果被墙了，请参看另一篇文章<a href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/">使用Aws EC2搭建shadowsocks服务器</a>。</p>
-<ul>
-<li><a href="https://github.com/">github</a></li>
-<li><a href="http://www.git-scm.com/">git</a></li>
-<li><a href="https://pages.github.com/">github pages</a></li>
-<li><a href="https://www.python.org/">python</a></li>
-<li><a href="https://pip.pypa.io/en/latest/">pip</a></li>
-<li><a href="http://docs.getpelican.com/en/3.6.0/#">pelican</a></li>
-<li><a href="http://sourceforge.net/projects/retext/">retext</a></li>
-<li><a href="http://daringfireball.net/projects/markdown/">markdown</a></li>
-</ul>
-<div class="highlight"><pre><span></span>$ apt-get install git
-$ apt-get install python-pip <span class="c1"># 建议参考官方文档安装</span>
-$ pip install pelican
-$ apt-get install retext
-$ pip install markdown
-</pre></div>
+
+                                <div class="row tag-row">
+                                        <span>Tagged as : </span>
+                                            <a class="danger label" href="../tag/nb.html">nb</a>
+                                            <a class="danger label" href="../tag/cli.html">cli</a>
+                                            <a class="danger label" href="../tag/raspberry-pi.html">raspberry pi</a>
+                                            <a class="danger label" href="../tag/linux.html">linux</a>
+                                </div>
 
 
-<hr>
-<h4>3.  Let's start!</h4>
-<p>首先创建一个属于个人博客的文件夹，例如：</p>
-<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> <span class="c1"># 先确保你会在用户主目录</span>
-$ mkdir -p sites/blog/endergeek <span class="o">&amp;&amp;</span> <span class="nb">cd</span> <span class="nv">$_</span> <span class="c1"># 创建文件夹endergeek并进入文件夹</span>
-$ pelican-quickstart <span class="c1"># 进入pelican配置并依据配置初始化当前文件夹</span>
-</pre></div>
 
-
-<p>效果如下图：</p>
-<blockquote>
-<p><img alt="pelican-quickstart" src="../../../../../images/pelican/pelican01.png"></p>
-</blockquote>
-<p>执行完毕后，文件夹结构如下图：</p>
-<blockquote>
-<p><img alt="pelican-file-structure" src="../../../../../images/pelican/pelican02.png"></p>
-</blockquote>
-<p>文件作用解释如下：</p>
-<ul>
-<li><strong>content</strong>：存放markdown或rst博客文章源文件，以及之后可选择创建的文件夹images,pages,notebooks等（notebooks需要启用插件<a href="https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags">liquid_tags.notebook</a>，images文件夹存放所有博客文件中引用到的图片，pages文件夹存放自己创建的静态页面）</li>
-<li><strong>output</strong>：执行make html命令后生成的静态博客</li>
-<li><strong>develop_server.sh</strong>：本地测试服务器，地址<a href="http://localhost:8000/">http://localhost:8000/</a></li>
-<li><strong>Makefile</strong>：管理博客的makefile文件，定义了一系列make的参数行为</li>
-<li><strong>pelicanconf.py</strong>：博客配置文件</li>
-<li><strong>publishconf.py</strong>：发布文件，非必需</li>
-<li><strong>cache</strong>： 缓存文件，可删除，删除后需要使用make html以重新生成。注意，删除cache文件夹内容可能导致自定义的样式被修改等问题</li>
-</ul>
-<hr>
-<h4>4.  Write something ...</h4>
-<p>在content文件夹内创建一个<em>[filename]</em>.md文件，并对其进行编辑。
-博文格式如下图：</p>
-<blockquote>
-<p><img alt="pelican-markdown-screenshot" src="../../../../../images/pelican/pelican03.png"></p>
-</blockquote>
-<p>你也可以根据<a href="http://docs.getpelican.com/en/3.6.0/#">官方文档</a>更完整定义你的markdown文件头，为了避免每次新建markdown文件要重复安排md文件头，因此就写<a href="https://github.com/sennhviwang/pelican_gum_endergeek/blob/master/generate_template.py">一个简单的python脚本</a>以生成md文件，使用方法如下图：</p>
-<blockquote>
-<p><img alt="pelican-md-generator-script" src="../../../../../images/pelican/pelican04.png"></p>
-</blockquote>
-<hr>
-<h4>5.  Make!</h4>
-<p>创作完毕后，回到endergeek文件夹（即content文件夹的父文件夹），执行命令：</p>
-<div class="highlight"><pre><span></span>$ make html <span class="c1"># make命令具体细节在Makefile中定义</span>
-</pre></div>
-
-
-<p>如下图：</p>
-<blockquote>
-<p><img alt="pelican-make-html" src="../../../../../images/pelican/pelican05.png"></p>
-</blockquote>
-<p><code>make html</code> 会按照配置文件将博文生成静态网页文件存放output文件夹中，使用<code>make serve</code>查看：</p>
-<blockquote>
-<p><img alt="pelican-make-serve" src="../../../../../images/pelican/pelican06.png"></p>
-</blockquote>
-<p>在浏览器中输入<a href="http://localhost:8000/">http://localhost:8000/</a>查看</p>
-<hr>
-<h4>6.  Choose your favourite theme</h4>
-<p>在博客主目录（即endergeek文件夹）下，使用git下载<a href="https://github.com/getpelican/pelican-themes">pelican主题</a>仓库到本地，主题预览网址<a href="http://pelicanthemes.com/">pelicanthemes</a>：</p>
-<div class="highlight"><pre><span></span>$ git clone https://github.com/getpelican/pelican-themes.git
-</pre></div>
-
-
-<p>打开并编辑pelicanconf.py配置文件，更改或添加THEME为主题名称：
-<code>THEME = 'pelican-themes/gum'</code>，具体配置设置参考<a href="http://docs.getpelican.com/en/3.6.0/settings.html">官方文档</a></p>
-<hr>
-<h4>7.  Enable Disqus</h4>
-<p>在Disqus申请账号，创建并使用站点的Shortname，获取自己应用的Secret Key和Public Key并写入pelicanconf.py配置文件中：</p>
-<blockquote>
-<p><img alt="pelican-disqus-set" src="../../../../../images/pelican/pelican07.png"></p>
-</blockquote>
-<hr>
-<h4>8.  Publish blog</h4>
-<p>发布博文，使用github pages作为站点服务器，参考<a href="https://help.github.com/articles/creating-pages-with-the-automatic-generator/">官方教程</a>简单几步即可，这样，你就获得一个github.io的二级域名以及建立了一个网站文件版本库，也可以使用自己的域名重定向到<em>[username]</em>.github.io二级域名这样就可以通过访问你的个人域名访问你的博客了。</p>
-<p>进入博客主目录(endergeek)下的output文件夹，执行如下命令（命令解释可以在另一篇<a href="http://blog.endergeek.com/pages/2015/06/15/git-some-note/">Git博文</a>找到：</p>
-<div class="highlight"><pre><span></span>$ git init 
-$ git add .
-$ git remote add origin https://github.com/<span class="o">[</span>username<span class="o">]</span>/<span class="o">[</span>username<span class="o">]</span>.github.io
-$ git pull origin master
-$ git commit -m <span class="s2">&quot;first blog&quot;</span>
-$ git push origin master
-</pre></div>
-
-
-<p>发布的命令较长，可以修改Makefile文件如下图：</p>
-<blockquote>
-<p><img alt="pelican-makefile-git" src="../../../../../images/pelican/pelican08.png"></p>
-</blockquote>
-<p>之后就可以在每次编辑完新的文章后，在主目录下使用</p>
-<div class="highlight"><pre><span></span>$ make html
-$ make github
-</pre></div>
-
-
-<p>来更新你的博客了～</p>
-<hr>
-<h4>9.  More ...</h4>
-<ul>
-<li>博客主题<a href="https://github.com/sennhviwang/pelican_gum_endergeek">地址</a></li>
-</ul>
-            </div><!-- /.entry-content -->
-            <div class="comments">
-              <h3>Comments</h3>
-              <div id="disqus_thread"></div>
-              <script type="text/javascript">
-                var disqus_identifier = "pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/";
-                (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://blogendergeekcom.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-              </script>
-            </div>
-
+                        </article></li>
+                </ol><!-- /#posts-list -->
 
         </div><!-- /.eleven.columns -->
-
+        
 <div class="three columns">
 <div class="centered">
-	<img src="../../../../../theme/avatar.jpg" class="avatar">
+	<img src="../theme/avatar.jpg" class="avatar">
 </div>
 
 <h4>Pages</h4>
@@ -1807,33 +1683,35 @@ $ make github
 
 <h4>Categories</h4>
 <ul>
-		<li><a href="../../../../../category/android.html">Android</a></li>
-		<li><a href="../../../../../category/cc.html">C/c++</a></li>
-		<li><a href="../../../../../category/event.html">Event</a></li>
-		<li><a href="../../../../../category/life.html">Life</a></li>
-		<li><a href="../../../../../category/linux.html">Linux</a></li>
-		<li><a href="../../../../../category/python.html">Python</a></li>
-		<li><a href="../../../../../category/vcs.html">Vcs</a></li>
+		<li><a href="../category/android.html">Android</a></li>
+		<li><a href="../category/cc.html">C/c++</a></li>
+		<li><a href="../category/event.html">Event</a></li>
+		<li><a href="../category/life.html">Life</a></li>
+		<li><a href="../category/linux.html">Linux</a></li>
+		<li><a href="../category/python.html">Python</a></li>
+		<li><a href="../category/raspberry-pi.html">Raspberry pi</a></li>
+		<li><a href="../category/vcs.html">Vcs</a></li>
 </ul>
 
 
 <h4>Tags</h4>
 	<ul>
-	    <li class="tag-1"><a href="../../../../../tag/nb.html">nb</a></li>
-	    <li class="tag-1"><a href="../../../../../tag/tips.html">tips</a></li>
-	    <li class="tag-2"><a href="../../../../../tag/linux.html">linux</a></li>
-	    <li class="tag-2"><a href="../../../../../tag/cli.html">cli</a></li>
-	    <li class="tag-2"><a href="../../../../../tag/android.html">android</a></li>
-	    <li class="tag-2"><a href="../../../../../tag/bash.html">bash</a></li>
-	    <li class="tag-3"><a href="../../../../../tag/pelican.html">pelican</a></li>
-	    <li class="tag-3"><a href="../../../../../tag/c.html">c</a></li>
-	    <li class="tag-3"><a href="../../../../../tag/git.html">git</a></li>
-	    <li class="tag-4"><a href="../../../../../tag/shell.html">shell</a></li>
-	    <li class="tag-4"><a href="../../../../../tag/python.html">python</a></li>
-	    <li class="tag-4"><a href="../../../../../tag/cyanogenmod.html">cyanogenmod</a></li>
-	    <li class="tag-4"><a href="../../../../../tag/aws.html">aws</a></li>
-	    <li class="tag-4"><a href="../../../../../tag/leetcode.html">leetcode</a></li>
-	    <li class="tag-4"><a href="../../../../../tag/shadowsocks.html">shadowsocks</a></li>
+	    <li class="tag-0"><a href="../tag/nb.html">nb</a></li>
+	    <li class="tag-1"><a href="../tag/tips.html">tips</a></li>
+	    <li class="tag-1"><a href="../tag/linux.html">linux</a></li>
+	    <li class="tag-2"><a href="../tag/cli.html">cli</a></li>
+	    <li class="tag-2"><a href="../tag/android.html">android</a></li>
+	    <li class="tag-2"><a href="../tag/bash.html">bash</a></li>
+	    <li class="tag-3"><a href="../tag/pelican.html">pelican</a></li>
+	    <li class="tag-3"><a href="../tag/c.html">c</a></li>
+	    <li class="tag-3"><a href="../tag/git.html">git</a></li>
+	    <li class="tag-4"><a href="../tag/shell.html">shell</a></li>
+	    <li class="tag-4"><a href="../tag/raspberry-pi.html">raspberry pi</a></li>
+	    <li class="tag-4"><a href="../tag/python.html">python</a></li>
+	    <li class="tag-4"><a href="../tag/cyanogenmod.html">cyanogenmod</a></li>
+	    <li class="tag-4"><a href="../tag/aws.html">aws</a></li>
+	    <li class="tag-4"><a href="../tag/leetcode.html">leetcode</a></li>
+	    <li class="tag-4"><a href="../tag/shadowsocks.html">shadowsocks</a></li>
 </ul>
 
 
@@ -1841,13 +1719,13 @@ $ make github
 	<nav class="widget">
   <h4>Social</h4>
   <ul>
-    <li><a target="_blank" href="https://github.com/sennhviwang">Github</a></li>
+    <li><a target="_blank" href="https://github.com/sennhvi">Github</a></li>
     <li><a target="_blank" href="https://twitter.com/sennhviwang">Twitter</a></li>
     <li><a target="_blank" href="https://plus.google.com/u/0/102452790789076134223/posts">Google-plus</a></li>
     <li><a target="_blank" href="http://www.reddit.com/user/sennhviwang/">Reddit</a></li>
     <li><a target="_blank" href="http://stackoverflow.com/users/4475528/sennhviwang">Stackoverflow</a></li>
     <li><a target="_blank" href="http://blog.endergeek.com/feeds/all.atom.xml">Rss</a></li>
-    <li><a target="_blank" href="mailto:sennhviwang@gmail.com">Email</a></li>
+    <li><a target="_blank" href="mailto:sennhvi@gmail.com">Email</a></li>
   </ul>
 	</nav>
 </div>
@@ -1864,13 +1742,15 @@ $ make github
 
 <h4>Official Account</h4>
 <div class="centered">
-	<img src="../../../../../theme/wechat.jpg" class="wechat">
+	<img src="../theme/wechat.jpg" class="wechat">
 </div>
 
 </div> </div><!-- /.row -->
 
-
-</section>
+<p class="paginator">
+    Page 1 / 1
+</p>
+</section><!-- /#content -->
 
        </div><!-- /.row -->
     </div><!-- /.container -->
@@ -1882,7 +1762,7 @@ $ make github
         <footer id="credits" class="row">
           <div class="seven columns left-center">
 
-                   <p>&copy; 2015 sennhviwang . All rights reserved.<br>Code snippets in the pages are released under <a href="http://opensource.org/licenses/MIT" target="_blank">The MIT License</a>, unless otherwise specified.</p>
+                   <p>&copy; 2015 sennhvi . All rights reserved.<br>Code snippets in the pages are released under <a href="http://opensource.org/licenses/MIT" target="_blank">The MIT License</a>, unless otherwise specified.</p>
                    <address id="about" class="vcard body">
                     Powered by <a href="http://getpelican.com/">Pelican</a>,
                     which takes great advantage of<a href="http://python.org"> Python</a>.
@@ -1894,7 +1774,7 @@ $ make github
             <div class="row">
               <ul class="socbtns">
 
-                <li><div class="btn primary"><a href="https://github.com/sennhviwang" target="_blank">Github</a></div></li>
+                <li><div class="btn primary"><a href="https://github.com/sennhvi" target="_blank">Github</a></div></li>
 
                 <li><div class="btn twitter"><a href="https://twitter.com/sennhviwang" target="_blank">Twitter</a></div></li>
 
@@ -1918,8 +1798,8 @@ $ make github
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-  <script src="../../../../../theme/js/libs/jquery-1.9.1.min.js"></script>
-  <script src="../../../../../theme/js/libs/gumby.min.js"></script>
-  <script src="../../../../../theme/js/plugins.js"></script>
+  <script src="../theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="../theme/js/libs/gumby.min.js"></script>
+  <script src="../theme/js/plugins.js"></script>
 </body>
 </html>

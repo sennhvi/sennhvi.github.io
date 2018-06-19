@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Raspberry pi</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/raspberry-pi.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2018-06-19T22:53:00+02:00</updated><entry><title>Raspberry Notebook</title><link href="http://blog.endergeek.com/pages/2018/06/19/raspberry-notebook/" rel="alternate"></link><published>2018-06-19T22:53:00+02:00</published><updated>2018-06-19T22:53:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2018-06-19:/pages/2018/06/19/raspberry-notebook/</id><summary type="html">&lt;hr&gt;
+&lt;h3&gt;Raspberry Pi 3B+ Notebook …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
+&lt;h3&gt;Raspberry Pi 3B+ Notebook&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Background" src="http://blog.endergeek.com/images/raspberrypi/background.png"&gt;&lt;/p&gt;
+&lt;h4&gt;0. How to disable default account 'pi'&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;建立临时账号&lt;/li&gt;
+&lt;li&gt;使用rasp-config关闭自动登录(使pi用户相关进程不启动)和开启连接网络后再登录(以防失联)&lt;/li&gt;
+&lt;li&gt;使用临时账号登录并su获取root权限&lt;/li&gt;
+&lt;li&gt;killall -u pi  # 杀掉用户pi的所有进程&lt;/li&gt;
+&lt;li&gt;usermod  # 修改pi账户的信息为你指定的内容即可&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;1. 树莓派解决libGLESv2.so问题&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install libgles2-mesa libsdl2-dev libegl1-mesa-dev
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;2. 树莓派摄像头模块没有/dev/video0设备节点的问题&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo rpi-update &lt;span class="c1"&gt;# to make sure the v4L2 drive is available.&lt;/span&gt;
+sudo modprobe bcm2835-v4l2 &lt;span class="c1"&gt;# to load it and create /dev/video0&lt;/span&gt;
+sudo apt-get upgrade
+sudo rpi-update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在&lt;code&gt;/etc/&lt;/code&gt;下面的&lt;code&gt;modules-load.d/rpi-camera.conf&lt;/code&gt;里面添加一行&lt;code&gt;bcm2835-v4l2&lt;/code&gt;，然后&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo reboot
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;3. 更新pip后发生 &lt;code&gt;ImportError: cannot import name 'main'&lt;/code&gt;的问题&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pip&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h4&gt;4. Raspberry Pi 3B+使用注意事项&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;树莓派每个引脚最大接受电流16mA&lt;/li&gt;
+&lt;li&gt;所有GPIO引脚的电流总和不能超过50mA &lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;5.&lt;/h4&gt;
+&lt;h2&gt;&lt;img alt="origin" src="http://blog.endergeek.com/images/raspberrypi/origin.png"&gt;&lt;/h2&gt;</content><category term="nb"></category><category term="cli"></category><category term="raspberry pi"></category><category term="linux"></category></entry></feed>

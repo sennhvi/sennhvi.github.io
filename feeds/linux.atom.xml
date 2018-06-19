@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Linux</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/linux.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-04T10:01:00+02:00</updated><entry><title>Classic Shell Scripting</title><link href="http://blog.endergeek.com/pages/2016/09/04/classic-shell-scripting/" rel="alternate"></link><published>2016-09-04T10:01:00+02:00</published><updated>2016-09-04T10:01:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-09-04:/pages/2016/09/04/classic-shell-scripting/</id><summary type="html">&lt;hr&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Linux</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/linux.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2016-09-04T10:01:00+02:00</updated><entry><title>Classic Shell Scripting</title><link href="http://blog.endergeek.com/pages/2016/09/04/classic-shell-scripting/" rel="alternate"></link><published>2016-09-04T10:01:00+02:00</published><updated>2016-09-04T10:01:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2016-09-04:/pages/2016/09/04/classic-shell-scripting/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="css" src="http://blog.endergeek.com/images/classicshellscripting/shellsrptg.gif"&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -128,7 +128,7 @@ $ &lt;span class="nv"&gt;LC_ALL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://linux.cn/article-7161-1.html"&gt;[LFCS系列]如何在 Linux 上使用 GNU sed 等命令来创建、编辑和操作文件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.jobbole.com/99063/"&gt;Linux Shell 文本处理工具集锦&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="linux"></category><category term="shell"></category><category term="nb"></category></entry><entry><title>FAQs in Linux</title><link href="http://blog.endergeek.com/pages/2016/08/27/faqs-in-linux/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/faqs-in-linux/</id><summary type="html">&lt;hr&gt;
+&lt;/ul&gt;</content><category term="linux"></category><category term="shell"></category><category term="nb"></category></entry><entry><title>FAQs in Linux</title><link href="http://blog.endergeek.com/pages/2016/08/27/faqs-in-linux/" rel="alternate"></link><published>2016-08-27T17:59:00+02:00</published><updated>2016-08-27T17:59:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2016-08-27:/pages/2016/08/27/faqs-in-linux/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;FAQs in Linux&lt;/h3&gt;
 &lt;hr&gt;
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
@@ -238,7 +238,7 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 &lt;h4&gt;7.&lt;/h4&gt;
 &lt;hr&gt;
 &lt;h4&gt;8.&lt;/h4&gt;
-&lt;hr&gt;</content><category term="linux"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Ssh Login Without Password</title><link href="http://blog.endergeek.com/pages/2015/09/24/ssh-login-without-password/" rel="alternate"></link><published>2015-09-24T10:41:00+02:00</published><updated>2015-09-24T10:41:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-09-24:/pages/2015/09/24/ssh-login-without-password/</id><summary type="html">&lt;hr&gt;
+&lt;hr&gt;</content><category term="linux"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Ssh Login Without Password</title><link href="http://blog.endergeek.com/pages/2015/09/24/ssh-login-without-password/" rel="alternate"></link><published>2015-09-24T10:41:00+02:00</published><updated>2015-09-24T10:41:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-09-24:/pages/2015/09/24/ssh-login-without-password/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h2&gt;&lt;img alt="ssh" src="http://blog.endergeek.com/images/sshlogin/dorm.png"&gt;&lt;/h2&gt;
 &lt;h4&gt;0.&lt;/h4&gt;
@@ -286,7 +286,7 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.prosight.me/blogs/1097/?utm_source=rss&amp;amp;utm_medium=rss&amp;amp;utm_campaign=%25e8%25ae%25be%25e7%25bd%25aessh%25e6%2597%25a0%25e5%25af%2586%25e9%2592%25a5%25e7%2599%25bb%25e5%25bd%2595"&gt;ssh&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-key-pairs.html"&gt;ec2 key pairs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="linux"></category><category term="nb"></category></entry><entry><title>Setup &amp;&amp; Use Ftp Server In Ubuntu Linux</title><link href="http://blog.endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/" rel="alternate"></link><published>2015-08-21T21:53:00+02:00</published><updated>2015-08-21T21:53:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-21:/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</id><summary type="html">&lt;hr&gt;
+&lt;/ul&gt;</content><category term="linux"></category><category term="nb"></category></entry><entry><title>Setup &amp;&amp; Use Ftp Server In Ubuntu Linux</title><link href="http://blog.endergeek.com/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/" rel="alternate"></link><published>2015-08-21T21:53:00+02:00</published><updated>2015-08-21T21:53:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-08-21:/pages/2015/08/21/setup-use-ftp-server-in-ubuntu-linux/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server …&lt;/h3&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;Setup &amp;amp;&amp;amp; Use FTP Server in Ubuntu Linux&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="testspeed" src="http://blog.endergeek.com/images/ftp/testspeed.png"&gt;&lt;/p&gt;
@@ -423,7 +423,7 @@ banner_fail - 指向列出禁止访问IP的文件
 &lt;li&gt;3.&lt;a href="http://www.tldp.org/HOWTO/FTP-3.html"&gt;Using FTP - Howtos&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;4.&lt;a href="https://www.siteground.com/kb/ftp_browser/"&gt;How to connect to FTP with a web browser - siteground&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="plant" src="http://blog.endergeek.com/images/ftp/plant.gif"&gt;&lt;/p&gt;</content><category term="linux"></category><category term="cli"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Autojump Between Dirs</title><link href="http://blog.endergeek.com/pages/2015/06/15/autojump-between-dirs/" rel="alternate"></link><published>2015-06-15T07:38:00+02:00</published><updated>2015-06-15T07:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/autojump-between-dirs/</id><summary type="html">&lt;hr&gt;
+&lt;p&gt;&lt;img alt="plant" src="http://blog.endergeek.com/images/ftp/plant.gif"&gt;&lt;/p&gt;</content><category term="linux"></category><category term="cli"></category><category term="nb"></category><category term="tips"></category></entry><entry><title>Autojump Between Dirs</title><link href="http://blog.endergeek.com/pages/2015/06/15/autojump-between-dirs/" rel="alternate"></link><published>2015-06-15T07:38:00+02:00</published><updated>2015-06-15T07:38:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-06-15:/pages/2015/06/15/autojump-between-dirs/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;autojump 工具&lt;/h3&gt;
 &lt;p&gt;本文将介绍一个实用的命令行工具，它允许你可以快速跳转到你喜爱的目录 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h3&gt;autojump 工具&lt;/h3&gt;
@@ -508,7 +508,7 @@ $ &lt;span class="nb"&gt;cd&lt;/span&gt; autojump &lt;span class="o"&gt;&amp;amp
 &lt;ul&gt;
 &lt;li&gt;1.&lt;a href="http://xmodulo.com/speed-up-directory-navigation-linux-terminal.html"&gt;Xmodulo Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;2.&lt;a href="https://github.com/joelthelion"&gt;Developer: Joel Schaerer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="bash"></category><category term="cli"></category><category term="nb"></category></entry><entry><title>Usage Of `Echo`</title><link href="http://blog.endergeek.com/pages/2015/06/14/usage-of-echo/" rel="alternate"></link><published>2015-06-14T08:07:00+02:00</published><updated>2015-06-14T08:07:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/usage-of-echo/</id><summary type="html">&lt;hr&gt;
+&lt;/ul&gt;</content><category term="bash"></category><category term="cli"></category><category term="nb"></category></entry><entry><title>Usage Of `Echo`</title><link href="http://blog.endergeek.com/pages/2015/06/14/usage-of-echo/" rel="alternate"></link><published>2015-06-14T08:07:00+02:00</published><updated>2015-06-14T08:07:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/usage-of-echo/</id><summary type="html">&lt;hr&gt;
 &lt;h4&gt;1.  输出变量的值:&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;3 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;hr&gt;
@@ -565,7 +565,7 @@ $ &lt;span class="nb"&gt;echo&lt;/span&gt; * &amp;gt; test.txt 内容重定向
 
 
 &lt;p&gt;should give you access to the complete manual.&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="bash"></category><category term="cli"></category></entry><entry><title>Tenth Line</title><link href="http://blog.endergeek.com/pages/2015/06/14/tenth-line/" rel="alternate"></link><published>2015-06-14T06:02:00+02:00</published><updated>2015-06-14T06:02:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/tenth-line/</id><summary type="html">&lt;hr&gt;
+&lt;/blockquote&gt;</content><category term="bash"></category><category term="cli"></category></entry><entry><title>Tenth Line</title><link href="http://blog.endergeek.com/pages/2015/06/14/tenth-line/" rel="alternate"></link><published>2015-06-14T06:02:00+02:00</published><updated>2015-06-14T06:02:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-06-14:/pages/2015/06/14/tenth-line/</id><summary type="html">&lt;hr&gt;
 &lt;h4&gt;1.  How would you …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  How would you print just the 10th line of a file?&lt;/h4&gt;
 &lt;p&gt;最近碰巧看见一道leetcode上的题，刚开始觉得会很简单，然而操作起来就觉得自己太天真了：&lt;/p&gt;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Event</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/event.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-08-20T21:12:00+02:00</updated><entry><title>Disaster Recovery Record</title><link href="http://blog.endergeek.com/pages/2015/08/20/disaster-recovery-record/" rel="alternate"></link><published>2015-08-20T21:12:00+02:00</published><updated>2015-08-20T21:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-20:/pages/2015/08/20/disaster-recovery-record/</id><summary type="html">&lt;hr&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>endergeek - Event</title><link href="http://blog.endergeek.com/" rel="alternate"></link><link href="http://blog.endergeek.com/feeds/event.atom.xml" rel="self"></link><id>http://blog.endergeek.com/</id><updated>2015-08-20T21:12:00+02:00</updated><entry><title>Disaster Recovery Record</title><link href="http://blog.endergeek.com/pages/2015/08/20/disaster-recovery-record/" rel="alternate"></link><published>2015-08-20T21:12:00+02:00</published><updated>2015-08-20T21:12:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-08-20:/pages/2015/08/20/disaster-recovery-record/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;灾难恢复记录&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="Disaster" src="http://blog.endergeek.com/images/disasterrecovery/disaster.jpg"&gt;&lt;/p&gt;
 &lt;h4&gt;0. Why we …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
@@ -121,7 +121,7 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 &lt;li&gt;7.&lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;reference for ipynb &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;8.&lt;a href="http://sourceforge.net/p/retext/tickets/104/"&gt;retext sf&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;</content><category term="nb"></category><category term="pelican"></category><category term="linux"></category></entry><entry><title>Oneplus One 折腾记录</title><link href="http://blog.endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/" rel="alternate"></link><published>2015-08-19T14:47:00+02:00</published><updated>2015-08-19T14:47:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-08-19:/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/</id><summary type="html">&lt;hr&gt;
+&lt;hr&gt;</content><category term="nb"></category><category term="pelican"></category><category term="linux"></category></entry><entry><title>Oneplus One 折腾记录</title><link href="http://blog.endergeek.com/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/" rel="alternate"></link><published>2015-08-19T14:47:00+02:00</published><updated>2015-08-19T14:47:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-08-19:/pages/2015/08/19/oneplus-one-zhe-teng-ji-lu/</id><summary type="html">&lt;hr&gt;
 &lt;h3&gt;一加1(A0001)折腾记录&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="cmhead" src="http://blog.endergeek.com/images/oneplus/cmhead.png"&gt;&lt;/p&gt;
 &lt;h4&gt;0 …&lt;/h4&gt;</summary><content type="html">&lt;hr&gt;
@@ -183,7 +183,7 @@ fcitx-modules fcitx-module-X11  kde-config-fcitx
 &lt;li&gt;4.&lt;a href="http://android.troplet.com/question/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi-or-signal-icon-in-lollipop-100657.html"&gt;感叹号原理&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;5.&lt;a href="http://www.oneplusbbs.com/thread-476657-1-1.html"&gt;最实用的update线刷方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;img alt="cmlog" src="http://blog.endergeek.com/images/oneplus/cmlog.jpg"&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="cyanogenmod"></category><category term="nb"></category></entry><entry><title>使用Aws Ec2搭建Shadowsocks服务器</title><link href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/" rel="alternate"></link><published>2015-07-11T11:38:00+02:00</published><updated>2015-07-11T11:38:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-11:/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/</id><summary type="html">&lt;hr&gt;
+&lt;/ul&gt;</content><category term="cyanogenmod"></category><category term="nb"></category></entry><entry><title>使用Aws Ec2搭建Shadowsocks服务器</title><link href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/" rel="alternate"></link><published>2015-07-11T11:38:00+02:00</published><updated>2015-07-11T11:38:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-07-11:/pages/2015/07/11/shi-yong-aws-ec2da-jian-shadowsocksfu-wu-qi/</id><summary type="html">&lt;hr&gt;
 &lt;h4&gt;1.  Why shadowsocks&lt;/h4&gt;
 &lt;p&gt;shadowsocks类似goagent …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  Why shadowsocks&lt;/h4&gt;
@@ -287,7 +287,7 @@ $ sudo apt-get install shadowsocks-qt5
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h4&gt;6.  More ...&lt;/h4&gt;
-&lt;p&gt;体验了免费的AWS EC2服务，还是很期待体验使用付费流量的:-)&lt;/p&gt;</content><category term="aws"></category><category term="nb"></category><category term="shadowsocks"></category></entry><entry><title>使用Pelican和Github Pages搭建博客(一)</title><link href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/" rel="alternate"></link><published>2015-07-11T10:12:00+02:00</published><updated>2015-07-11T10:12:00+02:00</updated><author><name>sennhviwang</name></author><id>tag:blog.endergeek.com,2015-07-11:/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke-yi/</id><summary type="html">&lt;hr&gt;
+&lt;p&gt;体验了免费的AWS EC2服务，还是很期待体验使用付费流量的:-)&lt;/p&gt;</content><category term="aws"></category><category term="nb"></category><category term="shadowsocks"></category></entry><entry><title>使用Pelican和Github Pages搭建博客</title><link href="http://blog.endergeek.com/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke/" rel="alternate"></link><published>2015-07-11T10:12:00+02:00</published><updated>2015-07-11T10:12:00+02:00</updated><author><name>sennhvi</name></author><id>tag:blog.endergeek.com,2015-07-11:/pages/2015/07/11/shi-yong-pelicanhe-github-pagesda-jian-bo-ke/</id><summary type="html">&lt;hr&gt;
 &lt;h4&gt;1.  Why Pelican?&lt;/h4&gt;
 &lt;p&gt;之前用过 …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
 &lt;h4&gt;1.  Why Pelican?&lt;/h4&gt;

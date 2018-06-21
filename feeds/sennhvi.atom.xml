@@ -475,7 +475,20 @@ dpkg-reconfigure locales &lt;span class="c1"&gt;### 更新locale&lt;/span&gt;
 
 
 &lt;hr&gt;
-&lt;h4&gt;5.&lt;/h4&gt;
+&lt;h4&gt;5. &lt;strong&gt;双系统win在linux下没有被识别且挂载失败&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Metadata kept in Windows cache, refused to mount.
+Failed to mount &lt;span class="s1"&gt;&amp;#39;/dev/sdx&amp;#39;&lt;/span&gt;: Operation not permitted
+The NTFS partition is in an unsafe state. Please resume and shutdown
+Windows fully &lt;span class="o"&gt;(&lt;/span&gt;no hibernation or fast restarting&lt;span class="o"&gt;)&lt;/span&gt;, or mount the volume
+read-only with the &lt;span class="s1"&gt;&amp;#39;ro&amp;#39;&lt;/span&gt; mount option.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;解决办法&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo ntfsfix /dev/sdXY
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;hr&gt;
 &lt;h4&gt;6.&lt;/h4&gt;
 &lt;hr&gt;
